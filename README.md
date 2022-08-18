@@ -12,3 +12,7 @@
 - Solved Course Exercises (required, with deadlines - evaluated through an automated scoring system)
 - Solved Extra Exercises (optional - evaluated through an automated scoring system)
 - Exam Practice (optional - evaluated through an automated scoring system)
+
+### Clarifications:
+- All functions are called in with multiple inputs for testing purposes. Different inputs are getting commented throughout testing.
+- Some solutions contain multiple versions commented out - again for testing purposes and for better learning / understanding.
