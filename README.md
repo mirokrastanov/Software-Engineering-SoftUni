@@ -12,6 +12,7 @@
 - Solved Course Exercises (required, with deadlines - evaluated through an automated scoring system)
 - Solved Extra Exercises (optional - evaluated through an automated scoring system)
 - Exam Practice (optional - evaluated through an automated scoring system)
+- Preliminary Exam Solutions (Max Score = Final for the course)
 
 ### Clarifications:
 - All functions are called in with multiple inputs for testing purposes. Different inputs are getting commented throughout testing.
