@@ -1,9 +1,11 @@
 <html>
 <body>
 
-# <p align="center">softuni-JS-Basics<p>
-  
+# <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022"><p align="center"> SoftUni JavaScript Basics - July 2022 </a><p>
+
+<a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">
 <img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="160">
+</a>
 
 </body>
 </html>
