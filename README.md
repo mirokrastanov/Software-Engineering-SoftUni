@@ -1,8 +1,9 @@
 <html>
 <body>
 
-<h2>softuni-JS-Basics</h2>
-<img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="231">
+# <p align="center">softuni-JS-Basics<p>
+  
+<img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="200">
 
 </body>
 </html>
