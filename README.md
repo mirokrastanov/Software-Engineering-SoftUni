@@ -1,13 +1,11 @@
 <html>
 <body>
 
-<h2>HTML Image</h2>
+<h2>softuni-JS-Basics</h2>
 <img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1740" height="330">
 
 </body>
 </html>
-
-# softuni-JS-Basics
 
 ### Course Topics:
 1. First steps in coding  
