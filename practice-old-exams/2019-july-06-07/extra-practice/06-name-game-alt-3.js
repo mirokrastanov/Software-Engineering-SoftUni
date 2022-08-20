@@ -1,3 +1,4 @@
+//complicated solution, incorporating the ASCII conversion inside the code 
 function nameGame(input) {
     let playerName = String(input[0]);
     let n = playerName.length;
@@ -62,16 +63,16 @@ nameGame(["Ivan",
     "87",
     "Stop"]);
 
-nameGame(["Pesho",
-    "124",
-    "34",
-    "111",
-    "97",
-    "99",
-    "Gosho",
-    "98",
-    "124",
-    "88",
-    "76",
-    "18",
-    "Stop"]);
+// nameGame(["Pesho",
+//     "124",
+//     "34",
+//     "111",
+//     "97",
+//     "99",
+//     "Gosho",
+//     "98",
+//     "124",
+//     "88",
+//     "76",
+//     "18",
+//     "Stop"]);
