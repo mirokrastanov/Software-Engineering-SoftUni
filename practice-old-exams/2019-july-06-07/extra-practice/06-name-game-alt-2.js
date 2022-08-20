@@ -1,3 +1,4 @@
+//another solution - new logic and attempting to account for a few extra things (using only the given inputs, without my own extra inputs)
 function nameGamePractice(input) {
     let index = 0;
     let name = String(input[index]);
@@ -29,16 +30,16 @@ function nameGamePractice(input) {
 
 }
 
-nameGamePractice(["Ivan",
-"73",
-"20",
-"98",
-"110",
-"Ivo",
-"80",
-"65",
-"87",
-"Stop"]);
+// nameGamePractice(["Ivan",
+// "73",
+// "20",
+// "98",
+// "110",
+// "Ivo",
+// "80",
+// "65",
+// "87",
+// "Stop"]);
 nameGamePractice(["Pesho",
 "124",
 "34",
