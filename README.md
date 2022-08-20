@@ -24,8 +24,11 @@
 6. Nested Loops   
 
 ### Contains:
-- Solved Course Exercises (required, with deadlines - evaluated through an automated scoring system)
-- Solved Extra Exercises (optional - evaluated through an automated scoring system)
-- Exam Practice (optional - evaluated through an automated scoring system)
-- Preliminary Exam Solutions 
+- Solved Course Exercises (required, with a deadlines)
+- Solved Extra Exercises (optional)
+- Additional Exam Practice (optional, using previous years' exams)
+- Preliminary Exam Solutions (my own solution - submitted and evaluated)
+
+### FINAL SCORE: 6.00/6.00
+### <a href="">Certificate</a>
 
