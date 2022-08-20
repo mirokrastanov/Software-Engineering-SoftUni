@@ -30,5 +30,5 @@
 - Preliminary Exam Solutions (my own solution - submitted and evaluated)
 
 ### FINAL SCORE: 6.00/6.00
-### <a href="">Certificate</a>
+### <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
 
