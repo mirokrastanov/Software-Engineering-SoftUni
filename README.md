@@ -1,4 +1,4 @@
-# <a href="https://softuni.bg/curriculum"><p align="center">Software Engineering - Professional Program - SoftUni</a></p>
+# <a href="https://softuni.bg/curriculum"><p align="center">Software Engineering - Main Program - SoftUni</a></p>
 
 <a href="https://softuni.bg/">
 <img src="https://stringfixer.com/files/651542214.jpg" alt="Trulli" width="1218" height="160">
@@ -13,15 +13,25 @@ All courses emphasize a serious practical approach by providing multiple complex
 Each course ends with an Exam, designed so students can demonstrate their skills in solving complex problems. 
 
 ## Curriculum
-- <a href="https://softuni.bg/curriculum">Professional Program</a>
-- <a href="https://softuni.bg/trainings/opencourses">Open Courses</a>
+- <a href="https://softuni.bg/curriculum">Main Program</a>
+- <a href="https://softuni.bg/trainings/opencourses">Other Courses</a>
 
 ## Table of Contents:
-- Courses completed
-- Grades for each course
-- Certificates for each course
+- List of courses 
+- Certificate links for each course (with GPA)
+- Coursework (in the sub-folders)
 
 
+<table>
+ 
+ <tr>
+  <th> Main Program </th>
+  <th> Other Courses </th>
+ </tr>
+ 
+ <tr>
+ <td>
+ <!-- 1st embedded table start -->
 <table>
  <tr>
   <th colspan=2> JavaScript </th>
@@ -38,6 +48,25 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JavaScript</a> </td>
   <td> </td>
  </tr>
+</table>
+ <!-- 1st embedded table end -->
+ </td>
+ <td>
+ <!-- 2nd embedded table start -->
+ <table>
+ <tr>
+  <th> Course </th>
+  <th> Certificate </th>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"> Certificate </a> </td>
+ </tr>
+</table>
+ <!-- 2nd embedded table end -->
+ </td>
+ </tr>
+ 
 </table>
 
 
