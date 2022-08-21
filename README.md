@@ -1,6 +1,21 @@
-# softuni-JS-Basics
+<html>
+<body>
 
-### Course Topics:
+# <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022"><p align="center"> Programming Basics with JavaScript - July 2022 </a><p>
+
+<a href="https://softuni.bg/">
+<img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="160">
+</a>
+
+</body>
+</html>
+
+### Course Description:
+- The course is based on the principles of JavaScript programming. It makes the introduction for students to basic coding knowledge such as data types, basic operators, reading user inputs from the console, converting inputs to required types, writing basic functions, solving coding problems, using conditional statements **(if, else, if-else)**, and loops **(for, while)**.
+- During the course students submit homework. It consists of solved problems evaluated by an automated judging system, created by SoftUni.
+- The course ends with a **practical programming exam**. Additionally students also take a **test with theoretical questions**.
+
+### Table of Contents:
 1. First steps in coding  
 2. Conditional Statements 
 3. Conditional Statements Advanced 
@@ -8,12 +23,12 @@
 5. While Loop          
 6. Nested Loops   
 
-### Contents:
-- Solved Course Exercises (required, with deadlines - evaluated through an automated scoring system)
-- Solved Extra Exercises (optional - evaluated through an automated scoring system)
-- Exam Practice (optional - evaluated through an automated scoring system)
-- Preliminary Exam Solutions (Max Score = Final for the course)
+### Contains:
+- Solved Course Exercises (required, with a deadlines)
+- Solved Extra Exercises (optional)
+- Additional Exam Practice (optional, using previous years' exams)
+- Preliminary Exam Solutions (my own solution - submitted and evaluated)
 
-### Clarifications:
-- All functions are called in with multiple inputs for testing purposes. Different inputs are getting commented throughout testing.
-- Some solutions contain multiple versions commented out - again for testing purposes and for better learning / understanding.
+### FINAL SCORE: 6.00/6.00
+### Link to <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
+

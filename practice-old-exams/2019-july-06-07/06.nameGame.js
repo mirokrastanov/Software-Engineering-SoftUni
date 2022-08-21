@@ -1,3 +1,4 @@
+//final solution, with additional custom inputs for more extensive testing
 function nameGame(input) {
     let index = 0;
     let name = input[index];
