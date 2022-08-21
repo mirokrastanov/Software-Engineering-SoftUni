@@ -1,10 +1,16 @@
-# softuni-JS-Basics
-
-### Final Exam - Submitted Solutions
-### Score: 6.00/6.00 
-
-
-# Problem 1. Mining Rig
+# <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022"><p align="center"> Programming Basics with JavaScript - July 2022 </a><p>
+<a href="https://softuni.bg/">
+<img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="160">
+</a>
+  
+# Final Exam 
+## Table of Contents: 
+- Submitted Solutions (for all problems)
+- Problems Given (listed in this document)
+## Score: 6.00/6.00
+  
+<br><p>
+# Problem 1. Mining Rig </p>
 Donald wants to build a computer rig for crypto mining. In order to do that he needs to buy GPUs, but first he needs to calculate how long until he returns his investment. He also needs to account for the price of electricity. For the rig he would like to buy 13 GPUs and 13 adapters, while the other components he will get second hand for a total of 1000 leva.
 
 Write a program that calculates how long until his investment is returned (rounded to the closest greater integer) as well as how much money he would have to invest initially.
@@ -15,14 +21,14 @@ Write a program that calculates how long until his investment is returned (round
 - 2nd line: **Price per single adapter** (number)
 - 3rd line: **Electricity cost per day for a single GPU** (number)
 - 4th line: **Earnings per single GPU per day** (number)
-<br>
-## Expected Output:
+<br><p>
+## Expected Output: </p>
 Print 2 lines on the console:
 - **Total Cost for the rig**
 - **Investment return - days needed (rounded to the closest greater integer)**
 
-<br>
-# Problem 2. Spaceship
+<br><p>
+# Problem 2. Spaceship </p>
 George needs to build a spaceship for his crew. In order to do that he needs to account for a special condition. The spaceship needs to be able to fit at least 3 astronauts, but not more than 10. Each astronaut needs a small room. Dimensions: width 2m; length 2m; height, which is 40cm more than the average height of the astronauts.
 
 Write a program that calculates the volume of the ship as well as how many astronauts it would fit and at the end prints out whether the ship is big enough.
@@ -33,18 +39,18 @@ Write a program that calculates the volume of the ship as well as how many astro
 - 2nd line: **length of the ship** (number)
 - 3rd line: **height of the ship** (number)
 - 4th line: **average astronaut height** (number)
-<br>
-## Expected Output:
+<br><p>
+## Expected Output: </p>
 Print the following, depending on the set conditions:
-- If the astronauts are between [3; 10] print this:
+- If the astronauts are between [3; 10] print this: <br>
 "**The spacecraft holds {astronauts count} astronauts.**"
-- If the astronauts are fewer than 3:
+- If the astronauts are fewer than 3: <br>
 "**The spacecraft is too small.**"
-- If the astronauts are more than 10:
+- If the astronauts are more than 10: <br>
 "**The spacecraft is too big.**"
 
-<br>
-# Problem 3. Computer Room
+<br><p>
+# Problem 3. Computer Room </p>
 In the biggest computer room in Bulgaria prices vary due to the high attendance. They vary based on whether people attend during the day or during the night and also based on the current month in which they attend. Prices are as follows:
 <table>
   <tr>
@@ -75,15 +81,15 @@ Write a program that calculates the price per person per hour and the total sum 
 - 2nd line: **hours spent inside** (number)
 - 3rd line: **people in the group** (number)
 - 4th line: **visit time - day or night** (string)
-<br>
-## Expected Output:
-Print out 2 lines on the console:
-- "**Price per person for one hour: {price per person per hour}**"
-- "**Total cost of the visit: {total cost}**"
-Format the resulting amounts to the 2nd decimal.
+<br><p>
+## Expected Output: </p>
+- Print out 2 lines on the console: <br>
+"**Price per person for one hour: {price per person per hour}**" <br>
+"**Total cost of the visit: {total cost}**"
+- Format the resulting amounts to the 2nd decimal.
 
-<br>
-# Problem 4. Gifts from Santa
+<br> <p>
+# Problem 4. Gifts from Santa </p>
 Santa Klaus begins his tour from town to town in order to bring presents to all the well behaved children. He asks you to write a program which prints out all of the addresses between "m" and "n", which when divided both by 2 and by 3 leave no remainder, because Santa Klaus knows that only well behaved children live at those addresses. "m" and "n" are being read from the console, as well as one other number "s", which represents the an address number in between "m" and "n". 
 <br>
 ## Input:
@@ -91,20 +97,20 @@ Santa Klaus begins his tour from town to town in order to bring presents to all 
 - **n** (integer) - while "n" is within the interval: (0 <= n < m)
 - **m** (integer) - while "m" is within the interval: (n < m <= 10000)
 - **s** (integer) - while "s" is within the interval: (n <= s <= m)
-<br>
-## Expected Output:
-If one of the addresses between "m" and "n" divisible by 2 and 3 without remainder, matches the address number "s" then:
-- **The program should finish. All prior addresses need to be printed. The address "s" should NOT be printed.** 
-Otherwise the console should print all of the addresses within the set criteria:
-For Input 1:
-- **30 24 18 12 6**
-For Input 2:
-- **36 30 24 18**
-For Input 3:
-- **996 990 984 978... 54 48 42** (shortened)
+<br><p>
+## Expected Output: </p>
+- If one of the addresses between "m" and "n" divisible by 2 and 3 without remainder, matches the address number "s" then: <br>
+**The program should finish. All prior addresses need to be printed. The address "s" should NOT be printed.** <br>
+- Otherwise the console should print all of the addresses within the set criteria: <br>
+- For Input 1: <br>
+**30 24 18 12 6**
+- For Input 2: <br>
+**36 30 24 18**
+- For Input 3: <br>
+**996 990 984 978... 54 48 42** (shortened)
 
-<br>
-# Problem 5. Puppy Care
+<br><p>
+# Problem 5. Puppy Care </p>
 Annie finds a puppy and decides to take care of it, until she has found someone to adopt it. The puppy eats a certain amount of food each day.
 Write a program that calculates whether the food bought by Annie for the puppy would be enough until it is adopted.
 <br>
@@ -113,16 +119,16 @@ Write a program that calculates whether the food bought by Annie for the puppy w
 - 1st line: **Food bought by Annie, in kg.** (integer)
 - on every other line following, until the console reads **"Adopted"**: 
 **Food eaten by the puppy daily, in grams.** (integer)
-<br>
-## Expected Output:
-Print only one line:
-- If the food is enough:
+<br><p>
+## Expected Output: </p>
+- Print only one line: 
+- If the food is enough: <br>
 **Food is enough! Leftovers: {food left} grams.**
-- If the food is not enough:
+- If the food is not enough: <br>
 **Food is not enough. You need {extra food needed} grams more.**
 
-<br>
-#Problem 6. Gold Mine
+<br><p>
+# Problem 6. Gold Mine </p>
 A group of enthusiasts travel to locations with gold mines. You need to write a program to help them determine whether a location will provide the expected daily yield.
 You know the number of locations, the expected average yield per day per location and for each day you would receive the actual daily yield. 
 <br>
@@ -133,13 +139,12 @@ After that for each location:
 - 2nd line: **days spent at the location** (integer)
 And after that for each day at the location:
 - 1st line: **actual daily yield** (integer)
-<br>
-## Expected Output:
-After the digging at one location has finished, print 1 line depending on which condition is met:
-If the actual average daily yield has reached or surpassed the expected one print the following:
-- "**Good job! Average gold per day: {actual daily average yield}**"
-If the actual daily yield is lower than the expected one print the following: 
-- "**You need {gold still needed to reach the expected average daily yield} gold.**"
-Format the results to the 2nd decimal.
-
+<br><p>
+## Expected Output: </p>
+- After the digging at one location has finished, print 1 line depending on which condition is met:
+- If the actual average daily yield has been reached or surpassed the expected one - print the following: <br>
+"**Good job! Average gold per day: {actual daily average yield}**"
+- If the actual daily yield is lower than the expected one - print the following: <br>
+"**You need {gold still needed to reach the expected average daily yield} gold.**"
+- Format the results to the 2nd decimal. <br>
 
