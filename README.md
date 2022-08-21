@@ -34,9 +34,6 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <!-- 1st embedded table start -->
 <table>
  <tr>
-  <th colspan=2> JavaScript </th>
- </tr>
- <tr>
   <th> Course </th>
   <th> Certificate </th>
  </tr>
