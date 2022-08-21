@@ -18,9 +18,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 
 ## Table of Contents:
 - List of courses 
-- Certificate links for each course (with GPA)
-- Coursework (in the sub-folders)
+- Certificates (with GPA)
+- Exercises
+- Exam Solutions
 
+## Certificates
 
 <table>
  
@@ -35,11 +37,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 <table>
  <tr>
   <th> Course </th>
-  <th> Certificate </th>
+  <th> Link </th>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Programming Basics with JS</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"> Certificate </a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"> Link </a> </td>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
@@ -53,11 +55,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <table>
  <tr>
   <th> Course </th>
-  <th> Certificate </th>
+  <th> Link </th>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"> Certificate </a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"> Link </a> </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
