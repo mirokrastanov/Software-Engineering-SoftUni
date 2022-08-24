@@ -19,7 +19,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 ## Table of Contents:
 - List of courses 
 - Certificates (with GPA)
-- Exercises
+- Exercise Solutions
 - Exam Solutions
 
 ## Certificates
@@ -83,4 +83,7 @@ To add:
 - Diplomas
 - Other certification from the open courses in SoftUni
 - Projects
+- Improve design
+- Add portfolio website link
+- Add extra tech table
 -->
