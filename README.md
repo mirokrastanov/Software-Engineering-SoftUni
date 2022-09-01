@@ -14,7 +14,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 
 ## Curriculum
 - <a href="https://softuni.bg/curriculum">Main Program</a>
-- <a href="https://softuni.bg/trainings/opencourses">Other Courses</a>
+- <a href="https://softuni.bg/trainings/opencourses">Optional Courses</a>
 
 ## Table of Contents:
 - List of courses 
@@ -28,7 +28,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  
  <tr>
   <th> Main Program </th>
-  <th> Other Courses </th>
+  <th> Extra Courses </th>
  </tr>
  
  <tr>
