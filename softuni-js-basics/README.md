@@ -21,7 +21,8 @@
 3. Conditional Statements Advanced 
 4. For Loop   
 5. While Loop          
-6. Nested Loops   
+6. Nested Loops
+7. Extra Practice Contest - Drawing Figures with Loops (tables with output figures included <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Link</a>)   
 
 ### Contains:
 - Solved Course Exercises (required, with a deadlines)
