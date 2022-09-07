@@ -1,118 +1,128 @@
 function diamond(input) {
     let n = Number(input);
     if (n >= 1) {
-        let topUndLimit = Math.ceil((n - 2) / 2);
-
-        for (let row = 1; row <= Math.floor((n + 1) / 2); row++) {   //rows
-            let result = "";
-            if (n == 2) {
-                result += "**";
-            } else if (n == 1) {
-                result += "*";
-            } else if (n % 2 == 0) {                                 // even rows
-                if (row == 1) {
-                    for (let und = 1; und <= topUndLimit; und++) {
+        if (n == 1) {
+            console.log("*");
+        } else if (n == 2) {
+            console.log("**");
+        } else if (n % 2 != 0) {                                     // odd numbers
+            let rowLimit = n;
+            let upperLimit = Math.ceil(rowLimit / 2);
+            let lowerLimit = rowLimit - upperLimit;
+            let side = (n - 1) / 2;
+            for (let row = 1; row <= upperLimit; row++) {            // upper part
+                result = "";
+                if (row == 1) {                                      // row 1
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
+                    }
+                } else {                                              // other rows
+                    for (let dash = 1; dash <= side; dash++) {        // left side dash
+                        result += "-"
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= n - 2 - 2 * side; dash++) { // middle dash
+                        result += "-";
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= side; dash++) {         // right side dash
+                        result += "-"
+                    }
+                }
+                side--;
+                console.log(result);
+            }
+            side = 1;
+            for (let row = 1; row <= lowerLimit; row++) {               // lower part
+                result = "";
+                if (row == lowerLimit) {                                // last row
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
+                    }
+                } else {                                                // other rows
+                    for (let dash = 1; dash <= side; dash++) {        // left side dash
+                        result += "-"
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= n - 2 - 2 * side; dash++) { // middle dash
+                        result += "-";
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= side; dash++) {         // right side dash
+                        result += "-"
+                    }
+                }
+                side++;
+                console.log(result);
+            }
+        } else if (n % 2 == 0) {                        // even numbers
+            let rowLimit = n - 1;
+            let upperLimit = Math.ceil(rowLimit / 2);
+            let lowerLimit = rowLimit - upperLimit;
+            let side = (n - 2) / 2;
+            for (let row = 1; row <= upperLimit; row++) {            // upper part
+                result = "";
+                if (row == 1) {                                      // row 1
+                    for (let dash = 1; dash <= side; dash++) {
                         result += "-";
                     }
                     result += "**";
-                    for (let und = 1; und <= topUndLimit; und++) {
+                    for (let dash = 1; dash <= side; dash++) {
                         result += "-";
                     }
-                } else {
-                    for (let und = 1; und <= topUndLimit; und++) {
+                } else {                                              // other rows
+                    for (let dash = 1; dash <= side; dash++) {        // left side dash
+                        result += "-"
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= n - 2 - 2 * side; dash++) { // middle dash
                         result += "-";
                     }
                     result += "*";
-                    for (let und = 1; und <= n - 2 - 2 * topUndLimit; und++) {
-                        result += "-";
-                    }
-                    result += "*";
-                    for (let und = 1; und <= topUndLimit; und++) {
-                        result += "-";
+                    for (let dash = 1; dash <= side; dash++) {         // right side dash
+                        result += "-"
                     }
                 }
-            } else if (n % 2 != 0) {                                  // odd rows
-                if (row == 1) {
-                    for (let und = 1; und <= topUndLimit; und++) {
-                        result += "-";
-                    }
-                    result += "*";
-                    for (let und = 1; und <= topUndLimit; und++) {
-                        result += "-";
-                    }
-                } else {
-                    for (let und = 1; und <= topUndLimit; und++) {
-                        result += "-";
-                    }
-                    result += "*";
-                    for (let und = 1; und <= n - 2 - 2 * topUndLimit; und++) {
-                        result += "-";
-                    }
-                    result += "*";
-                    for (let und = 1; und <= topUndLimit; und++) {
-                        result += "-";
-                    }
-                }
+                side--;
+                console.log(result);
             }
-            topUndLimit -= 1;
-            console.log(result);
-        }
-        // 2nd for for base (IN PROGRESS...)
-        if (n != 1 && n != 2) {
-            topUndLimit = Math.ceil((n - 2) / 2);
-            for (let row = 1; row <= n - 1 - Math.floor((n + 1) / 2); row++) {   //rows
-                let result = "";
-                if (n % 2 == 0) {                                 // even rows
-                    if (row == n - 1 - Math.floor((n + 1) / 2)) {
-                        for (let und = 1; und <= topUndLimit - (row * (-1)); und++) {
-                            result += "-";
-                        }
-                        result += "**";
-                        for (let und = 1; und <= topUndLimit - (row * (-1)); und++) {
-                            result += "-";
-                        }
-                    } else {
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
-                        result += "*";
-                        for (let und = 1; und <= 2 * (n - 2 * topUndLimit); und++) {
-                            result += "-";
-                        }
-                        result += "*";
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
+            side = 1;
+            for (let row = 1; row <= lowerLimit; row++) {               // lower part
+                result = "";
+                if (row == lowerLimit) {                                // last row
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
                     }
-                } else if (n % 2 != 0) {                                  // odd rows
-                    if (n - Math.floor((n + 1) / 2)) {
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
-                        result += "*";
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
-                    } else {
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
-                        result += "*";
-                        for (let und = 1; und <= n - 2 - 2 * topUndLimit; und++) {
-                            result += "-";
-                        }
-                        result += "*";
-                        for (let und = 1; und <= topUndLimit; und++) {
-                            result += "-";
-                        }
+                    result += "**";
+                    for (let dash = 1; dash <= side; dash++) {
+                        result += "-";
+                    }
+                } else {                                                // other rows
+                    for (let dash = 1; dash <= side; dash++) {        // left side dash
+                        result += "-"
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= n - 2 - 2 * side; dash++) { // middle dash
+                        result += "-";
+                    }
+                    result += "*";
+                    for (let dash = 1; dash <= side; dash++) {         // right side dash
+                        result += "-"
                     }
                 }
-                topUndLimit += 1;
+                side++;
                 console.log(result);
             }
         }
-
     }
 }
 
-diamond(["8"]);
+diamond(["9"]);
