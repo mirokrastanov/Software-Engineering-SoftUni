@@ -28,7 +28,7 @@
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
 - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-old-exams">Additional Exam Practice</a> (optional, using previous years' exams)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Extra Practice Contest</a> (optional) - Drawing Figures with Loops (Output Figures included)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Extra Practice Contest - Drawing Figures with Loops</a> (optional, output figures included)
 - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/preliminary-exam-js-basics">Preliminary Exam Solutions</a> (my own solution - submitted and evaluated)
 - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/final-exam-js-basics">Final Exam Solutions</a> (my own solution - submitted and evaluated)
 
