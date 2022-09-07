@@ -30,7 +30,7 @@
 - Additional Exam Practice (optional, using previous years' exams)
 - Extra Practice Contest (optional) - Drawing Figures with Loops (table with output figures included <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Link</a>)
 - Preliminary Exam Solutions (my own solution - submitted and evaluated)
-- Final Exam Solutions (my own solution - submitted and evaluated)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/final-exam-js-basics">Final Exam Solutions</a> (my own solution - submitted and evaluated)
 
 ### FINAL GPA: 6.00/6.00
 - Preliminary Exam: 6.00/6.00
