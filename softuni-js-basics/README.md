@@ -15,7 +15,7 @@
 - During the course students submit homework. It consists of solved problems evaluated by an automated judging system, created by SoftUni.
 - The course ends with a **practical programming exam**. Additionally students also take a **test with theoretical questions**.
 
-### Table of Contents:
+### Course Topics:
 1. First steps in coding  
 2. Conditional Statements 
 3. Conditional Statements Advanced 
@@ -24,12 +24,13 @@
 6. Nested Loops
   
 
-### Contains:
+### Table of Contents:
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
 - Additional Exam Practice (optional, using previous years' exams)
+- Extra Practice Contest (optional) - Drawing Figures with Loops (tables with output figures included <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Link</a>)
 - Preliminary Exam Solutions (my own solution - submitted and evaluated)
-- Extra Practice Contest (optional) - Drawing Figures with Loops (tables with output figures included <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Link</a>) 
+- Final Exam Solutions (my own solution - submitted and evaluated)
 
 ### FINAL GPA: 6.00/6.00
 - Preliminary Exam: 6.00/6.00
