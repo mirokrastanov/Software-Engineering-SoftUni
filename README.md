@@ -86,4 +86,7 @@ To add:
 - Improve design
 - Add portfolio website link
 - Add extra tech table
+- add side course cell inside the main table
+- add python to it
+- add c++ folders and cells
 -->
