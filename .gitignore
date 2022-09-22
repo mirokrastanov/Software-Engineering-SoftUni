@@ -12,3 +12,5 @@ out/
 /shelf/
 /workspace.xml
 
+# Python / PyCharm
+venv/
