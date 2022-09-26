@@ -13,3 +13,8 @@ out/
 
 # Python / PyCharm
 venv/
+
+
+
+# Ext
+.zip
