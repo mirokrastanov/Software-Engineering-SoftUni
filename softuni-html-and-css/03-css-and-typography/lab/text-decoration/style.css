@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+}
+p {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 4px 10px cyan;
+    color: rgba(112, 25, 123, 0.3);  /* text color  */
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: blueviolet;
+}
+
