@@ -1,0 +1,33 @@
+form {
+    border: 1px solid purple;
+    width: 40%;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    text-shadow: -1px 1px 2px black;
+}
+input {
+    width: 70%;
+    margin-bottom: 1.2em;
+    padding-left: 20px;
+}
+i {
+    position: relative;
+    left: 22px;
+    top: 1px;
+    scale: 0.8;
+}
+div.label-ctr {
+    padding-left: 20px;
+    padding-bottom: 1px;
+    font-weight: 900;
+}
+button {
+    margin-left: 20px;
+    margin-bottom: 1.2em;
+    font-weight: 900;
+    width: 80px;
+    height: 30px;
+    text-shadow: -1px 1px 5px black;
+}
