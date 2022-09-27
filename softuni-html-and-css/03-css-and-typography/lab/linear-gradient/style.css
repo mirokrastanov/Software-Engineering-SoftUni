@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+p {
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 4px 10px cyan;
+    color: rgba(112, 25, 123, 0.3);  /* text color  */
+}
+
+div {
+    width: 450px;
+    height: 450px;
+    background: url(./html-5728485-4781249.webp), linear-gradient(rgba(2,2,2,0.1),rgba(34,54,134,0.9));
+    cursor: move;
+}
+
