@@ -1,0 +1,102 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css?fbclid=IwAR2hiAXoKZ3cO_Dizsq1q_QRFBgf3sVCNQ0iBHDxBPeA_pKtH6VZ4dANAww);
+
+body {
+    background-color: rgb(221, 221, 221);
+}
+.button {
+    border-radius: 20px;
+    padding: 5px 8px;
+    margin-right: 10px;
+    color: rgb(51,51,51);
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgb(51,51,51);
+    font-weight: bold;
+}
+ a{
+    text-decoration: none;
+    color: rgb(51,51,51);
+    font-size: 16px;
+}
+.normal-buttons-ctr .button{
+    background-color: rgb(221, 221, 221);
+}
+.filled-buttons-ctr .button, .icon-buttons-ctr .button{
+    background-color: rgb(51,51,51);
+    border: 2px solid rgb(51,51,51);
+    color: white;
+}
+i {
+    margin-right: 5px;
+}
+.hover:hover {
+    background-color: rgb(0,102,0);
+    border: 2px solid rgb(0,102,0);
+}
+.normal-buttons-ctr .hover:hover{
+    background-color: rgb(221,221,221);
+    border: 2px solid rgb(0,102,0);
+    color: rgb(0,102,0);
+}
+
+
+
+
+
+
+
+
+/* 
+h2 {
+    font-weight: 400;
+    font-size: 1.8em;
+}
+button {
+    background-color: rgb(251,251,251);
+    cursor: pointer;
+    outline: none;
+    color: rgb(51,51,51);
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.fill {
+    background-color: rgb(51,51,51);
+    cursor: pointer;
+    outline: none;
+    color: rgb(251,251,251);
+}
+.fill.hover {
+    background-color: rgb(51,51,51);
+    cursor: pointer;
+    outline: none;
+    color: rgb(251,251,251);
+}
+.fill a {
+    color: rgb(251,251,251);
+}
+.button.fill.hover:hover {
+    background-color: rgb(0,102,0);
+    color: rgb(251,251,251);
+}
+.button.hover:hover {
+    border-color: rgb(0,102,0);
+    color: rgb(0,102,0);
+} 
+
+a {
+    background-color: rgb(251,251,251);
+    cursor: pointer;
+    outline: none;
+    color: rgb(51,51,51);
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(51,51,51);
+} */
