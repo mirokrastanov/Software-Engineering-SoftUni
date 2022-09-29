@@ -1,0 +1,33 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css?fbclid=IwAR2hiAXoKZ3cO_Dizsq1q_QRFBgf3sVCNQ0iBHDxBPeA_pKtH6VZ4dANAww);
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    border: 1px solid purple;
+    width: 25%;
+    text-align: center;
+    padding: 3px 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    li{
+        width: 100%;
+        font-weight: bolder;
+        background-color: aqua;
+    }
+    ul {
+        flex-direction: column;
+    }
+    a{
+        color: blueviolet;
+    }
+}
