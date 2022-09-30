@@ -21,6 +21,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 - Certificates (with GPA)
 - Exercise Solutions
 - Exam Solutions
+- Course projects
 
 ## Certificates
 
