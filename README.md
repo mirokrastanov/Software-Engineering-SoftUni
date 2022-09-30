@@ -92,4 +92,5 @@ To add:
 - add side course cell inside the main table
 - add python to it
 - add c++ folders and cells
+- add the 2 game projects from Fundamentals - update & improve on them often
 -->
