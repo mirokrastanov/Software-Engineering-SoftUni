@@ -27,8 +27,8 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 <table>
  
  <tr>
-  <th> Main Program </th>
-  <th> Other Courses </th>
+  <th> Main Program </th>    <!-- Main Table - column 1 -->
+  <th> Other Courses </th>   <!-- Main Table - column 2 -->
  </tr>
  
  <tr>
@@ -45,6 +45,10 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
+  <td> </td>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
   <td> </td>
  </tr>
 </table>
@@ -67,7 +71,6 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  
 </table>
-
 
 
 
