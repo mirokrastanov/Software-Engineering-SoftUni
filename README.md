@@ -35,9 +35,9 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <td>
  <!-- 1st embedded table start -->
 <table>
- <tr>
-  <th> Course </th>
-  <th> Link </th>
+ <tr>  <!-- row 1, left embedded table, 1 col -->
+  <th> Course </th> <!-- left embedded table, 1 col -->
+  <th> Link </th>   <!-- left embedded table, 2 col -->
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Programming Basics with JS</a> </td>
