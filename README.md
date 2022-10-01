@@ -21,23 +21,24 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 - Certificates (with GPA)
 - Exercise Solutions
 - Exam Solutions
+- Course projects
 
 ## Certificates
 
 <table>
  
  <tr>
-  <th> Main Program </th>
-  <th> Other Courses </th>
+  <th> Main Program </th>    <!-- Main Table - column 1 -->
+  <th> Other Courses </th>   <!-- Main Table - column 2 -->
  </tr>
  
  <tr>
  <td>
  <!-- 1st embedded table start -->
 <table>
- <tr>
-  <th> Course </th>
-  <th> Link </th>
+ <tr>  <!-- row 1, left embedded table, 1 col -->
+  <th> Course </th> <!-- left embedded table, 1 col -->
+  <th> Link </th>   <!-- left embedded table, 2 col -->
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Programming Basics with JS</a> </td>
@@ -45,6 +46,10 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
+  <td> </td>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
   <td> </td>
  </tr>
 </table>
@@ -77,7 +82,6 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 
 
 
-
 <!--
 To add:
 - Diplomas
@@ -89,4 +93,5 @@ To add:
 - add side course cell inside the main table
 - add python to it
 - add c++ folders and cells
+- add the 2 game projects from Fundamentals - update & improve on them often
 -->
