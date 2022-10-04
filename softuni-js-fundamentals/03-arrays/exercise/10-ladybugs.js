@@ -2,70 +2,87 @@ function ladybugs(arr) {
     let index = 0;
     let fieldSize = arr[index];
     index++;
-    let bugsIndicesArray = arr[index].split(" ");
+    let initialBugs = arr[index].split(" ");
     index++;
-    let command = arr[index]
+    let command = arr[index];
     index++;
-
-    let currentFieldArray = [];
-    for (let block = 1; block <= fieldSize; block++) {                  // CREATED EMPTY FIELD
-        currentFieldArray[block - 1] = 0;
+    let field = [];
+    if (fieldSize <= 0) {
+        return;
     }
-
-    for (let index = 0; index < bugsIndicesArray.length; index++) {     // INITIAL BUG LAYOUT
-        let currentBugIndex = Number(bugsIndicesArray[index]);
-        currentFieldArray[currentBugIndex] = 1;
+    for (let spot = 0; spot < fieldSize; spot++) {                  // CREATED EMPTY FIELD
+        field[spot] = 0;
     }
-    // console.log(currentFieldArray);
-
-    let directionLeft = false;
+    for (let index = 0; index < initialBugs.length; index++) {     // INITIAL BUG LAYOUT
+        let initialBugSpot = Number(initialBugs[index]);
+        field[initialBugSpot] = 1;
+    }
     while (command) {                                                   // COMMANDS TO MOVE
-        let commandArray = command.split(" ");
-        let ladybugFromIndex = Number(commandArray[0]);
-        let moveInDirection = commandArray[1];
-        let moveWithThisManyIndices = Number(commandArray[2]);
-        let ladybugCurrentIndex = ladybugFromIndex;
-
-        if (currentFieldArray[ladybugFromIndex] == 0) {                 // IN THERE IS NO BUG AT THE GIVEN STARTING INDEX
-            command = arr[index]
+        let currentCommands = command.split(" ");
+        let bugSpot = Number(currentCommands[0]);
+        let leftOrRight = currentCommands[1];
+        let spotsToMove = Number(currentCommands[2]);
+        if (field[bugSpot] == 0) {                      // IN THERE IS NO BUG AT THE GIVEN STARTING INDEX
+            command = arr[index];
             index++;
             continue;
         }
-
-        if (ladybugCurrentIndex >= 0 && ladybugCurrentIndex < currentFieldArray.length) { // IF GIVEN INDEX IS INSIDE (VALID)
-            currentFieldArray[ladybugFromIndex] = 0;                        // INDEX BEING FREED AFTER BUG FLIES OFF
-        } else {                                                                        // IF GIVEN INDEX IS OUTSIDE (INVALID)
-            command = arr[index]
-            index++;
-            continue;
-        }
-
-        switch (moveInDirection) {                                      // CALCULATING MOVE DIRECTION & VALUE
-            case 'right': ladybugCurrentIndex += moveWithThisManyIndices; directionLeft = false; break;
-            case 'left': ladybugCurrentIndex -= moveWithThisManyIndices; directionLeft = true; break;
-            default: break;
-        }
-        // THE SELECTED BUG MOVES following the given COMMAND
-        if (ladybugCurrentIndex >= 0 && ladybugCurrentIndex < currentFieldArray.length) { // IF SPOT IS INSIDE THE FIELD
-            while (currentFieldArray[ladybugCurrentIndex] == 1) {                                  // IF SPOT IS TAKEN
-                if (directionLeft) {
-                    ladybugCurrentIndex--;
-                } else {
-                    ladybugCurrentIndex++;
-                }
-            }                                                                            // IF SPOT IS FREE
-            if (ladybugCurrentIndex >= 0 && ladybugCurrentIndex < currentFieldArray.length) {
-                currentFieldArray[ladybugCurrentIndex] = 1;
+        if (bugSpot >= 0 && bugSpot < field.length) {   // IF GIVEN INDEX IS INSIDE (VALID)
+            if (spotsToMove != 0) {
+                field[bugSpot] = 0;                         // INDEX BEING FREED AFTER BUG FLIES OFF
+            } else {
+                command = arr[index];
+                index++;
+                continue;
             }
-        }                                       // IF THE FINAL LANDING SPOT IS OUTSIDE THE FIELD - NOTHING ELSE CHANGES
+        } else {                                                                        // IF GIVEN INDEX IS OUTSIDE (INVALID)
+            command = arr[index];
+            index++;
+            continue;
+        }
+        switch (leftOrRight) {                          // CALCULATING MOVE DIRECTION & VALUE
+            case 'right': bugSpot += spotsToMove; break;
+            case 'left': bugSpot -= spotsToMove; break;
+        }
+        if (bugSpot >= 0 && bugSpot < field.length) {   // IF FINAL INDEX IS INSIDE (VALID)
+            let spotTaken = false;
+            if (bugSpot >= 0 && bugSpot < field.length) {
+                field[bugSpot] = 1;
+                command = arr[index];
+                index++;
+                continue;
+            } else {
+                spotTaken = true;
+            }
+            while (spotTaken) {
+                switch (leftOrRight) {                   // CALCULATING MOVE DIRECTION & VALUE
+                    case 'right': bugSpot++; break;
+                    case 'left': bugSpot--; break;
+                }
+                if (field[bugSpot] != 1) {              // FINAL SPOT IS FREE
+                    spotTaken = false;
+                }
+            }
+            if (bugSpot >= 0 && bugSpot < field.length) {
+                field[bugSpot] = 1;
+            } else {
+                command = arr[index];
+                index++;
+                continue;
+            }
+        } else {                                        // IF FINAL INDEX IS OUTSIDE (INVALID)
+            command = arr[index];
+            index++;
+            continue;
+        }
         command = arr[index]
         index++;
     }
-    console.log(...currentFieldArray);
+    console.log(...field);
 
 }
 
 ladybugs([3, '0 1', '0 right 1', '2 right 1']);
-// ladybugs([5, '3', '3 left 2', '1 left -2']);
-// ladybugs([3, '0 1 2', '0 right 1', '1 right 1', '2 right 1']);
-ladybugs([6, '0 3 2', '0 right 1', '1 right 1', '2 right 1']);
+ladybugs([3, '0 1 2', '0 right 1', '1 right 1', '2 right 1']);
+ladybugs([5, '3', '3 left 2', '1 left -2']);
+// ladybugs([6, '0 3 2', '0 right 1', '1 right 1', '2 right 1']);
