@@ -29,7 +29,11 @@ The winner is the player whose choice beats the choice of his opponent. If both 
 |scissors|paper|You win|
 |scissors|scissors|Draw|
   
-
+  
+## Live Demo
+[<img src="https://freepngimg.com/download/play_now_button/25403-5-play-now-button-transparent.png" alt="run-button" height="40px" />](https://replit.com/@mirokrastanov/RockPaperScissors-JS?v=1)
+  
+  
 ## [Source Code](rockPaperScissors.js)
   
   
