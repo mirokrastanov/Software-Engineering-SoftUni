@@ -50,7 +50,7 @@ function ladybugsAlternative(arr) {
         }
         field[nextPosition] = 1;
     }
-    console.log(field.join(" "));
+    console.log(field.join(" ")); //...field
 
 }
 
