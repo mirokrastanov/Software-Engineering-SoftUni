@@ -18,4 +18,4 @@ venv/
 
 # Ext
 .zip
-.dat 
+*.dat 
