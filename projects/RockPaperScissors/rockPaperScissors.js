@@ -6,13 +6,13 @@ function rockPaperScissors(playerTurn) {
     // Player logic - turn definition
     if (playerTurn == "r" || playerTurn == "rock") {
         playerTurn = rock;
-        console.log(`The player chooses ${rock}`);
+        console.log(`You choose ${rock}`);
     } else if (playerTurn == "p" || playerTurn == "paper") {
         playerTurn = paper;
-        console.log(`The player chooses ${paper}`);
+        console.log(`You choose ${paper}`);
     } else if (playerTurn == "s" || playerTurn == "scissors") {
         playerTurn = scissors;
-        console.log(`The player chooses ${scissors}`);
+        console.log(`You choose ${scissors}`);
     } else {
         console.log("Invalid Input. Try Again...");
     }
