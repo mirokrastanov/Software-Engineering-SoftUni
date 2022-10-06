@@ -94,4 +94,7 @@ To add:
 - add python to it
 - add c++ folders and cells
 - add the 2 game projects from Fundamentals - update & improve on them often
+- ADD A PLAY BUTTON FOR EACH PROJECT / GAME inside the main table / add 3rd column
+
+
 -->
