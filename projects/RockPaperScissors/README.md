@@ -12,8 +12,9 @@ The winner is the player whose choice beats the choice of his opponent. If both 
 ## Input & Output
   - `rock` or `r`
   - `paper` or `p`
-  - `scissors` or `s`
-  The computer chooses a <b>random option</b>, then the <b>winner</b> is revealed.
+  - `scissors` or `s` <br />
+
+The computer chooses a <b>random option</b>, then the <b>winner</b> is revealed.
 
 ## Game Logic | Possible Scenarios
   
