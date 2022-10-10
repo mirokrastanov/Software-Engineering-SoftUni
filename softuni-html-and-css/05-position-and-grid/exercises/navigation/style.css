@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3,
+h2 {
+    font-size: 1em;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-family: Georgia, serif;
+}
+
+header.main-header {
+    margin: 7% 12% 3% 8%;
+    position: relative;
+}
+
+main.page-main {
+    width: 60%;
+    float: left;
+    margin: 0% 8% 5% 8%;
+}
+
+aside.sidebar-right {
+    float: left;
+    margin: 0% 0% 5% 0%;
+    display: inline;
+    width: 15%;
+}
+
+nav.main-nav {
+    float: right;
+}
+
+ul.main-ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    color: rgb(0, 102, 0);
+}
+
+p.main-title {
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+hr {
+    height: 4px;
+    background: black;
+    border: none;
+}
+
+.page-main header,
+.page-main section {
+    margin-bottom: 10px;
+    float: left;
+    width: 70%;
+    padding-right: 5px;
+}
+
+.page-main section p {
+    margin-bottom: 15px;
+}
+
+aside.sidebar-right section nav {
+    margin: 10px 0 20px 40px;
+}
+
+aside.sidebar-right section nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+.image-ctr-main {
+    float: right;
+    border: 2px solid black;
+
+}
+
+img {
+    scale: 95%;
+    vertical-align: middle;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 0 0 0;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+}
