@@ -24,11 +24,20 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 20px 1px black;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+    transition: all ease 0.2s;
+    border-radius: 20px;
+}
+
+.card:hover {
+    top: 45%;
+    scale: 1.03;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
 }
 
 .image-1 {
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
 .card-content {
@@ -41,6 +50,7 @@ h3 {
 
 .card-content p {
     padding: 0 0 60px 0;
+    min-height: 120px;
 }
 
 .card-content a {
