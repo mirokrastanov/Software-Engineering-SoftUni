@@ -1,0 +1,44 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    height: 50vh;
+    background: linear-gradient(to right, #094d7d, #07d9c0);
+    position: relative;
+}
+
+.container-2 {
+    height: 50vh;
+    background: linear-gradient(to right, #76249c, #c25913);
+    position: relative;
+}
+
+.sub-container-1,
+.sub-container-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-2,
+.image-1 {
+    max-height: 50vh;
+    max-width: 270px;
+    z-index: 1;
+    display: block;
+}
+
+.fa-solid {
+    color: white;
+    z-index: 2;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
