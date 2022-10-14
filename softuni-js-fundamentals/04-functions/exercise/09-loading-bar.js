@@ -1,4 +1,7 @@
 function loadingBar(inputNum) {
+
+    // alternative solution -> using .repeat method for the (.) & (%) symbols
+
     let createBar = function (inputNum) {
         let output = [];
         for (let i = 1; i <= 10; i++) {
@@ -43,5 +46,5 @@ function loadingBar(inputNum) {
 };
 
 loadingBar(30);
-loadingBar(50);
-loadingBar(100);
+// loadingBar(50);
+// loadingBar(100);
