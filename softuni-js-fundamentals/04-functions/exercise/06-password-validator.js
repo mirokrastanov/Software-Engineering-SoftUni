@@ -1,6 +1,6 @@
 function passwordValidator(userInput) {
 
-    let lengthValid = function (checkInput) {
+    function lengthValid(checkInput) {
         let passLength = checkInput.length;
         if (passLength >= 6 && passLength <= 10) {
             return true;
@@ -8,7 +8,7 @@ function passwordValidator(userInput) {
             return false;
         }
     };
-    let letterOrDigit = function (checkInput) {
+    function letterOrDigit(checkInput) {
         let passLength = checkInput.length;
         let isValid = true;
         for (let i = 0; i < passLength; i++) {
@@ -24,7 +24,7 @@ function passwordValidator(userInput) {
             return true;
         }
     };
-    let atLeast2num = function (checkInput) {
+    function atLeast2num(checkInput) {
         let isValid = false;
         let numberCounter = 0;
         for (let i = 0; i < checkInput.length; i++) {
