@@ -1,7 +1,7 @@
 <html>
 <body>
 
-# <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022"><p align="center"> Programming Fundamentals with JavaScript - September 2022  </a><p>
+# <p align="center"><a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022"> Programming & Technology Fundamentals with JavaScript - September 2022  </a><p>
 
 <a href="https://softuni.bg/">
 <img src="https://stringfixer.com/files/651542214.jpg" alt="Trulli" width="1218" height="160">
@@ -46,7 +46,8 @@
 - Exam solutions (for mid and final)
 
 ### FINAL GPA: 
-- 
+- Mid Exam: <a href="https://i.imgur.com/9MaY4xp.png">300/300</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals/mid-exam">Here</a></i>
+- Final Exam: <a href=""></a>
 
 ### Link to Certificate:
 - 

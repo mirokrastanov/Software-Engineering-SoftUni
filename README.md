@@ -1,4 +1,4 @@
-# <a href="https://softuni.bg/curriculum"><p align="center">Software Engineering - SoftUni</a></p>
+# <p align="center"><a href="https://softuni.bg/curriculum"> Software Engineering - SoftUni</a></p>
 
 <a href="https://softuni.bg/">
 <img src="https://stringfixer.com/files/651542214.jpg" width="1218" height="160">
@@ -45,7 +45,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"> Link </a> </td>
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
+  <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming & Technology Fundamentals with JS</a> </td>
   <td> </td>
  </tr>
  <tr>
