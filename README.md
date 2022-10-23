@@ -45,7 +45,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"> Link </a> </td>
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
+  <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming & Tech Fundamentals with JS</a> </td>
   <td> </td>
  </tr>
  <tr>
