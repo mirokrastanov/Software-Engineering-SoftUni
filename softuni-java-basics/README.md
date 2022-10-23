@@ -1,7 +1,7 @@
 <html>
 <body>
 
-# <a href="https://softuni.bg/trainings/3754/programming-basics-with-java-july-2022"><p align="center"> Programming Basics with Java - July 2022 </a><p>
+# <p align="center"><a href="https://softuni.bg/trainings/3754/programming-basics-with-java-july-2022"> Programming Basics with Java - July 2022 </a><p>
 
 <a href="https://softuni.bg/">
 <img src="https://stringfixer.com/files/651542214.jpg" alt="Trulli" width="1218" height="160">
