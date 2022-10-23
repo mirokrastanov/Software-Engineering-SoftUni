@@ -1,4 +1,4 @@
-# <a href="https://softuni.bg/curriculum"><p align="center">Software Engineering - SoftUni</a></p>
+# <p align="center"><a href="https://softuni.bg/curriculum"> Software Engineering - SoftUni</a></p>
 
 <a href="https://softuni.bg/">
 <img src="https://stringfixer.com/files/651542214.jpg" width="1218" height="160">
