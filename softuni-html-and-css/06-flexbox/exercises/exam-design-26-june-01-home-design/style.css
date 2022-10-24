@@ -1,0 +1,123 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@1,500&display=swap');
+
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --clr-white: #ffffff;
+}
+
+body {
+    max-width: 1200px;
+    background-color: #e7e9eb;
+    font-family: 'Courgette', cursive;
+    margin: 0 auto;
+}
+
+.h1-block,
+.h2-block {
+    display: flex;
+    justify-content: center;
+}
+
+.h2-block {
+    color: darkred;
+    margin: 0 0 10px 150px;
+}
+
+.h1-block {
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.card-master {
+    display: flex;
+    justify-content: center;
+}
+
+.card-ctr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    min-height: 200px;
+    max-height: 400px;
+    padding-left: 0px;
+}
+
+.card-ctr .card {
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: var(--clr-white);
+   
+}
+
+.image-ctr img {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+
+}
+
+.card-body h2,
+.card-body p {
+    display: flex;
+    justify-content: center;
+}
+
+.card-body h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-body hr {
+    background-color: darkred;
+    width: 90%;
+    height: 2px;
+    border: none;
+}
+
+.card-body p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 70px;
+}
+
+.card-button {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0; 
+}
+
+.card-button button {
+    background-color: var(--clr-white);
+    border: none;
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+}
+
+.card-button:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: transparent;
+}
+
+.fa-chevron-right {
+    padding: 4px;
+    background-color: darkred;
+    border-radius: 50%;
+    font-size: 12px;
+    color: var(--clr-white);
+    margin-left: 5px;
+}
