@@ -1,0 +1,39 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+ul {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+}
+
+section {
+    max-width: 70vw;
+}
+
+li {
+    list-style-type: none;
+    border: 5px solid black;
+    padding: 10px;
+    flex: 1 1 20%;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
