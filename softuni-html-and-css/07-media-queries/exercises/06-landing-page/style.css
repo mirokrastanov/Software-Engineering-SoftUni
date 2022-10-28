@@ -1,0 +1,122 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 6px 24px;
+    position: relative;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1.head {
+    font-size: 34px;
+    line-height: 1;
+    display: block;
+    color: darkviolet;
+    font-family: serif;
+    font-weight: 100;
+}
+
+p.head {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-stretch: condensed;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav .list {
+    display: flex;
+    gap: 30px;
+}
+
+.header .nav .nav__item .nav__item__link {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header .btn-login {
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sec-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 70%;
+    margin: 0 auto 0 10%;
+}
+
+.sec-1 h2,
+.sec-1 p,
+.sec-1 .link,
+.sec-1 .right {
+    padding: 10px 0px;
+}  
+
+.sec-1 h2 {
+    font-weight: 100;
+}
+
+.sec-1 .content {
+    width: 70%;
+}
+
+.sec-1 .right {
+    width: 30%;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-earth-americas {
+    scale: 8;
+    
+}
+
+.sec-1 p {
+    font-size: 16px;
+}
+
+.sec-1 .link a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 12px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.75);
+}
+
+
