@@ -1,0 +1,176 @@
+:root {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+header {
+    flex: 1 0 100%;
+    border-bottom: 3px solid black;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+}
+
+span {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 15%;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+img {
+    max-width: 150px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+.embed-img-1 {
+    float: right;
+    width: 120px;
+}
+
+.embed-img-2 {
+    float: left;
+}
+
+.page-main {
+    flex: 1 1 60%;
+    padding-right: 30px;
+}
+
+/* .sec-1, */
+/* .sec-3, */
+.sec-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sec-1 img,
+.sec-3 img {
+    flex: 1 0 20%;
+}
+
+.sec-1 p.img-p-1,
+.sec-1 p.img-p-2,
+.sec-3 p.img3 {
+    flex: 1 0 50%;
+}
+
+.sec-1 h1,
+.sec-2 h1,
+.sec-3 h1 {
+    flex: 1 0 100%;
+    margin-bottom: 0px;
+}
+
+.sec-2 .p1,
+.sec-2 .p4 {
+    flex: 1 0 100%;
+}
+
+.sec-2 .p2 {
+    flex: 1 0 40%;
+    padding-right: 20px;
+}
+
+.sec-2 .div-block {
+    flex: 1 0 50%;
+    border-left: 3px solid lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.div-block blockquote {
+    margin: 30px 30px 0px 30px;
+    font-style: italic;
+    color: rgb(136, 135, 135);
+}
+
+.div-block span {
+    color: rgb(136, 135, 135);
+    margin-right: 30px;
+}
+
+.hidden {
+    border: none;
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 500) {
+    div.page {
+        margin: 1% 5%;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) {
+    div.page {
+        margin: 1% 5%;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    div.page {
+        margin: 1% 5%;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1300px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1800px) {
+    p {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1801px) {
+    p {
+        font-size: 23px;
+    }
+}
