@@ -1,0 +1,46 @@
+@media (max-width: 600px) {
+
+    body {
+        border: 5px solid red;
+    }
+
+    .left-to-right {
+        height: 60vh;
+        padding: 10%;
+    }
+
+    main .left-to-right article {
+        height: 90%;
+        width: 100%;
+        border-radius: 10%;
+        background-color: white;
+        padding: 0px;   
+    }
+
+    .left-to-right:first-child article button {
+        display: none;
+    }
+
+    .left-to-right:first-child article header h1 {
+        font-size: 2rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .left-to-right:first-child article header p {
+        margin: 0.5rem;
+        padding: 0;
+    }
+
+    .left-to-right:first-child article > p {
+        margin: 1rem 2.5rem;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+
+    .left-to-right:first-child article {
+        justify-content: stretch;
+    }
+
+
+
+}
