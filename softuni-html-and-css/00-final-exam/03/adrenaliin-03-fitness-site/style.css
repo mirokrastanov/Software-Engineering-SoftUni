@@ -1,0 +1,188 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
+
+/* FONTS TO USE >>>
+font-family: 'PT Sans', sans-serif; -- main
+font-family: 'PT Serif', serif; -- to determine later
+*/
+
+:root {
+    --clr-red-light: rgb(202, 19, 19);
+    --clr-red-dark: rgb(141, 0, 0);
+    --clr-black: rgb(0, 0, 0);
+    --clr-white: rgb(255, 255, 255);
+    --clr-light-gray: rgb(238, 238, 238);
+    --clr-mid-gray: rgb(211, 211, 211);
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.header-ctr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-red-light);
+}
+
+.header-ctr .header-left,
+.header-ctr .header-right,
+.header-ctr .header-mid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 30px;
+    color: var(--clr-white);
+}
+
+.header-ctr .header-right {
+    cursor: pointer;
+}
+
+main .preview-ctr {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main .preview-ctr .background-layer {
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+main .preview-ctr .background-layer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -50;
+}
+
+.preview-ctr .preview-nav {
+    z-index: 5;
+    width: 100%;
+    padding: 1% 5% 5% 45%;
+    cursor: pointer;
+}
+
+.preview-ctr .preview-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.preview-ctr .preview-nav ul li a {
+    color: var(--clr-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.preview-ctr .preview-main {
+    width: 100%;
+    padding: 1% 20%;
+    margin: 5px auto;
+}
+
+.preview-ctr .preview-main h1,
+.preview-ctr .preview-main p,
+.preview-ctr .preview-main a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    color: var(--clr-white);
+}
+
+.preview-ctr .preview-main a {
+    background-color: var(--clr-red-light);
+    padding: 5px 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.preview-ctr .preview-main h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.preview-ctr .preview-main p {
+    height: 20px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+
+.cards-title>* {
+    text-align: center;
+    display: block;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cards-title hr {
+    border: none;
+    height: 3px;
+    background-color: var(--clr-red-light);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.cards .card i {
+    font-size: 60px;
+    margin: 0 auto;
+}
+.cards .card a,
+.cards .card p {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.cards .card a {
+    color: var(--clr-red-light);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-red-light);
+    padding: 5px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
