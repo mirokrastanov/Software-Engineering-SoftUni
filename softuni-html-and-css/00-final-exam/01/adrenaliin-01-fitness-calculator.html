@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Calculator</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="top-ctr">
+            <section class="left-ctr">
+                <img id="calculator-image" src="./calculator.png" alt="calculator-image">
+                <div id="image-overlay"></div>
+            </section>
+
+            <section class="right-ctr">
+                <div class="title">
+                    <h1>Fitness Calculator</h1>
+                </div>
+                <div class="units">
+                    <div class="units-us">
+                        <label for="us">Standart units (US)</label>
+                        <input type="radio" id="us" name="units">
+                    </div>
+                    <div class="units-metric">
+                        <label for="metric">Metric units</label>
+                        <input type="radio" id="metric" name="units">
+                    </div>
+                </div>
+                <div class="form-gender">
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="text" id="years" name="years" placeholder="Years..."><br>
+                </div>
+                <div class="form-weight">
+                    <label for="weight">Weight</label><br>
+                    <input type="text" id="weight" name="weight" placeholder="Pounds..."><br>
+                </div>
+                <div class="form-height">
+                    <label for="height">Height</label><br>
+                    <input type="text" id="height-1" name="height" placeholder="Feet..."><br>
+                    <input type="text" id="height-2" name="height" placeholder="Inches..."><br>
+                </div>
+                <div class="calculate">
+                    <button id="calc">Calculate</button>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
