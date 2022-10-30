@@ -1,0 +1,118 @@
+@media (max-width: 600px) {
+
+    body .site-header .site-navigation {
+        display: none;
+        width: 0px;
+    }
+
+    .site-main {
+        margin: 0px;
+    }
+
+    .site-main .entry-header {
+        border-radius: none;
+    }
+
+    .site-main .entry-header .button-primary {
+        height: 80px;
+        width: 100px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .site-main .site-logos .site-logos-container {
+        display: grid;
+        min-width: 200px;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .site-main .site-logos .site-logos-container .site-logo {
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-main .site-information {
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-main .site-information .site-information-image {
+        display: none;
+        width: 0%
+    }
+
+    .site-main .site-information .site-information-text {
+        width: 100%;
+        text-align: center;
+        
+
+    }
+    .site-main .site-information .site-information-text h2 {
+        font-size: 40px;
+    }
+    .site-main .site-information .site-information-text h5{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .site-main .site-information .site-information-text p{
+        text-align: center;
+        margin: 0 auto;
+        width: 400px;
+    }
+    .site-main .site-information .site-information-text button{
+        width: 100px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    .site-main .entry-content .site-form {
+        margin: 0;
+    }
+    .site-main .entry-content .site-form .entry-title {
+        font-size: 8px;
+    }
+
+    .site-main .entry-content .site-form form p {
+        flex-direction: column;
+    }
+    .site-main .entry-content .site-form form p input{
+        width: 100%;
+    }
+    .site-main .entry-content .site-form form button{
+        margin: 0 auto;
+    }
+    .site-main .site-blog .site-blog-container {
+        margin: 0;
+    }
+    .site-main .site-blog .site-blog-container .entry-subtitle{
+        font-size: 22px;
+    }
+    .site-main .site-blog .site-blog-container .entry-title{
+        font-size: 40px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .site-main .site-blog .site-blog-container .site-posts {
+        flex-direction: column;
+        margin: 0 17%;
+    }
+    .site-footer {
+        flex-direction: column;
+        height: 120px;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    
+    .site-main .entry-header .entry-header-container .entry-header-description {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .site-main .entry-header .entry-header-container .entry-header-title {
+        font-size: 60px;
+    }
+
+}
