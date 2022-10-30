@@ -1,8 +1,228 @@
-@import url("");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&family=Roboto:ital,wght@1,500&display=swap');
 
 :root {
-    --clr-1: black;
-    --clr-2: white;
-
+    --clr-lightblue: rgb(0, 162, 255);
+    --clr-white: rgb(255, 255, 255);
+    --clr-lightgreen: rgb(90, 197, 90);
+    --clr-mid-gray: rgb(211, 211, 211);
+    --clr-lightgray: rgb(238, 238, 238);
+    --clr-overlay-black: rgba(0, 0, 0, 0.5);
 }
 
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-ctr {
+    margin: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid var(--clr-mid-gray);
+    border-radius: 15px;
+    position: relative;
+}
+
+.left-ctr {
+    width: 50%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+}
+
+.left-ctr #calculator-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.left-ctr #image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-overlay-black);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.right-ctr {
+    width: 50%;
+    background-color: var(--clr-lightgray);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-ctr .title h1 {
+    text-align: center;
+    padding: 5%;
+    text-transform: uppercase;
+}
+
+.right-ctr .units {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 30px);
+    grid-template-areas: 
+    ". us . metric .";
+    width: 100%;
+    margin-left: -30px;
+}
+
+.right-ctr .units .units-us {
+    grid-area: us;
+}
+.right-ctr .units .units-metric {
+    grid-area: metric;
+}
+.right-ctr .units .units-us label {
+    position: absolute;
+    z-index: 5;
+    padding-top: 6px;
+    padding-left: 4px;
+}
+.right-ctr .units .units-metric label {
+    position: absolute;
+    z-index: 5;
+    padding-top: 6px;
+    padding-left: 28px;
+}
+
+
+input[type='radio']:after {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--clr-mid-gray);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[type='radio']:checked:after {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--clr-lightgreen);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+.right-ctr .form-gender {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    grid-template-rows: repeat(2, 30px);
+    grid-template-areas: 
+    "label label"
+    "toggle input";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.right-ctr .form-gender label{
+    grid-area: label;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.right-ctr .form-gender select{
+    grid-area: toggle;
+}
+
+.right-ctr .form-gender input {
+    grid-area: input;
+}
+
+.right-ctr .form-weight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-ctr .form-weight input {
+    width: 80%;
+}
+
+.right-ctr .form-weight label {
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.right-ctr .form-height {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    grid-template-rows: repeat(2, 30px);
+    grid-template-areas: 
+    "title title"
+    "height-1 height-2";
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.right-ctr .form-height label{
+    grid-area: title;
+    text-align: center;
+    font-weight: bold;
+}
+
+.right-ctr .form-height #height-1 {
+    grid-area: height-1;
+}
+
+.right-ctr .form-height #height-2 {
+    grid-area: height-2;
+}
+
+.right-ctr .calculate {
+    display: flex;
+    justify-content: center;
+}
+
+.right-ctr .calculate #calc {
+    padding: 1px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--clr-lightblue);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    width: 80%;
+    cursor: pointer;
+}
+
+input,
+label {
+    cursor: pointer;
+}
+
+.top-ctr {
+    transform: scale(1);
+    transition: 0.4s;
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+
+.top-ctr:hover {
+    transform: scale(1.03);
+    transition: 0.4s;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
