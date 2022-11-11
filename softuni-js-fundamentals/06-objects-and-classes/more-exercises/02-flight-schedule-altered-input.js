@@ -1,3 +1,6 @@
+
+// JUDGE fixed - inputs are back as they are given in the official documentation - no alt solution required
+
 function flightSchedule(input) {
     function filterArrays(inputArray) {
         for (let i = 0; i < inputArray.length; i++) {
