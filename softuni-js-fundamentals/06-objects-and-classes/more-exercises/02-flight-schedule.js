@@ -6,11 +6,13 @@ function flightSchedule(input) {
     let roster = [];
 
     for (let i = 0; i < allFlights.length; i++) {
-        let [callSign, destination] = allFlights[i].slice().split(" ");
+        let splitFlight = allFlights[i].slice().split(" ");
+        let callSign = splitFlight.shift();
+        let destination = splitFlight.join(" ");
         let flight = {
             callSign,
-            destination,
-            status: "Ready to fly",
+            "Destination": destination,
+            "Status": "Ready to fly",
         };
         roster.push(flight);
     }
@@ -18,8 +20,9 @@ function flightSchedule(input) {
     changes.forEach(element => {
         let [callSign, status] = element.slice().split(" ");
         for (let i = 0; i < roster.length; i++) {
-            if (callSign == roster[i].callSign) {
-                roster[i].status = status;
+            let current = roster[i];
+            if (callSign == current.callSign) {
+                current["Status"] = status;
             }
         }
     });
@@ -27,17 +30,16 @@ function flightSchedule(input) {
     for (let i = 0; i < roster.length; i++) {
         switch (toCheck) {
             case "Ready to fly":
-                roster.forEach(element => {
-                    if(element.status == toCheck) {
-                        let output = JSON.stringify(element);
-                        output = JSON.parse(output);
-                        delete output.callSign;
-                        console.log(output);
-                    }
-                });
+                let element = roster[i];
+                if (element["Status"] == toCheck) {
+                    let output = JSON.stringify(element);
+                    output = JSON.parse(output);
+                    delete output.callSign;
+                    console.log(output);
+                }
                 break;
             default:
-                if (roster[i].status == toCheck) {
+                if (roster[i]["Status"] == toCheck) {
                     let output = JSON.stringify(roster[i]);
                     output = JSON.parse(output);
                     delete output.callSign;
@@ -45,9 +47,7 @@ function flightSchedule(input) {
                 }
                 break;
         }
-
     }
-
 }
 
 flightSchedule([
