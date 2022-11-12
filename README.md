@@ -50,7 +50,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
-  <td> </td>
+  <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1"> Link </a> </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
