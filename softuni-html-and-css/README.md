@@ -28,8 +28,7 @@
 - Web project
 - Additional materials
 
-### FINAL GPA: 
-- 
+### FINAL GPA: 6.00/6.00
+- Final Exam: 6.00/6.00
 
-### Link to Certificate
-- 
+### Link to <a href="https://softuni.bg/certificates/details/147196/0b77e9d1">Certificate</a>
