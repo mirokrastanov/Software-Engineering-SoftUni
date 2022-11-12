@@ -24,8 +24,8 @@
 8. Design to Code - Demo Project
 
 ### Contains:
-- Exercise solution
-- Web project
+- Exercise solutions
+- Web projects
 - Additional materials
 
 ### FINAL GPA: 6.00/6.00
