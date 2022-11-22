@@ -35,7 +35,7 @@
 19. Database Basics
 20. QA Introduction
 21. Basic Web Project
-22. Practical/Final Exam
+22. Final Exam
 
 ### Contains:
 - Exercise solutions
