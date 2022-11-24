@@ -17,6 +17,7 @@ function revealWords(str1, str2) {
 
 }
 
+
 revealWords('great',
     'softuni is ***** place for learning new programming languages');
 revealWords('great, learning',
