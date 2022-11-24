@@ -16,7 +16,7 @@ function revealWords(str1, str2) {
     console.log(lookInside);
 
 }
-
+// in progress
 
 revealWords('great',
     'softuni is ***** place for learning new programming languages');
