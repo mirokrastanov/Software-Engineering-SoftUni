@@ -7,6 +7,7 @@ function matchDates(input) {
     for (const match of matches) {
         // console.log(`Day: ${match[1]}, Month: ${match[3]}, Year: ${match[4]}`);
         console.log(`Day: ${match.groups.day}, Month: ${match.groups.month}, Year: ${match.groups.year}`);
+        console.log(match.groups);
     }
 }
 
