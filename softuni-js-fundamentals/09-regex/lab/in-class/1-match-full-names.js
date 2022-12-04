@@ -4,6 +4,7 @@ function matchNames(text) {
     let names = text.match(pattern);
 
     console.log(names.join(' '));
+    console.log(pattern.exec(names));
 }
 
 matchNames("Ivan Ivanov, Ivan ivanov, ivan Ivanov, IVan Ivanov, Test Testov, Ivan	Ivanov");
