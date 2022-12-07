@@ -13,24 +13,24 @@
 <hr />
 <p align="center"><img src="https://i.imgur.com/iCBAYAN.png" alt="problem-1-preview" title="Problem 1 - Preview" /></p>
 <ul>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/problem-descriptions/01-burger-bus/01.Burger%20Bus_Problem%20Description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/problem-descriptions/01-string-game/01-string-game_problem-description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
 <li><a href="https://softwareuniversity-my.sharepoint.com/:w:/g/personal/joana_veskova_students_softuni_bg/EVMPkA4LjxpPv7EX942y3xMB-yT17_SWimuJTrowvZ-3Ig?rtime=Ap7BRDDY2kg">Problem Description - original URL</a> <i>(might not be available later on)</i></li>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/01-burger-bus.js">Problem Solution</a> <i>(submitted)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/01-string-game.js">Problem Solution</a> <i>(submitted)</i></li>
 </ul>
   
 <hr />
 <p align="center"><img src="https://i.imgur.com/mY2eTPf.png" alt="problem-2-preview" title="Problem 2 - Preview" /></p>
 <ul>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/problem-descriptions/02-coffee-lover/02.Coffee%20Lover_Problem%20Description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/problem-descriptions/02-boss-rush/02-boss-rush_problem-description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
 <li><a href="https://softwareuniversity-my.sharepoint.com/:w:/g/personal/joana_veskova_students_softuni_bg/ESNfT6sPSshJhzUbybY1140B13WDW4gs3_QbtuRseo3KtQ?e=vOt65u">Problem Description - original URL</a> <i>(might not be available later on)</i></li>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/02-coffee-lover.js">Problem Solution</a> <i>(submitted)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/02-boss-rush.js">Problem Solution</a> <i>(submitted)</i></li>
 </ul>
   
 <hr />
 <p align="center"><img src="https://i.imgur.com/KiBbSKa.png" alt="problem-3-preview" title="Problem 3 - Preview" /></p>
 <ul>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/problem-descriptions/03-deck-of-cards/03.Deck%20of%20Cards_Problem%20Description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/problem-descriptions/03-degustation-party/03-degustation-party_problem-description.pdf">Problem Description</a> <i>(lower res copy)</i></li>
 <li><a href="https://softwareuniversity-my.sharepoint.com/:w:/g/personal/joana_veskova_students_softuni_bg/ET91nHsHqOtNvkB8NHrPB_wBNP6qRd3WFf6RG9X_Q_0Blg?e=aWwgJV">Problem Description - original URL</a> <i>(might not be available later on)</i></li>
-<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/mid-exam/03-deck-of-cards.js">Problem Solution</a> <i>(submitted)</i></li>
+<li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-fundamentals/final-exam/03-degustation-party.js">Problem Solution</a> <i>(submitted)</i></li>
 </ul>  
   
