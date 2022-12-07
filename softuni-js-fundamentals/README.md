@@ -45,9 +45,8 @@
 - Certificate
 - Exam solutions (for mid and final)
 
-### FINAL GPA: 
-- Mid Exam: <a href="https://i.imgur.com/9MaY4xp.png">300/300</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals/mid-exam">Here</a></i>
-- Final Exam: <a href=""></a>
+### FINAL GPA: 6.00/6.00 
+- Mid Exam: <a href="https://i.imgur.com/9MaY4xp.png">300/300 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals/mid-exam">Here</a></i>
+- Final Exam: <a href="https://i.imgur.com/ZQ9OGlm.png">300/300 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals/final-exam">Here</a></i>
 
-### Link to Certificate:
-- 
+### Link to <a href="https://softuni.bg/certificates/details/149442/7cdc532d">Certificate </a>
