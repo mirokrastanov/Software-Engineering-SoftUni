@@ -48,9 +48,13 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming & Technology Fundamentals with JS</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d"> Link</a> </td>
  </tr>
-  <tr> <!-- add here -->
-  <td> <a href="">JS Advanced (in progress)</a> </td>
-  <td> <a href=""> Link</a> </td>
+ <tr> <!-- add here -->
+  <td> <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">JS Advanced (upcoming)</a> </td>
+  <td> <a href=""> </a> </td>
+ </tr>
+ <tr> <!-- add here -->
+  <td> <a href="https://softuni.bg/trainings/3962/js-applications-february-2023">JS Applications (upcoming)</a> </td>
+  <td> <a href=""> </a> </td>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
