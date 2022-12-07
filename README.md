@@ -38,15 +38,15 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 <table>
  <tr>  <!-- row 1, left embedded table, 1 col -->
   <th> Course </th> <!-- left embedded table, 1 col -->
-  <th> Link </th>   <!-- left embedded table, 2 col -->
+  <th> Certificate </th>   <!-- left embedded table, 2 col -->
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Programming Basics with JS</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c">Click here</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d">Click here</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr> <!-- add here -->
   <td> <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">JS Advanced (upcoming)</a> </td>
@@ -58,7 +58,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1">Click here</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
@@ -72,7 +72,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9">Click here</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
