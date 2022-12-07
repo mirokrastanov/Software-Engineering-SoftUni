@@ -11,7 +11,7 @@
 </html>
 
 ### Course Description:
-- Introduces students to a more complicated concepts such as arrays, lists, objects, classes and more. In those course students start learning additional technologies required by each software developer such as HTML, CSS, HTTP, bitwise operations, Git, GitHub, Dictionaries, Expressions, Web technologies and tools, QA basics, Database basics, and more. Problem solving is a key skill for every software developer and throughout the course students are encouraged and challenged to develop the skill all the time. During this course students take two exams - a mid exam and a final exam, both of which form the final score with a ratio of 40%/60%. At the end of the course students also create, design and publish a complete basic web project.
+- Introduces the students to more complex concepts such as associated arrays, lists, objects, classes and more. In this course students start learning additional technologies required by each software developer such as HTTP requests, HTML structure, CSS design, bitwise operations, Git, GitHub, Dictionaries, Regular Expressions, Web technologies and tools, QA basics, Database basics, and more. Problem solving is a key skill for every software developer and throughout the course students are encouraged and challenged to develop this skill all the time. During this course students take two exams - a mid exam and a final exam, both of which form the final score with a ratio of 40%/60%. At the end of the course students also create, design and publish a complete basic web project.
 
 ### Table of Contents:
 1. Language Comparison
