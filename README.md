@@ -68,7 +68,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <table>
  <tr>
   <th> Course </th>
-  <th> Link </th>
+  <th> Certificate </th>
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
