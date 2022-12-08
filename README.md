@@ -95,7 +95,6 @@ To add:
 - Diplomas
 - Other certification from the open courses in SoftUni
 - Projects
-- Improve design
 - Add portfolio website link
 - Add extra tech table
 - add side course cell inside the main table
