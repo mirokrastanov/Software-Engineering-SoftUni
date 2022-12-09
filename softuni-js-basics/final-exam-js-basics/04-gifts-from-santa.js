@@ -17,12 +17,12 @@ function giftsFromSanta(input) {
 
 }
 
-giftsFromSanta(["1",
-    "30",
-    "15"]);
+// giftsFromSanta(["1",
+//     "30",
+//     "15"]);
 // giftsFromSanta(["1",
 //     "36",
 //     "12"]);
-// giftsFromSanta(["20",
-//     "1000",
-//     "36"]);
+giftsFromSanta(["20",
+    "1000",
+    "36"]);
