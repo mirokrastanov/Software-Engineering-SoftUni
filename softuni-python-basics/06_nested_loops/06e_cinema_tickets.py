@@ -37,3 +37,5 @@ if finish:
     print(f"{(student / all_tickets * 100):.2f}% student tickets.")
     print(f"{(standard / all_tickets * 100):.2f}% standard tickets.")
     print(f"{(kid / all_tickets * 100):.2f}% kids tickets.")
+
+# continue with advanced - 1. , 4. , 7.
