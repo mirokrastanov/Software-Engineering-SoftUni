@@ -37,4 +37,5 @@
 - Final Exam: 6.00/6.00
 - **Accepted into Software University!**
 ### Link to <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
+### Link to <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Course</a>
 
