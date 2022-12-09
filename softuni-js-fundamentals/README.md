@@ -50,3 +50,5 @@
 - Final Exam: <a href="https://i.imgur.com/ZQ9OGlm.png">300/300 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals/final-exam">Here</a></i>
 
 ### Link to <a href="https://softuni.bg/certificates/details/149442/7cdc532d">Certificate </a>
+### Link to <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Course</a>
+

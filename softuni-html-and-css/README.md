@@ -32,3 +32,4 @@
 - Final Exam: 6.00/6.00
 
 ### Link to <a href="https://softuni.bg/certificates/details/147196/0b77e9d1">Certificate</a>
+### Link to <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">Course</a>
