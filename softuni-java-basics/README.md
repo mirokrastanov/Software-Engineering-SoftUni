@@ -28,5 +28,5 @@
 - Additional Exam Practice (optional, using previous years' exams)
 
 
-This course was completed as a side course - individually, without enrolling with Java. I enrolled in the main program with JavaScript. 
-I decided to learn the basics of Java on my own and to officially sign up for the Advanced Module in the near future so I can get certified.
+<i>This course was completed as a side course - individually, without enrolling with Java. I enrolled in the main program with JavaScript. 
+I decided to learn the basics of Java on my own and to officially sign up for the Advanced Module in the near future so I can get certified. </i>
