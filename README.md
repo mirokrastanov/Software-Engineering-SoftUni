@@ -41,11 +41,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <th> Certificate </th>   <!-- left embedded table, 2 col -->
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/3755/programming-basics-with-javascript-july-2022">Programming Basics with JS</a> </td>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics">Programming Basics with JS</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/140167/31a4474c"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022">Programming Fundamentals with JS</a> </td>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals">Programming Fundamentals with JS</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr> <!-- add here -->
@@ -57,7 +57,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href=""> </a> </td>
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/3855/html-and-css-september-2022">HTML & CSS</a> </td>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-html-and-css">HTML & CSS</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
