@@ -97,6 +97,7 @@ To add:
 - Projects
 - Add portfolio website link
 - Add extra tech table
+- Analyze, Design, Code, Debug - lg etc
 - add c++ folders and cells
 - add the 2 game projects from Fundamentals - update & improve on them often
 - ADD A PLAY BUTTON FOR EACH PROJECT / GAME inside the main table / add 3rd column
