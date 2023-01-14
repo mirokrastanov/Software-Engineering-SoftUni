@@ -15,3 +15,6 @@ while (match) {
     console.log(`Found ${match[0]} on index ${match.index} - ${match[1]}`); // number capturing group
     match = pattern.exec(text);
 }
+
+
+// key.exec() --> //
