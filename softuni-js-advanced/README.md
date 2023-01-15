@@ -1,0 +1,46 @@
+<html>
+<body>
+
+# <p align="center"><a href="https://softuni.bg/trainings/3961/js-advanced-january-2023"> JavaScript Advanced - January 2023 </a><p>
+
+<a href="https://softuni.bg/">
+<img src="https://stringfixer.com/files/651542214.jpg" alt="Trulli" width="1218" height="160">
+</a>
+
+</body>
+</html>
+
+### Course Description:
+<!-- TODO - Update Desc for current course
+- The course is based on the principles of JavaScript programming. It makes the introduction for students to basic coding knowledge such as data types, basic operators, reading user inputs from the console, converting inputs to required types, writing basic functions, solving coding problems, using conditional statements **(if, else, if-else)**, and loops **(for, while)**.
+- During the course students submit homework. It consists of solved problems evaluated by an automated judging system, created by SoftUni.
+- The course ends with a **practical programming exam**. Additionally students also take a **test with theoretical questions**.
+-->
+
+### Course Topics:
+<!-- TODO - Update Notes for current course
+1. First steps in coding  
+2. Conditional Statements 
+3. Conditional Statements Advanced 
+4. For Loop   
+5. While Loop          
+6. Nested Loops
+-->  
+
+### Table of Contents:
+<!-- TODO - Update Contents for current course
+- Solved Course Exercises (required, with a deadlines)
+- Solved Extra Exercises (optional)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-old-exams">Additional Exam Practice</a> (optional, using previous years' exams)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Extra Practice Contest - Drawing Figures with Loops</a> (optional, output figures included)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/preliminary-exam-js-basics">Preliminary Exam Solutions</a> (my own solution - submitted and evaluated)
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/final-exam-js-basics">Final Exam Solutions</a> (my own solution - submitted and evaluated)
+-->
+
+### FINAL GPA:
+- 
+
+
+### Link to <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
+### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
+
