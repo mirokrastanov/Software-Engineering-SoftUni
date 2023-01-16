@@ -31,19 +31,17 @@
 10. Workshop: Wizard Side Scrolling Game
 
 ### Table of Contents:
-<!-- TODO - Update Contents for current course
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-old-exams">Additional Exam Practice</a> (optional, using previous years' exams)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Extra Practice Contest - Drawing Figures with Loops</a> (optional, output figures included)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/preliminary-exam-js-basics">Preliminary Exam Solutions</a> (my own solution - submitted and evaluated)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/final-exam-js-basics">Final Exam Solutions</a> (my own solution - submitted and evaluated)
--->
+- Exam Practice - Old Exams - Problem solutions
+- Exam Problem - Descriptions & My Solution
+- Projects & Workshop files + Demoes/Previews where applicable
+- GPA & Certificate information
 
 ### FINAL GPA:
 - 
 
 
-### Link to <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
+### Link to <a href="#">Certificate (TBA, course still in progress...)</a>
 ### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
 
