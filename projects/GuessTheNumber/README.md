@@ -16,12 +16,12 @@ The computer select a random number between 0 and 100. Then the player has to gu
 **For example the computer has chosen the number 55.** This is hidden from the user. 
 |YOUR INPUT|OUTCOME|COLOR|
 | :--: | :--: | :--: |
-|empty input/nothing|"You've submitted an empty input! Please type a number!"| Yellow |
-|a space/s|"Your input -->  --> is not a number! Please type a number!"| Yellow |
-|banana|"Your input --> banana --> is not a number! Please type a number!"| Yellow |
-|12|"Your answer --> 12 --> is too Low! Try again!"| Green |
-|87|"Your answer --> 87 --> is too High! Try again!"| Red |
-|55|"Correct!!! You guessed the number --> 55 <--"| Cyan |
+|empty input/nothing|You've submitted an empty input! Please type a number!| Yellow |
+|` ` a space/s|Your input --> ` ` --> is not a number! Please type a number!| Yellow |
+|`banana`|Your input --> `banana` --> is not a number! Please type a number!| Yellow |
+|`12`|Your answer --> `12` --> is too Low! Try again!| Green |
+|`87`|Your answer --> `87` --> is too High! Try again!| Red |
+|`55`|Correct!!! You guessed the number --> `55` <--| Cyan |
 
 Different outcomes are styled with a specific color to improve their visualization to the player. This should help the player in their next guess as every failed guess provides a colored hint relative to the next step the player must take.
   
