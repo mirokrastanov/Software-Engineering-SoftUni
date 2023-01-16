@@ -37,7 +37,7 @@ function guessTheNumber() {
     callNewGuess();
 
     readline.on('close', () => {
-        console.log(`\n\x1b[35m Thank You for playing "Guess the Number" by @mirokrastanov !\n --> https://github.com/mirokrastanov \x1b[0m`);
+        console.log(`\n\x1b[35m Thank You for playing "Guess the Number" by @mirokrastanov !\n --> https://github.com/mirokrastanov \x1b[0m\n`);
     });
 
 }
