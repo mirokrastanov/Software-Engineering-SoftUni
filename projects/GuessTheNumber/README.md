@@ -1,4 +1,39 @@
 # GuessTheNumber
-A simple console game "Guess the Number".
+A simple console-based JavaScript Number Guessing Game.
+<p align="center"><img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/guess%20the%20num%20logo.png" alt="game-image" height="400px"></p>
 
-In progress...
+## Description
+<!--
+<br />
+
+## Input & Output
+  - `rock` or `r`
+  - `paper` or `p`
+  - `scissors` or `s` 
+<br />
+
+The computer chooses a <b>random option</b>, then the <b>winner</b> is revealed.
+
+## Game Logic | Possible Scenarios
+  
+|YOU|COMPUTER|OUTCOME|
+| :--: | :--: | :--: |
+|rock|rock|Draw|
+|rock|paper|You lose|
+|rock|scissors|You win|
+|paper|rock|You win|
+|paper|paper|Draw|
+|paper|scissors|You lose|
+|scissors|rock|You lose|
+|scissors|paper|You win|
+|scissors|scissors|Draw|
+  
+  
+## Live Demo
+[<img src="https://freepngimg.com/download/play_now_button/25403-5-play-now-button-transparent.png" alt="run-button" height="40px" />](https://replit.com/@mirokrastanov/RockPaperScissors-JS?v=1)
+  
+  
+## [Source Code](rockPaperScissors.js)
+  
+  
+  -->
