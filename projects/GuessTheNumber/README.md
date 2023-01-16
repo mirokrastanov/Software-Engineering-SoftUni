@@ -7,27 +7,24 @@ The computer select a random number between 0 and 100. Then the player has to gu
 <br />
 
 ## Input & Output
-  - A number between 0 - 100.
+  - The expected **valid input is a number between 0 - 100.**
   - The output indicates whether the number was guessed or not and shows a clue if the guessing failed.
 <br />
 
-The computer chooses a <b>random option</b>, then the <b>winner</b> is revealed.
-<!--
+
 ## Game Logic | Possible Scenarios
+**For example the computer has chosen the number 55.** This is hidden from the user. 
+|YOUR INPUT|OUTCOME|
+| :--: | :--: |
+|empty input/nothing|"You've submitted an empty input! Please type a number!"|
+|a space/s|"Your input -->  --> is not a number! Please type a number!"|
+|banana|"Your input --> banana --> is not a number! Please type a number!"|
+|12|"Your answer --> 12 --> is too Low! Try again!"|
+|87|"Your answer --> 87 --> is too High! Try again!"|
+|55|"Correct!!! You guessed the number --> 55 <--"|
+Different outcomes are styled with a specific color to improve their visualization to the player. This should help the player in their next guess as every failed guess provides a hint.
   
-|YOU|COMPUTER|OUTCOME|
-| :--: | :--: | :--: |
-|rock|rock|Draw|
-|rock|paper|You lose|
-|rock|scissors|You win|
-|paper|rock|You win|
-|paper|paper|Draw|
-|paper|scissors|You lose|
-|scissors|rock|You lose|
-|scissors|paper|You win|
-|scissors|scissors|Draw|
-  
-  
+<!--  
 ## Live Demo
 [<img src="https://freepngimg.com/download/play_now_button/25403-5-play-now-button-transparent.png" alt="run-button" height="40px" />](https://replit.com/@mirokrastanov/RockPaperScissors-JS?v=1)
   
