@@ -24,13 +24,11 @@ The computer select a random number between 0 and 100. Then the player has to gu
 |`55`|Correct!!! You guessed the number --> `55` <--| Cyan |
 
 Different outcomes are styled with a specific color to improve their visualization to the player. This should help the player in their next guess as every failed guess provides a colored hint relative to the next step the player must take.
+<br /><br />  
   
-<!--  
 ## Live Demo
-[<img src="https://freepngimg.com/download/play_now_button/25403-5-play-now-button-transparent.png" alt="run-button" height="40px" />](https://replit.com/@mirokrastanov/RockPaperScissors-JS?v=1)
+[<img src="https://freepngimg.com/download/play_now_button/25403-5-play-now-button-transparent.png" alt="run-button" height="40px" />](https://replit.com/@mirokrastanov/GuessTheNumber-JS?v=1)
   
   
-## [Source Code](rockPaperScissors.js)
+## [Source Code](guessTheNumber.js)
   
-  
-  -->
