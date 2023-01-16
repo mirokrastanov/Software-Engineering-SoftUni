@@ -14,7 +14,7 @@ function guessTheNumber() {
         readline.question('Guess the number (0-100): ', (userInput) => {
             if (userInput.trim() != Number(userInput.trim())) {
                 console.log(`\x1b[33m Your input --> ${userInput} --> is not a number! Please type a number! \x1b[0m`);
-                // Using recursion below in order to prompt the user over and over
+                // Using recursion below in order to prompt the user over until a proper input is received
                 callNewGuess();
             } else if (userInput.trim() == computerGuess) {
                 console.log(`\n\x1b[96m-------------------------------------------------\x1b[0m`);
@@ -23,7 +23,7 @@ function guessTheNumber() {
                 readline.close();
             } else if (userInput.trim() > computerGuess) {
                 console.log(`\x1b[31m Your answer --> ${userInput} --> is too High! Try again! \x1b[0m`);
-                // Using recursion below in order to prompt the user over and over
+                // Using recursion below in order to prompt the user over until the number is guessed
                 callNewGuess();
             } else if (userInput.trim() < computerGuess) {
                 if (!userInput) {
@@ -31,7 +31,7 @@ function guessTheNumber() {
                 } else {
                     console.log(`\x1b[32m Your answer --> ${userInput} --> is too low! Try again! \x1b[0m`);
                 }
-                // Using recursion below in order to prompt the user over and over
+                // Using recursion below in order to prompt the user over until the number is guessed
                 callNewGuess();
             }
         });
