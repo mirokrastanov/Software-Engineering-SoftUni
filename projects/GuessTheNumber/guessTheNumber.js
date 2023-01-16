@@ -20,6 +20,7 @@ function guessTheNumber() {
                 console.log(`\n\x1b[96m-------------------------------------------------\x1b[0m`);
                 console.log(`\x1b[96m Correct!!! You guessed the number --> ${userInput} <-- \x1b[0m`);
                 console.log(`\x1b[96m-------------------------------------------------\x1b[0m`);
+                // Closing the readline interface. Emits the close event to the listener for final actions.
                 readline.close();
             } else if (userInput.trim() > computerGuess) {
                 console.log(`\x1b[31m Your answer --> ${userInput} --> is too High! Try again! \x1b[0m`);
