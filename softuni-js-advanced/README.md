@@ -12,9 +12,9 @@
 
 ### Course Description:
 - The course further improves students' knowledge of concepts such as JS Syntax, Arrays, Objects, Classes & Functions. 
-- Students also dive deep into more advanced concepts such as Function Content, Explicit Binding, Event Loop, etc.
+- Students also dive deep into more advanced concepts such as Function Content, Explicit Binding, Event Loop, DOM, Prototypes, Unit Testing, Error Handling, etc.
 - During this course students hone their Algorithmic Thinking & Provblem Solving skills by creating Algorithms for complex problems.
-- Additionally, this course involves participation in multiple projects designed to further develop the formentioned skills.
+- Additionally, this course includes participation in multiple projects designed to further develop the formentioned skills.
 - Successful completion of the course means that the student has the necessary knowledge and skills to Build a DOM Tree and manipulate with it in whatever way needed. The student can also work with events and has a good understanding of Functional Coding as well as Object Orientde Programming with JavaScript, including the concepts for Inheritance, Object Composition, Prototype Chain, etc.
 - JS Advanced ends with a two part Exam. First part is practical and consists of 3 problems that need to be solved. Second part is a test.
 
