@@ -11,36 +11,37 @@
 </html>
 
 ### Course Description:
-<!-- TODO - Update Desc for current course
-- The course is based on the principles of JavaScript programming. It makes the introduction for students to basic coding knowledge such as data types, basic operators, reading user inputs from the console, converting inputs to required types, writing basic functions, solving coding problems, using conditional statements **(if, else, if-else)**, and loops **(for, while)**.
-- During the course students submit homework. It consists of solved problems evaluated by an automated judging system, created by SoftUni.
-- The course ends with a **practical programming exam**. Additionally students also take a **test with theoretical questions**.
--->
+- The course further improves students' knowledge of concepts such as JS Syntax, Arrays, Objects, Classes & Functions. 
+- Students also dive deep into more advanced concepts such as Function Content, Explicit Binding, Event Loop, DOM, Prototypes, Unit Testing, Error Handling, etc.
+- During this course students hone their Algorithmic Thinking & Provblem Solving skills by creating Algorithms for complex problems.
+- Additionally, this course includes participation in multiple projects designed to further develop the formentioned skills.
+- Successful completion of the course means that the student has the necessary knowledge and skills to Build a DOM Tree and manipulate with it in whatever way needed. The student can also work with events and has a good understanding of Functional Coding as well as Object Orientde Programming with JavaScript, including the concepts for Inheritance, Object Composition, Prototype Chain, etc.
+- JS Advanced ends with a two part Exam. First part is practical and consists of 3 problems that need to be solved. Second part is a test.
 
 ### Course Topics:
-<!-- TODO - Update Notes for current course
-1. First steps in coding  
-2. Conditional Statements 
-3. Conditional Statements Advanced 
-4. For Loop   
-5. While Loop          
-6. Nested Loops
--->  
+1. Syntax, Functions and Statements
+2. Arrays, Nested Arrays (Advanced)
+3. Objects and Composition
+4. DOM Introduction
+5. DOM Manipulations and Events
+6. Advanced Functions
+7. Unit Testing and Error Handling
+8. Classes (Advanced)
+9. Prototypes and Inheritance
+10. Workshop: Wizard Side Scrolling Game
 
 ### Table of Contents:
-<!-- TODO - Update Contents for current course
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-old-exams">Additional Exam Practice</a> (optional, using previous years' exams)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/practice-drawing-figures-with-loops">Extra Practice Contest - Drawing Figures with Loops</a> (optional, output figures included)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/preliminary-exam-js-basics">Preliminary Exam Solutions</a> (my own solution - submitted and evaluated)
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics/final-exam-js-basics">Final Exam Solutions</a> (my own solution - submitted and evaluated)
--->
+- Exam Practice - Old Exams - Problem solutions
+- Exam Problem - Descriptions & My Solution (TBA, course in progress...)
+- Projects & Workshop files + Demos/Previews where applicable
+- GPA & Certificate information
 
 ### FINAL GPA:
-- 
+- (TBA, course in progress...)
 
 
-### Link to <a href="https://softuni.bg/certificates/details/140167/31a4474c">Certificate</a>
+### Link to <a href="#">Certificate (TBA, course in progress...)</a>
 ### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
 
