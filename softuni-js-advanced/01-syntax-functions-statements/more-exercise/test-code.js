@@ -8,6 +8,7 @@ function guessTheNumber() {
     let computerGuess = Math.floor((Math.random() * 100) + 1);
 
     readline.question('Guess the number (0-100): ', userInput => {
+        
         // TODO - fix the scenario with a NaN input
         if (userInput.trim() == computerGuess) {
             readline.close();
