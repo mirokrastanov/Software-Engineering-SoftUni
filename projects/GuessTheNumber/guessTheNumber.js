@@ -24,7 +24,11 @@ function guessTheNumber() {
                 console.log(`\x1b[31m Your answer --> ${userInput} --> is too High! Try again! \x1b[0m`);
                 callNewGuess();
             } else if (userInput.trim() < computerGuess) {
-               
+                if (!userInput) {
+                    console.log(`\x1b[33m You\'ve submitted an empty input! Please type a number! \x1b[0m`);
+                } else {
+                    console.log(`\x1b[32m Your answer --> ${userInput} --> is too low! Try again! \x1b[0m`);
+                }
                 callNewGuess();
             }
         });
