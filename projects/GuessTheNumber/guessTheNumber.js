@@ -13,7 +13,7 @@ function guessTheNumber() {
     let callNewGuess = function () {
         readline.question('Guess the number (0-100): ', (userInput) => {
             if (userInput.trim() != Number(userInput.trim())) {
-                
+                console.log(`\x1b[33m Your input --> ${userInput} --> is not a number! Please type a number! \x1b[0m`);
                 callNewGuess();
             } else if (userInput.trim() == computerGuess) {
                 
