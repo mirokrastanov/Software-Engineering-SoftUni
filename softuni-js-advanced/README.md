@@ -34,14 +34,14 @@
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
 - Exam Practice - Old Exams - Problem solutions
-- Exam Problem - Descriptions & My Solution
+- Exam Problem - Descriptions & My Solution (TBA, course in progress...)
 - Projects & Workshop files + Demos/Previews where applicable
 - GPA & Certificate information
 
 ### FINAL GPA:
-- 
+- (TBA, course in progress...)
 
 
-### Link to <a href="#">Certificate (TBA, course still in progress...)</a>
+### Link to <a href="#">Certificate (TBA, course in progress...)</a>
 ### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
 
