@@ -1,8 +1,6 @@
 function guessTheNumber() {
 
-    console.log(' ');
-    console.log('Welcome to "Guess the Number" by Miro Krastanov!');
-    console.log('Enjoy!\n');
+    console.log(`\n\x1b[35m Welcome to "Guess the Number" by Miro Krastanov!\n Enjoy!\x1b[0m`);
 
     // Create an Interface for Input & Output
     const readline = require('readline').createInterface({
