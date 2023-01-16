@@ -37,8 +37,10 @@ function guessTheNumber() {
         });
     };
 
+    // Prompt the user to guess the number - Invokes the call function, determines outcome & prints result.
     callNewGuess();
 
+    // Listener for the close event. Upon close the following is executed. Both on forced close via command and on expected close due to game ending after the number has been guessed by the user.
     readline.on('close', () => {
         console.log(`\n\x1b[35m Thank You for playing "Guess the Number" by @mirokrastanov !\n --> https://github.com/mirokrastanov \x1b[0m\n`);
     });
