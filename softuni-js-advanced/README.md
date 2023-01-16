@@ -19,14 +19,16 @@
 - JS Advanced ends with a two part Exam. First part is practical and consists of 3 problems that need to be solved. Second part is a test.
 
 ### Course Topics:
-<!-- TODO - Update Notes for current course
-1. First steps in coding  
-2. Conditional Statements 
-3. Conditional Statements Advanced 
-4. For Loop   
-5. While Loop          
-6. Nested Loops
--->  
+1. Syntax, Functions and Statements
+2. Arrays, Nested Arrays (Advanced)
+3. Objects and Composition
+4. DOM Introduction
+5. DOM Manipulations and Events
+6. Advanced Functions
+7. Unit Testing and Error Handling
+8. Classes (Advanced)
+9. Prototypes and Inheritance
+10. Workshop: Wizard Side Scrolling Game
 
 ### Table of Contents:
 <!-- TODO - Update Contents for current course
