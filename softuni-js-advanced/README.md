@@ -35,7 +35,7 @@
 - Solved Extra Exercises (optional)
 - Exam Practice - Old Exams - Problem solutions
 - Exam Problem - Descriptions & My Solution
-- Projects & Workshop files + Demoes/Previews where applicable
+- Projects & Workshop files + Demos/Previews where applicable
 - GPA & Certificate information
 
 ### FINAL GPA:
