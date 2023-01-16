@@ -21,7 +21,7 @@ function guessTheNumber() {
                 console.log(`\x1b[96m-------------------------------------------------\x1b[0m`);
                 readline.close();
             } else if (userInput.trim() > computerGuess) {
-                
+                console.log(`\x1b[31m Your answer --> ${userInput} --> is too High! Try again! \x1b[0m`);
                 callNewGuess();
             } else if (userInput.trim() < computerGuess) {
                
