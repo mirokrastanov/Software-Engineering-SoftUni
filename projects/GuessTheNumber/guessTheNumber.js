@@ -16,7 +16,9 @@ function guessTheNumber() {
                 console.log(`\x1b[33m Your input --> ${userInput} --> is not a number! Please type a number! \x1b[0m`);
                 callNewGuess();
             } else if (userInput.trim() == computerGuess) {
-                
+                console.log(`\n\x1b[96m-------------------------------------------------\x1b[0m`);
+                console.log(`\x1b[96m Correct!!! You guessed the number --> ${userInput} <-- \x1b[0m`);
+                console.log(`\x1b[96m-------------------------------------------------\x1b[0m`);
                 readline.close();
             } else if (userInput.trim() > computerGuess) {
                 
