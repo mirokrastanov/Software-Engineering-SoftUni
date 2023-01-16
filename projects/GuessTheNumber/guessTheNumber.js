@@ -32,7 +32,7 @@ function guessTheNumber() {
                 if (!userInput) {
                     console.log(`\x1b[33m You\'ve submitted an empty input! Please type a number! \x1b[0m`);
                 } else {
-                    console.log(`\x1b[32m Your answer --> ${userInput} --> is too low! Try again! \x1b[0m`);
+                    console.log(`\x1b[32m Your answer --> ${userInput} --> is too Low! Try again! \x1b[0m`);
                 }
                 // Using recursion below in order to prompt the user over until the number is guessed
                 callNewGuess();
