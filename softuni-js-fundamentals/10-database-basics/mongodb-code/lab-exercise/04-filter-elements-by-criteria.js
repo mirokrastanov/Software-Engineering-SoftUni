@@ -1,0 +1,1 @@
+db.getCollection('people').find({ firstName: 'Michael' })
