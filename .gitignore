@@ -19,3 +19,7 @@ venv/
 # Ext
 .zip
 *.dat 
+
+
+# JS packages
+node_modules/
