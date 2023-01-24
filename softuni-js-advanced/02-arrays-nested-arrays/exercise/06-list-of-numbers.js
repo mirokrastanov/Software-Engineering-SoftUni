@@ -5,7 +5,7 @@ function list(input) {
         counter++;
         console.log(`${counter}.${element}`);
     });
-
+    
 }
 
 list(["John", "Bob", "Christina", "Ema"]);
