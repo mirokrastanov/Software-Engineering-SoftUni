@@ -11,8 +11,7 @@ function magicMatrices(input) {
             currentColSum += input[j][i];
         }
         lastColSum = i == 0 ? currentColSum : lastColSum;
-        if (lastRowSum != currentRowSum
-            || lastColSum != currentColSum) {
+        if (lastRowSum != currentRowSum || lastColSum != currentColSum) {
             isMagic = false;
             break;
         }
