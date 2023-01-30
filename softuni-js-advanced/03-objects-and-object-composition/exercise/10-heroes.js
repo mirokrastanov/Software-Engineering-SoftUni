@@ -21,7 +21,7 @@ function heroes() {
             name,
             health: 100,
             mana: 100,
-            cast,
+            cast, 
         };
         function cast(spell) {
             hero.mana--;
