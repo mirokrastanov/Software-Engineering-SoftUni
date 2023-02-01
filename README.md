@@ -1,7 +1,7 @@
 # <p align="center"><a href="https://softuni.bg/curriculum"> Software Engineering - SoftUni</a></p>
 
 <a href="https://softuni.bg/">
-<img src="https://stringfixer.com/files/651542214.jpg" width="1218" height="160">
+<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" width="1218" height="160">
 </a>
 
 ## Program Description
