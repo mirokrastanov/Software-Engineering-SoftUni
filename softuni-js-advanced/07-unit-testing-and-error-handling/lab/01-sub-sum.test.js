@@ -2,6 +2,7 @@
 const solve = require('./01-sub-sum');
 
 function test() {
+    // Arrange
     let expected = 14;
     let numbers = [1, 2, 3, 4, 5, 6, 7];
     let startIndex = 1;
