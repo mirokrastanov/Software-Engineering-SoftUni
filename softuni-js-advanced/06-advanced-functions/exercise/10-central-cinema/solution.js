@@ -27,7 +27,7 @@ function solve() {
         inputF.setAttribute('placeholder', 'Tickets Sold');
         div.appendChild(inputF);
         let archBtn = document.createElement('button');
-        archBtn.textContent = 'Archieve';
+        archBtn.textContent = 'Archive';
         div.appendChild(archBtn);
         li.appendChild(div);
         movies.appendChild(li);
