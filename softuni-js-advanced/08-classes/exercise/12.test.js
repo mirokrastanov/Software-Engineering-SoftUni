@@ -6,7 +6,7 @@ describe("Test Class creation", function () {
         let test = new PaymentPackage('HR', 10);
         assert.equal(test._name, 'HR');
         assert.equal(test._value, 10);
-        assert.doesNotThrow(() => test.value = 0);
+        assert.doesNotThrow(() => test.value = 0); // 88 to 100, 88 without this line
         assert.equal(test._VAT, 20);
         assert.equal(test._active, true);
     });
