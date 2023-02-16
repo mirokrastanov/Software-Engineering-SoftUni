@@ -1,8 +1,10 @@
 function check(input) {
     let methods = ['GET', 'POST', 'DELETE', 'CONNECT'];
     let versions = ['HTTP/0.9', 'HTTP/1.0', 'HTTP/1.1', 'HTTP/2.0'];
-    let uriPattern = new RegExp(/[\d\w.]+[\d\w.]*/, 'gm');
-    let messagePattern = new RegExp(/[\<\>\\\&\'\"]+/, 'gm'); // finds forbiden symbols -> hence use NOT for statements
+    // let uriPattern = new RegExp(/[\d\w.]+[\d\w.]*/, 'gm');9
+    let uriPattern = new RegExp(/^(\.*[a-zA-Z]*[0-9]*\.*\**)+$/, 'g');
+    // let messagePattern = new RegExp(/[\<\>\\\&\'\"]+/, 'gm'); // finds forbiden symbols -> hence use NOT for statements
+    let messagePattern = new RegExp(/^[^<>\\&'"]*$/, 'g');
 
     if (!input.method || !methods.includes(input.method)) {
         throw new Error(`Invalid request header: Invalid Method`);
@@ -13,7 +15,7 @@ function check(input) {
     if (!input.version || !versions.includes(input.version)) {
         throw new Error(`Invalid request header: Invalid Version`);
     }
-    if ((!input.message && input.message != "") || (messagePattern.test(input.message) && input.message != "")) {
+    if ((!input.message && input.message != "") || (!messagePattern.test(input.message) && input.message != "")) {
         throw new Error(`Invalid request header: Invalid Message`);
     }
     return input;
