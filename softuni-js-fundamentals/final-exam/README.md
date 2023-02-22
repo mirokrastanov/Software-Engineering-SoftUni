@@ -1,7 +1,7 @@
 # <p align="center"><a href="https://softuni.bg/trainings/3839/programming-fundamentals-with-javascript-september-2022"> Programming Fundamentals with JavaScript - September 2022 </a></p>
   
 <a href="https://softuni.bg/">
-<img src="https://camo.githubusercontent.com/faa79249ae3db9bbf97c786a08b2edbe1524a4a2f0ecd7db594efc88e6839d25/68747470733a2f2f676f6f2e676c2f4b596d30547a" alt="Trulli" width="1218" height="160">
+<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="Trulli" width="1218" height="160">
 </a>
   
 # Final Exam - December 4, 2022
