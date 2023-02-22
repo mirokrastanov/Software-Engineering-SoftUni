@@ -26,7 +26,7 @@
 </ul>
 
 <hr />
-<h3> Problem 3* - Unit Testing (with Mocha & Chai) </h3>
+<h3> Problem 3 - Unit Testing (with Mocha & Chai) </h3>
 <ul>
 <li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-advanced/final-exam/00-problem-descriptions/03.%20Find%20Apartment_Problem-Description.docx">Problem Description</a> <i>docx</i></li>
 <li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced/final-exam/03-find-apartment">Problem Solution</a> <i>(submitted)</i></li>
