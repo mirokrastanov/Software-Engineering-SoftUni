@@ -49,8 +49,8 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr> <!-- add here -->
-  <td> <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">JS Advanced (upcoming)</a> </td>
-  <td> <a href=""> </a> </td>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced">JS Advanced</a> </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/160014/409ec459"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr> <!-- add here -->
   <td> <a href="https://softuni.bg/trainings/3962/js-applications-february-2023">JS Applications (upcoming)</a> </td>
