@@ -38,10 +38,10 @@
 - Projects & Workshop files + Demos/Previews where applicable
 - GPA & Certificate information
 
-### FINAL GPA:
-- (TBA, course in progress...)
+### FINAL GPA: 6.00/6.00 
+- Final Exam: <a href="https://i.imgur.com/csPYCZi.png">300/300 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced/final-exam">Here</a></i>
 
 
-### Link to <a href="#">Certificate (TBA, course in progress...)</a>
+### Link to <a href="https://softuni.bg/Certificates/Details/160014/409ec459">Certificate</a>
 ### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
 
