@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Prototype';
+}
+
+html {
+    background-color: antiquewhite;
+}
+
+#board {
+    width: fit-content;
+    display: grid;
+    grid-template-rows: 195px auto;
+    grid-template-columns: repeat(1, 630px);
+    grid-template-areas:
+        'top'
+        'bottom';
+    row-gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background: rgb(0, 31, 36);
+    background: linear-gradient(90deg, rgba(0, 31, 36, 1) 0%, rgba(29, 114, 201, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+#controls {
+    width: 670px;
+    background: rgb(0, 31, 36);
+    background: linear-gradient(90deg, rgba(0, 31, 36, 1) 0%, rgba(29, 114, 201, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+#top-board {
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 20px auto;
+}
+
+#stock {
+    width: 167px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#stock .card:not(.top) {
+    height: 3px;
+}
+
+#pile .card:not(.top) {
+    height: 20px;
+}
+
+#foundation {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#foundation .card:not(:last-child) {
+    position: relative;
+    z-index: 1;
+    height: 5px;
+}
+
+#foundation .card:last-child {
+    position: relative;
+    z-index: 2;
+}
+
+#pile {
+    grid-area: bottom;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#new-game,
+#new-tab {
+    padding: 4px 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: antiquewhite;
+    transition: all ease 0.2s;
+}
+
+#new-tab {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#new-game:hover,
+#new-tab:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    background-color: rgb(255, 200, 129);
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.deck {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(189, 242, 252);
+    display: inline-block;
+    min-width: 80px;
+    min-height: 120px;
+    padding: 5px;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 165px; */
+    z-index: 1;
+}
+
+#top-board:has(.deck) {
+    height: 175px;
+}
+
+#pile .deck,
+#stock .deck,
+#foundation .deck {
+    min-height: 120px;
+    height: fit-content;
+}
+
+#pile .deck .card:last-child,
+#stock .deck .card:last-child,
+#foundation .deck .card:last-child {
+    height: 90px;
+}
+
+.card {
+    width: 65px;
+    height: 20px;
+    max-height: 90px;
+    font-size: 16px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: none;
+    background-color: antiquewhite;
+    padding: 1px 5px;
+    margin: auto;
+    user-select: none;
+}
+
+/* .card:has(.back) {
+    height: 90px;
+} */
+
+.back {
+    display: block;
+    height: 90%;
+    margin-top: 4px;
+    background-image: url('/images/card-background-4.jpg');
+    /* background: rgb(131, 58, 180); */
+    /* background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); */
+    border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.back.top {
+    border-radius: 5px;
+    height: 90%;
+    border: 1px solid black;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.card.top {
+    position: relative;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+#stock article:nth-of-type(2) .card:not(.top) {
+    position: relative;
+    z-index: 1;
+}
+
+.active {
+    transition: all ease-in 0.2s;
+}
+
+.active:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 200, 129);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.you-won {
+    font-size: 80px;
+    color: antiquewhite;
+    letter-spacing: 0.6rem;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    animation: drop 3s linear forwards;
+    margin: auto;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    15% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    19% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+
+    22% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+
+    27% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    34% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 5px rgba(0, 0, 0, 0.75);
+    }
+
+    38% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 5px rgba(0, 0, 0, 1);
+    }
+
+    42% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 0px rgba(0, 0, 0, 1);
+    }
+
+    46% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 0px -5px rgba(0, 0, 0, 1);
+        color: yellow;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: -5px -5px rgba(0, 0, 0, 1);
+        color: rgb(30, 255, 0);
+    }
+
+    54% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: -5px 0px rgba(0, 0, 0, 1);
+        color: rgb(0, 255, 234);
+    }
+
+    58% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 0 5px rgba(0, 0, 0, 1);
+        color: rgb(0, 60, 255);
+    }
+
+    62% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 5px rgba(0, 0, 0, 1);
+        color: rgb(68, 0, 255);
+    }
+
+    66% {
+        transform: translateY(0px);
+        opacity: 1;
+        text-shadow: 5px 5px rgba(0, 0, 0, 1);
+        color: rgb(0, 60, 255);
+    }
+
+    70% {
+        transform: translateY(0px);
+        transform: scale(1.05);
+        opacity: 1;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+        color: rgb(0, 255, 234);
+    }
+
+    80% {
+        transform: translateY(0px);
+        transform: scale(1.1);
+        opacity: 1;
+        text-shadow: 0px 0px rgba(0, 0, 0, 0.5);
+        color: rgb(123, 255, 0);
+    }
+
+    90% {
+        transform: translateY(0px);
+        transform: scale(1.15);
+        opacity: 1;
+        text-shadow: -2px -2px rgba(0, 0, 0, 0.25);
+        color: rgb(229, 255, 0);
+    }
+
+    100% {
+        transform: translateY(0px);
+        transform: scale(1.2);
+        opacity: 1;
+        text-shadow: 0px 0px rgba(0, 0, 0, 0);
+        background: -webkit-linear-gradient(#ff1e00, #eeff00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 1rem;
+        filter: drop-shadow(2px 7px #000000);
+    }
+}
+
+
+#stock-counter {
+    position: absolute;
+    left: 27px;
+    top: -27px;
+    font-size: 16px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    padding: 0px 5px;
+    border: 2px solid black;
+}
+
+#waste-counter {
+    position: absolute;
+    top: -27px;
+    right: 27px;
+    font-size: 16px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    padding: 0px 5px;
+    border: 2px solid black;
+}
+
+#foundation .deck:nth-of-type(1) {
+    background: url('./images/clubs-icon.png') center no-repeat, rgb(189, 242, 252);
+}
+
+#foundation .deck:nth-of-type(2) {
+    background: url('./images/diamonds-icon.png') center no-repeat, rgb(189, 242, 252);
+}
+
+#foundation .deck:nth-of-type(3) {
+    background: url('./images/hearts-icon.png') center no-repeat, rgb(189, 242, 252);
+}
+
+#foundation .deck:nth-of-type(4) {
+    background: url('./images/spades-icon.png') center no-repeat, rgb(189, 242, 252);
+}
+
+#stock .deck:nth-of-type(1) {
+    background: url('./images/reload.png') center no-repeat, rgb(189, 242, 252);
+}
