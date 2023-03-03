@@ -33,6 +33,11 @@ main:after {
   clear: both;
 }
 
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+
 input[type="button"],
 button {
   padding: 0.3rem 0.5rem;
@@ -48,8 +53,8 @@ button {
 .profile {
   border: 3px solid black;
   display: inline-block;
-  margin-left: 11.7%;
-  width: 13%;
+  margin-left: 2%;
+  width: 25%;
   vertical-align: top;
   margin-top: 15px;
 }
