@@ -43,9 +43,9 @@
 }
 
 .new-topic-content textarea {
-    width: 100%;
+    width: 95%;
     padding: 0.5em;
-    margin: 0;
+    margin: 5px auto;
 }
 
 .new-topic-content label {
@@ -87,4 +87,8 @@ p.error {
 
 .input-error {
     border-left-color: red;
+}
+
+#user-pview {
+    justify-content: center;
 }

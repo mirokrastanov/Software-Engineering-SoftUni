@@ -1,3 +1,4 @@
+import { loadCommentMenu } from "./comment.js";
 import { elements } from "./elements.js";
 
 export function clearTopic(e) {
@@ -66,6 +67,7 @@ export async function loadTopics() {
         }
         let data = await res.json();
         elements.topicCtr.replaceChildren();
+        document.querySelectorAll('.comment').forEach(x => x.remove());
         Object.values(data).forEach(x => {
             createTopicElement(x);
         });
@@ -97,6 +99,7 @@ export function createTopicElement(data) {
     elements.topicCtr.appendChild(topic);
     topic.querySelector('.topic-name a h2')
         .addEventListener('click', (e) => {
+            e.preventDefault();
             let id = e.target.dataset.id;
             openTopic(id);
         });
@@ -129,11 +132,7 @@ export async function openTopic(id) {
             throw error;
         }
         let data = await res.json();
-        console.log(data);
-
-        // build current post's View Screen + comments after
-        createTopicView(data._id);
-
+        createTopicView(data);
     } catch (error) {
         console.log(error.message);
     }
@@ -160,8 +159,9 @@ export async function deleteTopic(id) {
     }
 }
 
-export function createTopicView(id) {
-
+export function createTopicView(data) {
+    console.log(data);
+    loadCommentMenu(data);
 
 
     // at the end - attach post comments

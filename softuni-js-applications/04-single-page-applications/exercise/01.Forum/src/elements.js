@@ -7,5 +7,6 @@ export const elements = {
     postTextEl: document.querySelector('#postText'),
     topicCtr: document.querySelector('.topic-container'),
     homeForm: document.querySelector('.new-topic-border'),
+    mainEl: document.querySelector('main'),
     
 };
