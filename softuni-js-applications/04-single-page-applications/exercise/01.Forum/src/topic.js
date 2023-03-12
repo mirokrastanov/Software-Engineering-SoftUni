@@ -43,7 +43,7 @@ export async function postTopic(e) {
         elements.userEl.value = '';
         elements.postTextEl.value = '';
         let data = await res.json();
-        console.log(data);
+        loadTopics();
     } catch (error) {
         console.log(error.message);
     }
@@ -65,9 +65,9 @@ export async function loadTopics() {
             throw error;
         }
         let data = await res.json();
-        console.log(data);
+        elements.topicCtr.replaceChildren();
         Object.values(data).forEach(x => {
-            console.log(x);
+            createTopicElement(x);
         });
     } catch (error) {
         console.log(error.message);
@@ -76,6 +76,95 @@ export async function loadTopics() {
 
 
 export function createTopicElement(data) {
-
-
+    let topic = document.createElement('div');
+    topic.classList.add('topic-name-wrapper');
+    topic.innerHTML = `
+    <div class="topic-name">
+        <a href="javascript:void(0)" class="normal">
+            <h2 data-id="${data._id}">${data.title}</h2>
+        </a>
+        <div class="columns">
+            <div>
+                <p>Date: <time>${data.date}</time></p>
+                <div class="nick-name">
+                    <p>Username: <span>${data.username}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button data-id="${data._id}">DELETE</button>
+    `;
+    elements.topicCtr.appendChild(topic);
+    topic.querySelector('.topic-name a h2')
+        .addEventListener('click', (e) => {
+            let id = e.target.dataset.id;
+            openTopic(id);
+        });
+    topic.querySelector('button').addEventListener('click', (e) => {
+        e.preventDefault();
+        let id = e.target.dataset.id;
+        deleteTopic(id);
+        loadTopics();
+    });
 }
+
+
+
+export async function openTopic(id) {
+    elements.homeForm.style.display = 'none';
+    elements.topicCtr.querySelectorAll('.topic-name-wrapper')
+        .forEach(x => x.style.display = 'none');
+
+    let url = `http://localhost:3030/jsonstore/collections/myboard/posts/${id}`;
+    try {
+        let options = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        };
+        let res = await fetch(url, options);
+        if (!res.ok) {
+            let error = await res.json();
+            throw error;
+        }
+        let data = await res.json();
+        console.log(data);
+
+        // build current post's View Screen + comments after
+        createTopicView(data._id);
+
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+export async function deleteTopic(id) {
+    let url = `http://localhost:3030/jsonstore/collections/myboard/posts/${id}`;
+    try {
+        let options = {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        };
+        let res = await fetch(url, options);
+        if (!res.ok) {
+            let error = await res.json();
+            throw error;
+        }
+        let data = await res.json();
+        loadTopics();
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+export function createTopicView(id) {
+
+
+
+    // at the end - attach post comments
+    // also - attach post comment div
+}
+
