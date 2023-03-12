@@ -1,6 +1,8 @@
 import { elements } from "./elements.js";
 
 export function loadCommentMenu(data) {
+    elements.mainEl.querySelectorAll('.comment')
+        .forEach(x => x.remove());
     let postCtr = document.createElement('div');
     postCtr.setAttribute('class', 'comment');
 
@@ -13,7 +15,9 @@ export function loadCommentMenu(data) {
     <p class="post-content">${data.post}</p>
     `;
 
-    // get comments and append in the middle
+    let commentsSection = document.createElement('div');
+    commentsSection.setAttribute('id', 'user-comment');
+    loadPostComments(data._id);
 
     let commentForm = document.createElement('form');
     commentForm.innerHTML = `
@@ -50,6 +54,7 @@ export function loadCommentMenu(data) {
             }
         });
     postCtr.appendChild(post);
+    postCtr.appendChild(commentsSection);
     postCtr.appendChild(commentForm);
     elements.mainEl.appendChild(postCtr);
 }
@@ -76,7 +81,7 @@ export async function postComment(data) {
             throw error;
         }
         let data = await res.json();
-        console.log(data);
+        loadPostComments(data.postID);
     } catch (error) {
         console.log(error.message);
     }
@@ -84,7 +89,34 @@ export async function postComment(data) {
 
 
 
-export async function loadPostComments(id) {
+export async function loadPostComments(postID) {
+    let url = 'http://localhost:3030/jsonstore/collections/myboard/comments';
+    let options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    };
+    try {
+        let res = await fetch(url, options);
+        if (!res.ok) {
+            let error = await res.json();
+            throw error;
+        }
+        let data = await res.json();
+        document.querySelector('#user-comment').replaceChildren();
+        let thisPostComments = [];
+        Object.values(data).forEach(x => {
+            if (x.postID == postID) {
+                thisPostComments.push(x);
+            }
+        });
+        thisPostComments.forEach(x => {
+            buildCommentElement(x);
+        });
+    } catch (error) {
+        console.log(error.message);
+    }
 
 
     // pull all comments from the server
@@ -95,9 +127,16 @@ export async function loadPostComments(id) {
 
 export function buildCommentElement(data) {
     let comment = document.createElement('div');
-    comment.setAttribute('id', 'user-comment');
-    // inner html the rest
-    // return element 
-
+    comment.classList.add('topic-name-wrapper');
+    comment.innerHTML = `
+    <div class="topic-name">
+        <p><strong>${data.username}</strong> commented on <time>${data.date}</time></p>
+        <div class="post-content">
+            <p>${data.comment}</p>
+        </div>
+    </div>
+    `;
+    document.querySelector('#user-comment')
+        .appendChild(comment);
 }
 

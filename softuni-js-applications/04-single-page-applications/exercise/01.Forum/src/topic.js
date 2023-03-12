@@ -160,7 +160,7 @@ export async function deleteTopic(id) {
 }
 
 export function createTopicView(data) {
-    console.log(data);
+    // console.log(data);
     loadCommentMenu(data);
 
 
