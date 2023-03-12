@@ -19,6 +19,14 @@ export function loadCommentMenu(data) {
     commentsSection.setAttribute('id', 'user-comment');
     loadPostComments(data._id);
 
+    let commWrapper = document.createElement('div');
+    commWrapper.setAttribute('id', 'comm-wrap');
+
+    let currUser = document.createElement('p');
+    currUser.innerHTML = `
+    <span>currentUser</span> comment:
+    `;
+
     let commentForm = document.createElement('form');
     commentForm.innerHTML = `
     <div class="new-topic-content">
@@ -55,8 +63,10 @@ export function loadCommentMenu(data) {
         });
     postCtr.appendChild(post);
     postCtr.appendChild(commentsSection);
-    postCtr.appendChild(commentForm);
+    commWrapper.appendChild(currUser);
+    commWrapper.appendChild(commentForm);
     elements.mainEl.appendChild(postCtr);
+    elements.mainEl.appendChild(commWrapper);
 }
 
 

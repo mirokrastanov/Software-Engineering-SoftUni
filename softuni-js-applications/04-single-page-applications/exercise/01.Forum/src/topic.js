@@ -3,8 +3,10 @@ import { elements } from "./elements.js";
 
 export function clearTopic(e) {
     e.preventDefault();
-
-
+    let inputs = [elements.titleEl, elements.userEl, elements.postTextEl];
+    inputs.forEach(x => {
+        x.value = '';
+    });
 }
 
 
@@ -40,9 +42,7 @@ export async function postTopic(e) {
             let error = await res.json();
             throw error;
         }
-        elements.titleEl.value = '';
-        elements.userEl.value = '';
-        elements.postTextEl.value = '';
+        clearTopic(e);
         let data = await res.json();
         loadTopics();
     } catch (error) {
