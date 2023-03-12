@@ -18,6 +18,10 @@ export async function postTopic(e) {
         if (inputs.some(x => x.trim() == '')) {
             throw new Error('All fields are required!')
         }
+        let postTime = (new Date()).toISOString().split('');
+        postTime.splice(10, 1, ' ');
+        postTime.splice(19, 5);
+        postTime = postTime.join('');
         let options = {
             method: 'POST',
             headers: {
@@ -27,6 +31,7 @@ export async function postTopic(e) {
                 title: inputs[0],
                 username: inputs[1],
                 post: inputs[2],
+                date: postTime,
             }),
         };
         let res = await fetch(url, options);
@@ -61,6 +66,9 @@ export async function loadTopics() {
         }
         let data = await res.json();
         console.log(data);
+        Object.values(data).forEach(x => {
+            console.log(x);
+        });
     } catch (error) {
         console.log(error.message);
     }
