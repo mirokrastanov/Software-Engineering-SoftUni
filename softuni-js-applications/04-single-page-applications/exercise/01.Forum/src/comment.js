@@ -28,17 +28,59 @@ export function loadCommentMenu(data) {
         <button>Post</button>
     </div>`;
     commentForm.querySelector('.new-topic-buttons button')
-    .addEventListener('click', (e) => {
-        e.preventDefault();
-        
-    });
+        .addEventListener('click', (e) => {
+            e.preventDefault();
+            let parentForm = e.target.parentElement.parentElement;
+            let commentText = parentForm.querySelector('#postText');
+            let username = parentForm.querySelector('#username');
+            try {
+                if (commentText.value.trim() == '' || username.value.trim() == '') {
+                    throw new Error('All fields are required!');
+                }
+                let commentData = {
+                    username: username.value.trim(),
+                    comment: commentText.value.trim(),
+                    postID: data._id,
+                }
+                commentText.value = '';
+                username.value = '';
+                postComment(commentData);
+            } catch (error) {
+                console.log(error.message);
+            }
+        });
     postCtr.appendChild(post);
     postCtr.appendChild(commentForm);
     elements.mainEl.appendChild(postCtr);
 }
 
 
-
+export async function postComment(data) {
+    let url = 'http://localhost:3030/jsonstore/collections/myboard/comments';
+    let options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            username: data.username,
+            comment: data.comment,
+            postID: data.postID,
+            date: (new Date()).toLocaleString(),
+        })
+    };
+    try {
+        let res = await fetch(url, options);
+        if (!res.ok) {
+            let error = await res.json();
+            throw error;
+        }
+        let data = await res.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error.message);
+    }
+}
 
 
 
