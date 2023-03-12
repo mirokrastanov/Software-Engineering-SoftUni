@@ -3,7 +3,7 @@ import { loadTopics } from "./topic.js";
 
 export function loadHome(e) {
     e.preventDefault();
-    document.querySelector('.new-topic-border').style.display = 'block';
+    elements.homeForm.style.display = 'block';
     loadTopics();
 
 }
