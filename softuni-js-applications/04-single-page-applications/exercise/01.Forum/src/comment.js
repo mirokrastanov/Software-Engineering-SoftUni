@@ -3,6 +3,8 @@ import { elements } from "./elements.js";
 export function loadCommentMenu(data) {
     elements.mainEl.querySelectorAll('.comment')
         .forEach(x => x.remove());
+    document.querySelectorAll('#comm-wrap')
+        .forEach(x => x.remove());
     let postCtr = document.createElement('div');
     postCtr.setAttribute('class', 'comment');
 
