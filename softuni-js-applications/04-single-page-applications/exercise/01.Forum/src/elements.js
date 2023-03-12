@@ -5,5 +5,7 @@ export const elements = {
     titleEl: document.querySelector('#topicName'),
     userEl: document.querySelector('#username'),
     postTextEl: document.querySelector('#postText'),
-
+    topicCtr: document.querySelector('.topic-container'),
+    homeForm: document.querySelector('.new-topic-border'),
+    
 };
