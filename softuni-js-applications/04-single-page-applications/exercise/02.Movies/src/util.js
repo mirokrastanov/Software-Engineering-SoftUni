@@ -105,5 +105,5 @@ export {
     onAddMovieClick,
     updateNav,
     isLogged,
-    
+
 }

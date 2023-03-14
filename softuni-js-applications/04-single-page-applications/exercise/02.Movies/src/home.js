@@ -1,5 +1,5 @@
 import { elements } from './app.js';
-import { request, updateNav } from './util.js';
+import { isLogged, request, updateNav } from './util.js';
 
 
 function hideSections() {
@@ -11,6 +11,11 @@ function loadHome() {
     elements.home.style.display = 'block';
     loadMovies();
     updateNav();
+    if (isLogged()) {
+        elements.addMovieBtn.style.display = 'inline-block';
+    } else {
+        elements.addMovieBtn.style.display = 'none';
+    }
 }
 
 async function loadMovies() {
