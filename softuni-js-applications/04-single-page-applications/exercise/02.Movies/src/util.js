@@ -50,6 +50,9 @@ function onAddMovieClick(e) {
 
 }
 
+function updateNav() {
+    
+}
 
 
 export {

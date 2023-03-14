@@ -31,6 +31,9 @@ const elements = {
 
 };
 
+let test = localStorage.getItem('userData');
+console.log(JSON.parse(test));
+
 loadHome();
 elements.navigation.addEventListener('click', (e) => {
     onNavigationClick(e);

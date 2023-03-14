@@ -39,7 +39,7 @@ async function onRegisterFormClick(e, form) {
         let url = elements.usersURL + '/register';
         let data = await request(url, options);
         if (!data) throw new Error('Bad Request');
-        localStorage.setItem('userData', data);
+        localStorage.setItem('userData', JSON.stringify(data));
         form.reset();
         loadHome();
     } catch (error) {
