@@ -25,7 +25,7 @@ function onNavigationClick(e) {
         loadHome();
     } else {
         if (e.target.textContent == 'Logout') {
-            console.log('logout');
+            onLogout();
         } else if (e.target.textContent == 'Login') {
             loadLogin();
         } else if (e.target.textContent == 'Register') {
@@ -49,6 +49,25 @@ function onAddMovieClick(e) {
 
 
 
+}
+
+function onLogout() {
+    let userData = JSON.parse(localStorage.getItem('userData'));
+    if (userData == null) {
+        loadHome();
+        return;
+    }
+    let url = elements.usersURL + '/logout';
+    let options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Authorization': userData.accessToken,
+        },
+    };
+    let res = request(url, options);
+    localStorage.clear();
+    loadHome();
 }
 
 function updateNav() {

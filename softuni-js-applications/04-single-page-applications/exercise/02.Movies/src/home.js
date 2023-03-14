@@ -10,6 +10,8 @@ function loadHome() {
     hideSections();
     elements.home.style.display = 'block';
     loadMovies();
+    let userData = JSON.parse(localStorage.getItem('userData'));
+    console.log(userData);
 }
 
 async function loadMovies() {
