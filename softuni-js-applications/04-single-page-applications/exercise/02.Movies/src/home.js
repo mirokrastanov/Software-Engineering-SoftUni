@@ -1,6 +1,6 @@
 import { elements } from './app.js';
-import { loadMovieSection } from './movie.js';
 import { request } from './util.js';
+
 
 function hideSections() {
     [...elements.sections].forEach(x => x.style.display = 'none');
@@ -10,21 +10,6 @@ function loadHome() {
     hideSections();
     elements.home.style.display = 'block';
     loadMovies();
-
-    elements.homeMovies.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (e.target.tagName == 'BUTTON') {
-            let cardParent = e.target.parentElement.parentElement;
-            let id = cardParent.dataset.id;
-            hideSections();
-            loadMovieSection(id);
-
-        }
-
-    });
-
-
-
 }
 
 async function loadMovies() {

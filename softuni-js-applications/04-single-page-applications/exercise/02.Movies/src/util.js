@@ -1,5 +1,7 @@
 import { elements } from './app.js';
-import { loadHome } from './home.js';
+import { hideSections, loadHome } from './home.js';
+import { loadMovieSection } from './movie.js';
+
 
 async function request(url, options) {
     try {
@@ -29,8 +31,19 @@ function onNavigationClick(e) {
     }
 }
 
+function onDetailsClick(e) {
+    e.preventDefault();
+    if (e.target.tagName == 'BUTTON') {
+        let cardParent = e.target.parentElement.parentElement;
+        let id = cardParent.dataset.id;
+        hideSections();
+        loadMovieSection(id);
+    }
+}
+
 export {
     request,
     onNavigationClick,
+    onDetailsClick,
 
 }

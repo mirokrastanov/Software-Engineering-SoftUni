@@ -10,7 +10,6 @@ async function loadMovieSection(id) {
         },
     };
     let movie = await request(url, options);
-    console.log(movie);
     elements.movie.style.display = 'block';
     let movieElement = createMovieExample(movie);
     elements.movie.replaceChildren(movieElement);

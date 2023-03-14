@@ -13,7 +13,7 @@
 // [] delete
 // [] guest
 import { loadHome } from './home.js';
-import { onNavigationClick } from './util.js';
+import { onDetailsClick, onNavigationClick } from './util.js';
 
 const elements = {
     moviesURL: 'http://localhost:3030/data/movies',
@@ -28,8 +28,11 @@ const elements = {
 loadHome();
 elements.navigation.addEventListener('click', (e) => {
     onNavigationClick(e);
-
 });
+elements.homeMovies.addEventListener('click', (e) => {
+    onDetailsClick(e);
+});
+
 
 
 
