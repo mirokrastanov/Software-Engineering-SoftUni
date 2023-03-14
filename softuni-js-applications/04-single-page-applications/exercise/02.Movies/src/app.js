@@ -13,9 +13,11 @@
 // [] delete
 // [] guest
 import { loadHome } from './home.js';
+import { onNavigationClick } from './util.js';
 
 const elements = {
     moviesURL: 'http://localhost:3030/data/movies',
+    navigation: document.querySelector('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark'),
     sections: document.querySelectorAll('.view-section'),
     home: document.querySelector('#home-page'),
     homeMovies: document.querySelector('#home-page #movies-list'),
@@ -24,6 +26,10 @@ const elements = {
 };
 
 loadHome();
+elements.navigation.addEventListener('click', (e) => {
+    onNavigationClick(e);
+
+});
 
 
 
