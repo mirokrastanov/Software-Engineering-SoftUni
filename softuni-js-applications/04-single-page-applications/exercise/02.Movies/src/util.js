@@ -1,6 +1,7 @@
 import { elements } from './app.js';
 import { hideSections, loadHome } from './home.js';
 import { loadMovieSection } from './movie.js';
+import { loadRegister } from './register.js';
 
 
 async function request(url, options) {
@@ -26,7 +27,7 @@ function onNavigationClick(e) {
         } else if (e.target.textContent == 'Login') {
             console.log('login');
         } else if (e.target.textContent == 'Register') {
-            console.log('register');
+            loadRegister();
         }
     }
 }
@@ -41,9 +42,19 @@ function onDetailsClick(e) {
     }
 }
 
+function onAddMovieClick(e) {
+    e.preventDefault();
+
+
+
+}
+
+
+
 export {
     request,
     onNavigationClick,
     onDetailsClick,
+    onAddMovieClick,
 
 }
