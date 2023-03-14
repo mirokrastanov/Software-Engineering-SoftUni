@@ -1,5 +1,6 @@
 import { elements } from './app.js';
 import { hideSections, loadHome } from './home.js';
+import { loadLogin } from './login.js';
 import { loadMovieSection } from './movie.js';
 import { loadRegister } from './register.js';
 
@@ -25,7 +26,7 @@ function onNavigationClick(e) {
         if (e.target.textContent == 'Logout') {
             console.log('logout');
         } else if (e.target.textContent == 'Login') {
-            console.log('login');
+            loadLogin();
         } else if (e.target.textContent == 'Register') {
             loadRegister();
         }
