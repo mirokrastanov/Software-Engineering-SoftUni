@@ -1,5 +1,5 @@
 import { elements } from './app.js';
-import { request } from './util.js';
+import { request, updateNav } from './util.js';
 
 
 function hideSections() {
@@ -10,8 +10,7 @@ function loadHome() {
     hideSections();
     elements.home.style.display = 'block';
     loadMovies();
-    let userData = JSON.parse(localStorage.getItem('userData'));
-    console.log(userData);
+    updateNav();
 }
 
 async function loadMovies() {

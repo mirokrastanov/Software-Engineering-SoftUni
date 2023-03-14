@@ -1,6 +1,6 @@
 import { elements } from "./app.js";
 import { hideSections } from "./home.js";
-import { request } from "./util.js";
+import { request, updateNav } from "./util.js";
 import { loadHome } from "./home.js";
 
 function loadLogin() {

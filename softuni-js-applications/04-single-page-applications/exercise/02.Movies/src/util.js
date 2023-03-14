@@ -47,7 +47,7 @@ function onDetailsClick(e) {
 function onAddMovieClick(e) {
     e.preventDefault();
 
-
+    // TO DO 
 
 }
 
@@ -71,7 +71,30 @@ function onLogout() {
 }
 
 function updateNav() {
-    
+    let userData = JSON.parse(localStorage.getItem('userData'));
+    let navElements = {
+        email: elements.navigation.querySelector('#welcome-msg'),
+        logout: elements.navigation.querySelector('ul li:nth-of-type(2)'),
+        login: elements.navigation.querySelector('ul li:nth-of-type(3)'),
+        register: elements.navigation.querySelector('ul li:nth-of-type(4)'),
+    };
+    if (userData == null) {
+        navElements.email.textContent = 'Welcome, email';
+        navElements.logout.style.display = 'none';
+        navElements.login.style.display = 'block';
+        navElements.register.style.display = 'block';
+    } else {
+        navElements.email.textContent = 'Welcome, ' + userData.email;
+        navElements.logout.style.display = 'block';
+        navElements.login.style.display = 'none';
+        navElements.register.style.display = 'none';
+    }
+}
+
+function isLogged() {
+    let userData = JSON.parse(localStorage.getItem('userData'));
+    if (userData == null) return false;
+    return true;
 }
 
 
@@ -80,5 +103,7 @@ export {
     onNavigationClick,
     onDetailsClick,
     onAddMovieClick,
-
+    updateNav,
+    isLogged,
+    
 }
