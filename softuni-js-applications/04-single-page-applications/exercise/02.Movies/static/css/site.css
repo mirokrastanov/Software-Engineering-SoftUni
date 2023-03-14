@@ -89,3 +89,11 @@
 .navbar.navbar-expand-lg.navbar-dark.bg-dark ul {
     margin-right: 10px;
 }
+
+button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 32px 29px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: inset 0px 0px 32px 29px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px 0px 32px 29px rgba(0, 0, 0, 0.24);
+}
+
