@@ -8,13 +8,14 @@ import { loadRegister } from './register.js';
 async function request(url, options) {
     try {
         let res = await fetch(url, options);
-        let data = await res.json();
         if (!res.ok) {
-            return null;
+            let error = await res.json();
+            throw error;
         }
+        let data = await res.json();
         return data;
     } catch (error) {
-        return null;
+        return error.message;
     }
 }
 

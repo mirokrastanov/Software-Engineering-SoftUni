@@ -32,7 +32,10 @@ async function onLoginFormClick(e, form) {
         };
         let url = elements.usersURL + '/login';
         let data = await request(url, options);
-        if (!data) throw new Error('Bad Request');
+        if (typeof data != 'object') {
+            let error = { message: data };
+            throw error;
+        }
         localStorage.setItem('userData', JSON.stringify(data));
         form.reset();
         loadHome();
