@@ -1,4 +1,4 @@
-import { elements, routes } from './app.js';
+import { elements } from './app.js';
 
 function hideSections() {
     [...elements.sections].forEach(x => x.style.display = 'none');
