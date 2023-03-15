@@ -81,7 +81,7 @@ async function updateMovieBtns() {
         } else { // NOT Owner: like
             btns.delete.style.display = 'none';
             btns.edit.style.display = 'none';
-            if (hasCurrentUserLikedThisMovie(userData._id, movieData.id)) {
+            if (await hasCurrentUserLikedThisMovie(userData._id, movieData.id)) {
                 btns.like.style.display = 'none'; // hide like btn
             } else {
                 btns.like.style.display = 'inline-block'; // show it
@@ -115,17 +115,29 @@ async function getLikes(movieId) {
     };
     try {
         let res = await request(url, options);
-        console.log(await res);
+        return await res;
     } catch (error) {
-        console.log(error.message);
+        return null;
     }
-    return 3;
 }
 
 async function hasCurrentUserLikedThisMovie(userId, movieId) {
-    
-
-    
+    let url = elements.baseURL + `/data/likes?where=movieId%3D%22${movieId}%22%20and%20_ownerId%3D%22${userId}%22`;
+    let options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    };
+    try {
+        let res = await request(url, options);
+        if (res == 0) {
+            return false;
+        }
+        return true;
+    } catch (error) {
+        return null;
+    }
 }
 
 
