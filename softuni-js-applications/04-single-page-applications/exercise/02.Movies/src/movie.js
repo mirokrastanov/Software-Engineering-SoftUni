@@ -1,5 +1,5 @@
 import { elements } from "./app.js";
-import { loadEditMovie } from "./edit-movie.js";
+import { deleteMovie, loadEditMovie } from "./edit-movie.js";
 import { isLogged, request } from "./util.js";
 
 async function loadMovieSection(id) {
@@ -21,7 +21,7 @@ async function loadMovieSection(id) {
     });
 }
 
-function createMovieExample(movie) {  // TODO - add likes counter
+function createMovieExample(movie) { 
     let div = document.createElement('div');
     div.classList.add('container');
     div.dataset.ownerId = movie._ownerId;
@@ -111,7 +111,7 @@ async function btnsHandler(e) {
     };
     if (e.target.tagName == 'A') {
         if (e.target.textContent == 'Delete') {
-            // function for movie deletion
+            deleteMovie(movieData.id);
         } else if (e.target.textContent == 'Edit') {
             loadEditMovie(movieData);
         } else if (e.target.textContent == 'Like') {
