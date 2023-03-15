@@ -57,25 +57,23 @@ function updateMovieBtns() {
     // TODO - add a request to pull the likes from the server here
     // and use it below for the 2 conditions - logged in / not
     btns.indicator.style.display = 'inline-block';
-    if (!isLogged()) {
-        // guest , not logged in
+    if (!isLogged()) {  // guest , not logged in
         btns.delete.style.display = 'none';
         btns.edit.style.display = 'none';
         btns.like.style.display = 'none';
         // update indicator's textContent with # likes
-    } else {
-        // logged in
-        if (movieData.ownerId == userData._id) {
-            // is the owner and CAN - edit/delete
+    } else {  // logged in
+        if (movieData.ownerId == userData._id) { // Owner: CAN edit/delete
             btns.like.style.display = 'none';
-        } else {
-            // is NOT the owner - can only like
+            btns.delete.style.display = 'inline-block';
+            btns.edit.style.display = 'inline-block';
+        } else { // NOT Owner: CAN like
             btns.like.style.display = 'inline-block';
+            btns.delete.style.display = 'none';
+            btns.edit.style.display = 'none';
         }
-        // all can see the indicator - da go iznesa izvun vsekvi if-ove
-
     }
-    
+
 }
 
 
