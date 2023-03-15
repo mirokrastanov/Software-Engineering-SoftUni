@@ -6,11 +6,31 @@ import { loadHome } from "./home.js";
 function loadLogin() {
     hideSections();
     elements.login.style.display = 'block';
+    elements.login.replaceChildren(createLoginForm());
     let newForm = elements.login.querySelector('form');
     newForm.reset();
     newForm.addEventListener('submit', (e) => {
         onLoginFormClick(e, newForm);
     });
+}
+
+function createLoginForm() {
+    let form = document.createElement('form');
+    form.setAttribute('id', 'login-form');
+    form.classList.add('text-center', 'border', 'border-light', 'p-5');
+    form.setAttribute('method', '');
+    form.setAttribute('action', '');
+    form.innerHTML = `
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="" />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" class="form-control" placeholder="Password" name="password" value="" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>`;
+    return form;
 }
 
 async function onLoginFormClick(e, form) {
