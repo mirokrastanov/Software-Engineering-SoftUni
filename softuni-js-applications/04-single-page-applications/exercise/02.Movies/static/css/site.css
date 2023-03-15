@@ -51,6 +51,17 @@ body .container #home-page #movies-list .card {
     margin-right: 20px;
 }
 
+.btn-del-like {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-del-like:hover {
+    color: #fff;
+    background-color: #005dc0;
+}
+
 .badge {
     margin-left: 10px;
 }
