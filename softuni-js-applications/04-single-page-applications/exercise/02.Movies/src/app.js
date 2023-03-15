@@ -18,6 +18,7 @@ import {
 } from './util.js';
 
 const elements = {
+    baseURL: 'http://localhost:3030',
     moviesURL: 'http://localhost:3030/data/movies',
     usersURL: 'http://localhost:3030/users',
     navigation: document.querySelector('nav.navbar.navbar-expand-lg.navbar-dark.bg-dark'),
@@ -29,7 +30,8 @@ const elements = {
     login: document.querySelector('#form-login'),
     register: document.querySelector('#form-sign-up'),
     addMovie: document.querySelector('#add-movie'),
-    
+    editMovie: document.querySelector('#edit-movie'),
+
 };
 
 loadHome();
