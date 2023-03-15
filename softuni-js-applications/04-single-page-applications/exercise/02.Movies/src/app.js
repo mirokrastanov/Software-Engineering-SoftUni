@@ -28,7 +28,8 @@ const elements = {
     addMovieBtn: document.querySelector('#add-movie-button a'),
     login: document.querySelector('#form-login'),
     register: document.querySelector('#form-sign-up'),
-
+    addMovie: document.querySelector('#add-movie'),
+    
 };
 
 loadHome();

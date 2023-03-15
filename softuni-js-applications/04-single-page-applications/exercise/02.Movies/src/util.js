@@ -1,3 +1,4 @@
+import { loadAddMovie } from './add-movie.js';
 import { elements } from './app.js';
 import { hideSections, loadHome } from './home.js';
 import { loadLogin } from './login.js';
@@ -46,8 +47,14 @@ function onDetailsClick(e) {
 
 function onAddMovieClick(e) {
     e.preventDefault();
+    if (isLogged()) {
+        loadAddMovie();
+    } else {
+        console.log('You need to be logged in to add a movie.');
+        return;
+    }
+    
 
-    // TO DO 
 
 }
 
