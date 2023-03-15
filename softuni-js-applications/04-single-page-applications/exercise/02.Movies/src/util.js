@@ -53,9 +53,6 @@ function onAddMovieClick(e) {
         console.log('You need to be logged in to add a movie.');
         return;
     }
-    
-
-
 }
 
 function onLogout() {
