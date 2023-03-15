@@ -1,4 +1,5 @@
 import { elements } from "./app.js";
+import { loadEditMovie } from "./edit-movie.js";
 import { isLogged, request } from "./util.js";
 
 async function loadMovieSection(id) {
@@ -38,7 +39,7 @@ function createMovieExample(movie) {  // TODO - add likes counter
             <a class="btn btn-warning" href="javascript:void(0)">Edit</a>
             <a class="btn btn-primary" href="javascript:void(0)">Like</a>
             <a class="btn btn-del-like" href="javascript:void(0)">Remove Like</a>
-            <span class="enrolled-span">Liked ###</span>
+            <span class="enrolled-span">Liked 1</span>
         </div>
     </div>`;
     return div;
@@ -52,7 +53,7 @@ async function updateMovieBtns() {
         ownerId: elements.movie.querySelector('.container').dataset.ownerId,
         id: elements.movie.querySelector('.container').dataset.id,
     };
-    console.log(userData, movieData);
+    // console.log(userData, movieData);
     let btns = {
         delete: btnsCtr.querySelector('a.btn.btn-danger'),
         edit: btnsCtr.querySelector('a.btn.btn-warning'),
@@ -112,7 +113,7 @@ async function btnsHandler(e) {
         if (e.target.textContent == 'Delete') {
             // function for movie deletion
         } else if (e.target.textContent == 'Edit') {
-            // function for movie edit - from the edit-movie.js
+            loadEditMovie(movieData);
         } else if (e.target.textContent == 'Like') {
             let likeData = await addLike(userData, movieData.id);
             updateMovieBtns();
