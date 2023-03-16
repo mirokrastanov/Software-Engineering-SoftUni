@@ -11,7 +11,6 @@ body .container #home-page #movies-list {
 }
 
 .card {
-    max-width: 21%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,7 +42,7 @@ body .container #home-page #movies-list {
 }
 
 body .container #home-page #movies-list .card {
-    flex: 1 1 13%;
+    flex: 0 0 21%;
 }
 
 .btn-group {
