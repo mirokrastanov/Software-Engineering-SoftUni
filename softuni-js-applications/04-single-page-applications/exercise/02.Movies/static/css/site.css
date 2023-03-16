@@ -11,8 +11,7 @@ body .container #home-page #movies-list {
 }
 
 .card {
-    max-width: 13%;
-    min-width: 13%;
+    max-width: 21%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
