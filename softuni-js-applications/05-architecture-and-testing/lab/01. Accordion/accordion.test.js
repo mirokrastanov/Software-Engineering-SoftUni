@@ -17,7 +17,7 @@ describe('E2E tests', async function () {
 
     it('titles text', async () => {
         await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
-        const titles = await page.locator('div.head>span').allTextContents();
+        let titles = await page.locator('div.head>span').allTextContents();
         expect(titles).to.contains('Scalable Vector Graphics');
         expect(titles).to.contains('Open standard');
         expect(titles).to.contains('Unix');
@@ -27,10 +27,20 @@ describe('E2E tests', async function () {
     it('shows more text', async () => {
         await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
         await page.getByText('More').first().click();
-        const visible = await page.isVisible('div.extra');
+        let visible = await page.isVisible('div.extra');
         expect(visible).to.be.true;
-        const content = await page.locator('div.extra p').first().allTextContents();
+        let content = await page.locator('div.extra p').first().allTextContents();
         expect(content.length).to.be.greaterThan(0);
+    });
+
+    it('shows less text', async () => {
+        await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
+        await page.getByText('More').first().click();
+        let visible = await page.isVisible('div.extra');
+        expect(visible).to.be.true;
+        await page.getByText('Less').first().click();
+        visible = await page.isVisible('div.extra');
+        expect(visible).to.be.false;
     });
 });
 
