@@ -83,11 +83,12 @@ function updateNav() {
         register: elements.navigation.querySelector('ul li:nth-of-type(4)'),
     };
     if (userData == null) {
-        navElements.email.textContent = 'Welcome, email';
+        navElements.email.style.display = 'none';
         navElements.logout.style.display = 'none';
         navElements.login.style.display = 'block';
         navElements.register.style.display = 'block';
     } else {
+        navElements.email.style.display = 'block';
         navElements.email.textContent = 'Welcome, ' + userData.email;
         navElements.logout.style.display = 'block';
         navElements.login.style.display = 'none';
