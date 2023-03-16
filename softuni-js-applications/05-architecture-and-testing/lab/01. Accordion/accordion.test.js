@@ -15,13 +15,22 @@ describe('E2E tests', async function () {
     beforeEach(async () => { page = await browser.newPage(); });
     afterEach(async () => { await page.close(); });
 
-    it('works', async () => {
+    it('titles text', async () => {
         await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
         const titles = await page.locator('div.head>span').allTextContents();
         expect(titles).to.contains('Scalable Vector Graphics');
         expect(titles).to.contains('Open standard');
         expect(titles).to.contains('Unix');
         expect(titles).to.contains('ALGOL');
+    });
+
+    it('shows more text', async () => {
+        await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
+        await page.getByText('More').first().click();
+        const visible = await page.isVisible('div.extra');
+        expect(visible).to.be.true;
+        const content = await page.locator('div.extra p').first().allTextContents();
+        expect(content.length).to.be.greaterThan(0);
     });
 });
 
