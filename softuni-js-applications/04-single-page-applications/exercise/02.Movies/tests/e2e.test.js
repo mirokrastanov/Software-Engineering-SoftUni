@@ -2,6 +2,7 @@ const { chromium } = require('playwright-chromium');
 const { expect } = require('chai');
 
 const host = 'http://localhost:5500/softuni-js-applications/04-single-page-applications/exercise/02.Movies/index.html'; // Application host (NOT service host - that can be anything)
+// const host = 'https://test-repl-.mirokrastanov.repl.co/#';
 
 const interval = 300;
 const DEBUG = false;
@@ -93,9 +94,9 @@ describe('E2E tests', function () {
   this.timeout(DEBUG ? 120000 : 7000);
   before(
     async () =>
-      (browser = await chromium.launch(
-        DEBUG ? { headless: false, slowMo } : {}
-      ))
+    (browser = await chromium.launch(
+      DEBUG ? { headless: false, slowMo } : {}
+    ))
   );
   after(async () => await browser.close());
   beforeEach(async () => {
@@ -262,10 +263,12 @@ describe('E2E tests', function () {
       await page.click('nav >> text=Movies');
 
       await page.waitForSelector('#movie');
+      let test222 = `#movie > div div ul li:has-text("${data.title}") >> text=Details`;
       await page.click(
-        `#movie > div div ul li:has-text("${data.title}") >> text=Details`
+        test222
       );
-
+      // expect(await page.isVisible('#movie')).to.be.false;
+      // expect(await page.isVisible('#movie-example')).to.be.true;
       expect(await page.isVisible('text="Delete"')).to.be.false;
       expect(await page.isVisible('text="Edit"')).to.be.false;
     });
