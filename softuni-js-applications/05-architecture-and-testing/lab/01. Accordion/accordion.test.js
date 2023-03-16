@@ -1,7 +1,11 @@
 const { chromium } = require('playwright-chromium');
 const { expect, assert } = require('chai');
 
-let browser, page;
+// Declare reusable variables
+/** @type {Browser} */
+let browser;
+/** @type {Page} */
+let page;
 
 describe('E2E tests', async function () {
     this.timeout(10000);
@@ -13,8 +17,11 @@ describe('E2E tests', async function () {
 
     it('works', async () => {
         await page.goto('http://localhost:5500/softuni-js-applications/05-architecture-and-testing/lab/01.%20Accordion/index.html');
-        await page.screenshot({ path: 'test.png' });
-        expect(1).to.equal(1);
+        const titles = await page.locator('div.head>span').allTextContents();
+        expect(titles).to.contains('Scalable Vector Graphics');
+        expect(titles).to.contains('Open standard');
+        expect(titles).to.contains('Unix');
+        expect(titles).to.contains('ALGOL');
     });
 });
 
