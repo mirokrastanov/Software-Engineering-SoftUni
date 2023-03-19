@@ -1,7 +1,7 @@
 const { chromium } = require('playwright-chromium');
 const { expect } = require('chai');
 
-const host = 'http://localhost:3000'; // use 5500/...
+const host = 'http://127.0.0.1:5500/softuni-js-applications/05-architecture-and-testing/exercise/03.SoftTerest';
 const DEBUG = false;
 
 const mockData = require('./mock-data.json');
