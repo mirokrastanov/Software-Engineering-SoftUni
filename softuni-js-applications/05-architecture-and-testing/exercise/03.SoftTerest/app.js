@@ -4,4 +4,4 @@
 // router - paths for all views
 // api - methods, async functions
 
-
+document.querySelector("#defSection").remove();
