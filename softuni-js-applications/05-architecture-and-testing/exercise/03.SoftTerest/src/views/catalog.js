@@ -1,7 +1,7 @@
 import { getAllIdeas } from "../api/data.js";
 
 const section = document.querySelector('#dashboard-holder');
-
+section.addEventListener('click', onDetails);
 
 
 let ctx = null;
@@ -28,4 +28,12 @@ function createIdea(idea) {
     <img class="card-image" src="${idea.img}" alt="Card image cap">
     <a data-id="${idea._id}" class="btn" href="">Details</a>`;
     return div;
+}
+
+function onDetails(e) {
+    e.preventDefault();
+    if (e.target.tagName == 'A') {
+        let id = e.target.dataset.id;
+        ctx.goTo(`/details`, id);
+    }
 }
