@@ -20,6 +20,7 @@ async function onSubmit(e) {
     } else {
         await register(email, password);
         console.log('Registration successful');
+        form.reset();
         ctx.updateNav();
         ctx.goTo('/catalog');
     }

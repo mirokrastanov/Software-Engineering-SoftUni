@@ -16,6 +16,7 @@ async function onSubmit(e) {
     const { email, password } = Object.fromEntries(formData);
     await login(email, password);
     console.log('Login successful');
+    form.reset();
     ctx.updateNav();
     ctx.goTo('/catalog');
 }
