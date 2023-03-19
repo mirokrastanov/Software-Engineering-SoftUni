@@ -12,7 +12,7 @@ export async function register(email, password) {
 }
 
 export async function login(email, password) {
-    const user = await api.post(nav.register, { email, password });
+    const user = await api.post(nav.user, { email, password });
     sessionStorage.setItem('user', JSON.stringify(user));
 }
 

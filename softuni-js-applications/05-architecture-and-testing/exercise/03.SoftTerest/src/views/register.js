@@ -1,7 +1,7 @@
 import { register } from "../api/user.js";
 
 const section = document.querySelector('#registerView');
-const form = document.querySelector('form');
+const form = section.querySelector('form');
 form.addEventListener('submit', onSubmit);
 
 let ctx = null;
