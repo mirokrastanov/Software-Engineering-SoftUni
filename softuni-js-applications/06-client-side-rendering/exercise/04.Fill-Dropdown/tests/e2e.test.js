@@ -1,7 +1,7 @@
 const { chromium } = require('playwright-chromium');
 const { expect } = require('chai');
 
-const host = 'http://localhost:3000'; // Application host (NOT service host - that can be anything)
+const host = 'http://localhost:5500/softuni-js-applications/06-client-side-rendering/exercise/04.Fill-Dropdown/'; // Application host (NOT service host - that can be anything)
 
 const DEBUG = false;
 const slowMo = 500;
@@ -70,7 +70,6 @@ describe('E2E tests', function () {
       const city = await page.$$eval(`#menu option`, (t) =>
         t.map((s) => s.value)
       );
-
       expect(city[0]).to.equal(data[0]._id);
       expect(city[1]).to.equal(data[1]._id);
     });
@@ -80,14 +79,13 @@ describe('E2E tests', function () {
 
       const { post } = await handle(endpoints.catalog);
       const isCalled = post().isHandled;
-
+      
       await page.goto(host);
       await page.waitForSelector('#itemText');
-
+      
       await page.fill('#itemText', town.text);
-
+      
       page.click('[type="submit"]');
-
       expect(isCalled()).to.be.false;
     });
   });
