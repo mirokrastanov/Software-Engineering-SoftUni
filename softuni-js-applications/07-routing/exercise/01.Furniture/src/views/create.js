@@ -6,17 +6,16 @@ let context = null;
 export async function createPage(ctx) {
     context = ctx;
     ctx.render(createTemplate(onSubmit));
-
 }
 
 async function onSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const { make, model, year, description, price, image, material } = Object.fromEntries(formData);
+    const { make, model, year, description, price, img, material } = Object.fromEntries(formData);
 
     // validation
-
-    await createItem({ make, model, year, description, price, image, material });
+    
+    await createItem({ make, model, year, description, price, img, material });
     context.page.redirect('/');
 }
 

@@ -7,11 +7,8 @@ export async function detailsPage(ctx) {
     context = ctx;
     const id = ctx.params.id;
     const item = await getItemById(id);
-    console.log(item);
     const userData = JSON.parse(localStorage.getItem('userData'));
-
     ctx.render(detailsTemplate(item, userData._id == item._ownerId, delItem));
-
 }
 
 async function delItem(e) {
@@ -45,8 +42,8 @@ function detailsTemplate(item, isOwner, handler) {
             <p>Material: <span>${item.material}</span></p>
             ${isOwner ? html`
             <div>
-                <a href=”#” class="btn btn-info">Edit</a>
-                <a @click=${handler} data-id=${item._id} href=”javascript:void(0)” class="btn btn-red">Delete</a>
+                <a href="/edit/${item._id}" class="btn btn-info">Edit</a>
+                <a @click=${handler} data-id=${item._id} href="javascript:void(0)" class="btn btn-red">Delete</a>
             </div>` : null }
         </div >
     </div > `;

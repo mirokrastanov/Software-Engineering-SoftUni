@@ -2,7 +2,7 @@ import { render, html } from '../../node_modules/lit-html/lit-html.js';
 import { getAllItems } from '../api/auth.js';
 
 export async function catalogPage(ctx) {
-    console.log(ctx);
+    // console.log(ctx);
     const items = await getAllItems();
     ctx.render(catalogTemplate(items));
 }
