@@ -2,9 +2,9 @@ import { html, render } from '../../node_modules/lit-html/lit-html.js';
 import { register } from '../api/auth.js';
 
 
-let page = null;
+let context = null;
 export async function registerPage(ctx) {
-    page = ctx.page;
+    context = ctx;
     ctx.render(registerTemplate(onSubmit));
 }
 
@@ -15,7 +15,8 @@ function onSubmit(e) {
 
     // validation
     register(email, password);
-    page.redirect('/');
+    context.updateNav();
+    context.page.redirect('/');
 }
 
 function registerTemplate(handler) {
