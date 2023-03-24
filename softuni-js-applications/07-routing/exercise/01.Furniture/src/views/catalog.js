@@ -20,7 +20,7 @@ function catalogTemplate(data) {
     </div>`;
 }
 
-function createItemTemplate(item) {
+export function createItemTemplate(item) {
     return html`
     <div class="col-md-4">
         <div class="card text-white bg-primary">
