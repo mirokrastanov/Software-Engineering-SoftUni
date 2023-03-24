@@ -7,11 +7,11 @@ export async function loginPage(ctx) {
     ctx.render(loginTemplate(onSubmit));
 }
 
-function onSubmit(e) {
+async function onSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
-    login(email, password);
+    await login(email, password);
     context.updateNav();
     context.page.redirect('/');
 }
