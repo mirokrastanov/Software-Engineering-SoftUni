@@ -6,15 +6,24 @@ import { editPage } from './src/views/edit.js';
 import { loginPage } from './src/views/login.js';
 import { registerPage } from './src/views/register.js';
 import { myFurniturePage } from './src/views/myFurniture.js';
+import { render, html } from './node_modules/lit-html/lit-html.js';
 
-page('/', catalogPage);
-page('/index.html', catalogPage);
-page('/catalog', catalogPage);
-page('/create', createPage);
-page('/details/:id', detailsPage);
-page('/edit/:id', editPage);
-page('/login', loginPage);
-page('/register', registerPage);
-page('/my-furniture', myFurniturePage);
+const root = document.querySelector('.container');
+
+page('/', renderMiddlware, catalogPage);
+page('/index.html', renderMiddlware, catalogPage);
+page('/catalog', renderMiddlware, catalogPage);
+page('/create', renderMiddlware, createPage);
+page('/details/:id', renderMiddlware, detailsPage);
+page('/edit/:id', renderMiddlware, editPage);
+page('/login', renderMiddlware, loginPage);
+page('/register', renderMiddlware, registerPage);
+page('/my-furniture', renderMiddlware, myFurniturePage);
 page('*', catalogPage);
 page.start();
+
+function renderMiddlware(ctx, next) {
+    ctx.render = (content) => render(content, root);
+    next();
+}
+
