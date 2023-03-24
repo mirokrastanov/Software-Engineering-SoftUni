@@ -17,6 +17,7 @@ async function onSubmit(e) {
     const { make, model, year, description, price, img, material } = Object.fromEntries(formData);
     const id = e.target.dataset.id;
     // validation
+    // copy validation from create.js
     
     await updateById(id, { make, model, year, description, price, img, material });
     context.page.redirect('/');

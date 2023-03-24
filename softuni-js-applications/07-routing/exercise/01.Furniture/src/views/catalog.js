@@ -4,6 +4,7 @@ import { getAllItems } from '../api/auth.js';
 export async function catalogPage(ctx) {
     // console.log(ctx);
     const items = await getAllItems();
+    // console.log(items);
     ctx.render(catalogTemplate(items));
 }
 
