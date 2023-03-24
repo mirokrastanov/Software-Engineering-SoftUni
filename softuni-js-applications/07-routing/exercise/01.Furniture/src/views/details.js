@@ -8,6 +8,7 @@ export async function detailsPage(ctx) {
     const id = ctx.params.id;
     const item = await getItemById(id);
     const userData = JSON.parse(localStorage.getItem('userData'));
+    if (!userData) return ctx.render(detailsTemplate(item, false, delItem));
     ctx.render(detailsTemplate(item, userData._id == item._ownerId, delItem));
 }
 

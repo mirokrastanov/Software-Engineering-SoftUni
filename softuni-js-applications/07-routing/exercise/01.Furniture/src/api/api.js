@@ -1,15 +1,12 @@
 const host = 'http://localhost:3030/';
 
-
 async function request(method, url, data) {
     try {
         const userData = JSON.parse(localStorage.getItem('userData'));
-
         const options = {
             method,
             headers: {}
         };
-
         if (userData != null) {
             options.headers['X-Authorization'] = userData.accessToken;
         }
@@ -17,15 +14,11 @@ async function request(method, url, data) {
             options.headers['Content-Type'] = 'application/json';
             options.body = JSON.stringify(data);
         }
-
         const response = await fetch(host + url, options);
-
         let result;
-
         if (response.status != 204) {
             result = await response.json();
         }
-
         if (response.ok == false) {
             if (response.status == 403) {
                 localStorage.removeItem('userData');
@@ -33,7 +26,6 @@ async function request(method, url, data) {
             const error = result;
             throw error;
         }
-
         return result;
     } catch (err) {
         alert(err.message);
