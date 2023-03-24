@@ -1,9 +1,9 @@
 import { html, render } from '../../node_modules/lit-html/lit-html.js';
-import * as api from '../api/api.js';
 import { login } from '../api/auth.js';
 
-
+let page = null;
 export async function loginPage(ctx) {
+    page = ctx.page;
     ctx.render(loginTemplate(onSubmit));
 }
 
@@ -12,6 +12,7 @@ function onSubmit(e) {
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
     login(email, password);
+    page.redirect('/');
 }
 
 function loginTemplate(handler) { // handler ===> onSubmit()
