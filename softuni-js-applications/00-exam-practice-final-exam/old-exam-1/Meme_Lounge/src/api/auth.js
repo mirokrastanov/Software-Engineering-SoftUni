@@ -6,11 +6,8 @@ const endpoints = {
     'logout': 'users/logout',
     'allMemes': 'data/memes?sortBy=_createdOn%20desc',
     'memeDetails': 'data/memes/', // + id
-
-    // 'createItem': 'data/catalog',
-    // 'getItems': 'data/catalog',
-    // 'details': 'data/catalog/', // + :id
-    // 'myItems': 'data/catalog?where=_ownerId%3D%22', // + ownerid + %22
+    'createMeme': 'data/memes',
+    'myMemes': 'data/memes?where=_ownerId%3D%22' // + ownerid + extra
 };
 
 export async function login(email, password) {
@@ -46,21 +43,20 @@ export async function updateMemeById(id, data) {
     return res;
 }
 
-// export async function createItem(data) {
-//     const res = await api.post(endpoints.createItem, data);
-//     return res;
-// }
+export async function createMeme(data) {
+    const res = await api.post(endpoints.createMeme, data);
+    return res;
+}
 
-// export async function deleteById(id) {
-//     const res = await api.del(endpoints.details + id);
-//     return res;
-// }
+export async function deleteMemeById(id) {
+    const res = await api.del(endpoints.memeDetails + id);
+    return res;
+}
 
-// export async function getMyItems() {
-//     const userData = JSON.parse(localStorage.getItem('userData'));
-//     const userId = userData._id;
-//     const url = endpoints.myItems + userId + '%22';
-//     const res = await api.get(url);
-//     return res;
-// }
-
+export async function getMyMemes() {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    const userId = userData._id;
+    const url = endpoints.myMemes + userId + '%22&sortBy=_createdOn%20desc';
+    const res = await api.get(url);
+    return res;
+}
