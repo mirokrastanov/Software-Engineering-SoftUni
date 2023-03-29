@@ -1,6 +1,7 @@
 // Login Page ( Only for guest users )
 import { html, render } from '../../node_modules/lit-html/lit-html.js';
 import { login } from '../api/auth.js';
+import { errorHandler } from '../api/error.js';
 
 let context = null;
 export async function loginPage(ctx) {
@@ -12,12 +13,21 @@ async function onSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
-    await login(email, password);
-    context.updateNav();
-    context.page.redirect('/');
+    try {
+        // validation - done
+        if (email == '' || password == '') {
+            throw new Error('Both fields are required!');
+        }
+        await login(email, password);
+        context.updateNav();
+        context.page.redirect('/allMemes');
+    } catch (error) {
+        // console.log(error.message);
+        errorHandler(error.message);
+    }
 }
 
-function loginTemplate(onSubmit) { 
+function loginTemplate(onSubmit) {
     return html`
     <section id="login">
         <form @submit=${onSubmit} id="login-form">
