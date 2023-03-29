@@ -1,6 +1,7 @@
 // Register Page ( Only for guest users )
 import { html, render } from '../../node_modules/lit-html/lit-html.js';
 import { register } from '../api/auth.js';
+import { errorHandler } from '../api/error.js';
 
 
 let context = null;
@@ -13,12 +14,24 @@ async function onSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { username, email, password, repeatPass, gender } = Object.fromEntries(formData);
-    console.log(Object.fromEntries(formData));
-
-    // validation
-    await register(username, email, password, repeatPass, gender);
-    context.updateNav();
-    context.page.redirect('/');
+    // console.log(Object.fromEntries(formData));
+    try {
+        // validation - done
+        let invalid = [username, email, password, repeatPass, gender].map(x => x.trim()).filter(x => x == '');
+        if (invalid.length != 0) {
+            // console.log('All fields are required!');
+            throw new Error('All fields are required!');
+        }
+        if (password != repeatPass) {
+            throw new Error('Passwords do not match!');
+        }
+        await register(username, email, password, repeatPass, gender);
+        context.updateNav();
+        context.page.redirect('/');
+    } catch (error) {
+        // console.log(error.message);
+        errorHandler(error.message);
+    }
 }
 
 function registerTemplate(onSubmit) {

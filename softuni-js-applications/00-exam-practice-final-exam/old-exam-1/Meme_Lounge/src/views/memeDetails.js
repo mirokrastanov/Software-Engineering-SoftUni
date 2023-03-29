@@ -1,31 +1,38 @@
 // Meme Details Page ( for Guests and Users )
 import { html, render } from '../../node_modules/lit-html/lit-html.js';
-import { getMemeDetailsById } from '../api/auth.js';
+import { deleteMemeById, getMemeDetailsById } from '../api/auth.js';
 
 let context = null;
 export async function memeDetailsPage(ctx) {
     context = ctx;
     let meme = await getMemeDetailsById(ctx.params.id);
-    ctx.render(memeDetailsTemplate(meme));
+    let userData = JSON.parse(localStorage.getItem('userData'));
+    ctx.render(memeDetailsTemplate(meme, userData));
 }
 
 async function onEdit(e) {
     e.preventDefault();
     let id = e.currentTarget.dataset.id;
-    console.log('edit');
     context.page.redirect(`/edit/${id}`);
 }
 
 async function onDelete(e) {
     e.preventDefault();
     let id = e.currentTarget.dataset.id;
-    console.log('delete');
-    // context.page.redirect(`/data/memes/${id}`);
+    await deleteMemeById(id);
+    context.page.redirect(`/allMemes`);
 }
 
+function isOwner(meme, userData) {
+    if (userData) {
+        return meme._ownerId == userData._id;
+    } else {
+        return false;
+    }
+}
 
 // Details Meme Page (for guests and logged users)
-const memeDetailsTemplate = (meme) => html`
+const memeDetailsTemplate = (meme, userData) => html`
 <section id="meme-details">
     <h1>Meme Title: ${meme.title}</h1>
     <div class="meme-details">
@@ -35,10 +42,10 @@ const memeDetailsTemplate = (meme) => html`
         <div class="meme-description">
             <h2>Meme Description</h2>
             <p>${meme.description}</p>
-            ${ meme._ownerId == JSON.parse(localStorage.getItem('userData'))._id
-            // Btns Edit/Delete should be displayed only for creator of this meme  -->
-            ? renderBtns(meme._id)
-            : null
+            ${isOwner(meme, userData)
+                // Btns are displayed only for creator of this meme
+                ? renderBtns(meme._id)
+                : null
             }
         </div>
     </div>
