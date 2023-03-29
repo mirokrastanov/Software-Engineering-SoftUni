@@ -15,15 +15,15 @@ const root = document.querySelector('main');
 page('/', middleMan, welcomePage);
 page('/index.html', middleMan, welcomePage);
 page('/allMemes', middleMan, allMemesPage);
-page('/create', middleMan, createMemePage);
-page('/data/memes/:id', middleMan, memeDetailsPage);
-page('/edit/:id', middleMan, editMemePage);
-page('/login', middleMan, loginPage);
-page('/register', middleMan, registerPage);
-page('/userProfile', middleMan, myMemesPage);
-page('*', welcomePage);
-page.start();
-updateNav();
+// page('/create', middleMan, createMemePage);
+// page('/data/memes/:id', middleMan, memeDetailsPage);
+// page('/edit/:id', middleMan, editMemePage);
+// page('/login', middleMan, loginPage);
+// page('/register', middleMan, registerPage);
+// page('/userProfile', middleMan, myMemesPage);
+// page('*', welcomePage);
+// page.start();
+// updateNav();
 
 function updateNav() {
     const userSection = document.querySelector('.user');
