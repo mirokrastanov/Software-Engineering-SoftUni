@@ -4,6 +4,9 @@ const endpoints = {
     'login': 'users/login',
     'register': 'users/register',
     'logout': 'users/logout',
+    'allMemes': 'data/memes?sortBy=_createdOn%20desc',
+    'memeDetails': 'data/memes/', // + id
+
     // 'createItem': 'data/catalog',
     // 'getItems': 'data/catalog',
     // 'details': 'data/catalog/', // + :id
@@ -28,23 +31,23 @@ export async function logout() {
     return res;
 }
 
+export async function getAllMemes() {
+    const res = await api.get(endpoints.allMemes);
+    return res;
+}
+
+export async function getMemeDetailsById(id) {
+    const res = await api.get(endpoints.memeDetails + id);
+    return res;
+}
+
+export async function updateMemeById(id, data) {
+    const res = await api.put(endpoints.memeDetails + id, data);
+    return res;
+}
+
 // export async function createItem(data) {
 //     const res = await api.post(endpoints.createItem, data);
-//     return res;
-// }
-
-// export async function getAllItems() {
-//     const res = await api.get(endpoints.getItems);
-//     return res;
-// }
-
-// export async function getItemById(id) {
-//     const res = await api.get(endpoints.details + id);
-//     return res;
-// }
-
-// export async function updateById(id, data) {
-//     const res = await api.put(endpoints.details + id, data);
 //     return res;
 // }
 
