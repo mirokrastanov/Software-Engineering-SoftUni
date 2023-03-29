@@ -4,19 +4,22 @@ import { logout } from './src/api/auth.js';
 import { welcomePage } from './src/views/home.js';
 import { loginPage } from './src/views/login.js';
 import { registerPage } from './src/views/register.js';
+import { allMemesPage } from './src/views/allMemes.js';
+import { memeDetailsPage } from './src/views/memeDetails.js';
+import { editMemePage } from './src/views/editMeme.js';
 
 const root = document.querySelector('main');
 
 page('/', middleMan, welcomePage);
 // page('/index.html', middleMan, welcomePage);
-// page('/catalog', middleMan, welcomePage);
+page('/allMemes', middleMan, allMemesPage);
 // page('/create', middleMan, createPage);
-// page('/details/:id', middleMan, detailsPage);
-// page('/edit/:id', middleMan, editPage);
+page('/data/memes/:id', middleMan, memeDetailsPage);
+page('/edit/:id', middleMan, editMemePage);
 page('/login', middleMan, loginPage);
 page('/register', middleMan, registerPage);
 // page('/my-furniture', middleMan, myFurniturePage);
-page('*', welcomePage);
+page('*', allMemesPage);
 page.start();
 updateNav();
 
@@ -26,11 +29,11 @@ function updateNav() {
     const userData = JSON.parse(localStorage.getItem('userData'));
     console.log(userData);
     if (userData) {
-        userSection.style.display = 'inline-block';
+        userSection.style.display = 'block';
         guestSection.style.display = 'none';
     } else {
         userSection.style.display = 'none';
-        guestSection.style.display = 'inline-block';
+        guestSection.style.display = 'block';
     }
 }
 
