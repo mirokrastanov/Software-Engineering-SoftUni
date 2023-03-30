@@ -35,7 +35,6 @@ const allAlbumsTemplate = (albums) => html`
         }
 </section>`;
 
-
 const albumTemplate = (album) => html`
     <li class="card">
         <img src=".${album.imageUrl}" alt="travis" />
@@ -43,7 +42,7 @@ const albumTemplate = (album) => html`
             <strong>Singer/Band: </strong><span class="singer">${album.singer}</span>
         </p>
         <p>
-            <strong>Album name: </strong><span class="album">${album.name}</span>
+            <strong>Album name: </strong><span class="album">${album.album}</span>
         </p>
         <p><strong>Sales:</strong><span class="sales">${album.sales}</span></p>
         <a class="details-btn" data-id=${album._id} @click=${onDetails}>Details</a>
