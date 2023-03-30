@@ -8,7 +8,10 @@ export async function detailsPage(ctx) {
     let album = await getAlbumDetailsById(ctx.params.id);
     let userData = JSON.parse(localStorage.getItem('userData'));
     let totalLikes = await getTotalLikes(album._id);
-    let myLikes = await getMyLikes(album._id);
+    let myLikes = 1;
+    if (userData) {
+        myLikes = await getMyLikes(album._id);
+    }
     ctx.render(detailsTemplate(album, userData, totalLikes, myLikes));
 }
 
