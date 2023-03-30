@@ -23,3 +23,7 @@ venv/
 
 # JS packages
 node_modules/
+
+# JS private templates & misc
+_templates/
+
