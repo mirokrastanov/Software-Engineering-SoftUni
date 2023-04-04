@@ -1,7 +1,9 @@
+<!--
+
 # <p align="center"><a href="https://softuni.bg/trainings/3961/js-advanced-january-2023"> JavaScript Advanced - January 2023 </a></p>
   
 <a href="https://softuni.bg/">
-<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="softuni-banner" width="1218" height="160">
+<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="Trulli" width="1218" height="160">
 </a>
   
 # Final Exam - February 18, 2023
@@ -32,3 +34,4 @@
 <li><a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced/final-exam/03-find-apartment">Problem Solution</a> <i>(submitted)</i></li>
 </ul>
 
+-->
