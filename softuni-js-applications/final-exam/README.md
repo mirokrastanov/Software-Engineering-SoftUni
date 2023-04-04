@@ -9,7 +9,7 @@
 ## Table of Contents: 
 - Submitted Solutions
 - Problem Descriptions
-- Score: <a href="https://i.imgur.com/gGHp90S.png">115/115</a> ***(inc bonus pts)***
+- Score: <a href="https://i.imgur.com/gGHp90S.png">115/115</a> *(inc bonus pts)*
 
 
 ## Task - Build a Single Page Application 
@@ -38,6 +38,6 @@
 
 
 ## Project Files
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-applications/final-exam/00-problem-description/Fruitipedia_Problem-description.docx">Problem Description</a> ***docx***
-- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-applications/final-exam/01-fruitipedia">Problem Solution</a> ***(submitted)***
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-applications/final-exam/00-problem-description/Fruitipedia_Problem-description.docx">Problem Description</a> *docx*
+- <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-applications/final-exam/01-fruitipedia">Problem Solution</a> *(submitted)*
 
