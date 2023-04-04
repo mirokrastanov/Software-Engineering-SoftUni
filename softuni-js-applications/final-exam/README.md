@@ -7,8 +7,8 @@
   
 # Final Exam - April 1, 2023
 ## Table of Contents: 
-- Submitted Solutions
-- Problem Descriptions
+- Submitted Solution
+- Problem Description
 - Score: <a href="https://i.imgur.com/gGHp90S.png">115/115</a> *(inc bonus pts)*
 
 
@@ -37,7 +37,7 @@
 - **(BONUS)** Search Page - **(15 pts)**
 
 
-## Project Files
+## Application Files
 - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/softuni-js-applications/final-exam/00-problem-description/Fruitipedia_Problem-description.docx">Problem Description</a> *docx*
 - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-applications/final-exam/01-fruitipedia">Problem Solution</a> *(submitted)*
 
