@@ -4,7 +4,7 @@
 # <p align="center"><a href="https://softuni.bg/trainings/3961/js-advanced-january-2023"> JavaScript Advanced - January 2023 </a><p>
 
 <a href="https://softuni.bg/">
-<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="Trulli" width="1218" height="160">
+<img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="softuni-banner" width="1218" height="160">
 </a>
 
 </body>
