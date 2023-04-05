@@ -34,7 +34,7 @@
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
 - Exam Practice - Old Exams - Problem solutions
-- Exam Problem - Descriptions & My Solution (TBA, course in progress...)
+- Exam Problem - Descriptions & My Solution
 - Projects & Workshop files + Demos/Previews where applicable
 - GPA & Certificate information
 
