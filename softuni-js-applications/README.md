@@ -20,21 +20,30 @@
 - JS Applications ends with a two part Exam. The first part is practical and tasks the student with the creation of a dynamic SPA application. The second part is a theoretical test.
 
 ### Course Topics:
-1. TODO...
-<!--
+1. HTTP and REST Services
+2. Asynchronous Programming
+3. Remote Data and Authentication
+4. Single Page Applications
+5. Architecture and Testing
+6. Client Side Rendering
+7. Routing
+8. Modular Applications
+9. Workshop: End-to-End Application (2 lectures)
+10. Workshop: Web Components (Webpack)
+
 ### Table of Contents:
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
 - Exam Practice - Old Exams - Problem solutions
-- Exam Problem - Descriptions & My Solution (TBA, course in progress...)
+- Exam Problem - Description & My Solution
 - Projects & Workshop files + Demos/Previews where applicable
 - GPA & Certificate information
 
 ### FINAL GPA: 6.00/6.00 
-- Final Exam: <a href="https://i.imgur.com/csPYCZi.png">300/300 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced/final-exam">Here</a></i>
+- Final Exam: <a href="https://i.imgur.com/gGHp90S.png">115/115 pts</a> <i> - Full Information: <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-applications/final-exam">Here</a></i>
 
 
-### Link to <a href="https://softuni.bg/Certificates/Details/160014/409ec459">Certificate</a>
-### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
+### Link to <a href="https://softuni.bg/certificates/details/167716/26bd4406">Certificate</a>
+### Link to <a href="https://softuni.bg/trainings/3962/js-applications-february-2023">Course</a>
 
--->
+
