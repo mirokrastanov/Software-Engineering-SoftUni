@@ -1,9 +1,7 @@
-<!-- 
-
 <html>
 <body>
 
-# <p align="center"><a href="https://softuni.bg/trainings/3961/js-advanced-january-2023"> JavaScript Advanced - January 2023 </a><p>
+# <p align="center"><a href="https://softuni.bg/trainings/3962/js-applications-february-2023"> JavaScript Applications - February 2023 </a><p>
 
 <a href="https://softuni.bg/">
 <img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png" alt="softuni-banner" width="1218" height="160">
@@ -13,25 +11,17 @@
 </html>
 
 ### Course Description:
-- The course further improves students' knowledge of concepts such as JS Syntax, Arrays, Objects, Classes & Functions. 
-- Students also dive deep into more advanced concepts such as Function Content, Explicit Binding, Event Loop, DOM, Prototypes, Unit Testing, Error Handling, etc.
-- During this course students hone their Algorithmic Thinking & Provblem Solving skills by creating Algorithms for complex problems.
-- Additionally, this course includes participation in multiple projects designed to further develop the formentioned skills.
-- Successful completion of the course means that the student has the necessary knowledge and skills to Build a DOM Tree and manipulate with it in whatever way needed. The student can also work with events and has a good understanding of Functional Coding as well as Object Orientde Programming with JavaScript, including the concepts for Inheritance, Object Composition, Prototype Chain, etc.
-- JS Advanced ends with a two part Exam. First part is practical and consists of 3 problems that need to be solved. Second part is a test.
+- In this course students learn everything about HTTP Requests.
+- They study REST Services, BaaS and different techniques to work with them.
+- Students also learn about Asynchronous Programming and begin to learn how to resolve Promises and how to incorporate the whole concept into a real project. What are good practices when working with asynchronous code.
+- Additionally, students study the concepts of Templating & Routing with their respective tools, libraries and get introduced to the ecosystem of building a complete SPA using them efficiently.
+- Best Practices when it comes to the Architecture of a SPA are being emphasized throughout the whole course and there is also a dedicated lecture & exercise going deep into this topic. Student will later on use the lessons learned when doing their final exam SPA.
+- At the end SoftUni has dedicated a few Workshops to showcase the Web Components standard as well as the complete building of a Webpack environment from start to finish. 
+- JS Applications ends with a two part Exam. The first part is practical and tasks the student with the creation of a dynamic SPA application. The second part is a theoretical test.
 
 ### Course Topics:
-1. Syntax, Functions and Statements
-2. Arrays, Nested Arrays (Advanced)
-3. Objects and Composition
-4. DOM Introduction
-5. DOM Manipulations and Events
-6. Advanced Functions
-7. Unit Testing and Error Handling
-8. Classes (Advanced)
-9. Prototypes and Inheritance
-10. Workshop: Wizard Side Scrolling Game
-
+1. TODO...
+<!--
 ### Table of Contents:
 - Solved Course Exercises (required, with a deadlines)
 - Solved Extra Exercises (optional)
@@ -46,9 +36,5 @@
 
 ### Link to <a href="https://softuni.bg/Certificates/Details/160014/409ec459">Certificate</a>
 ### Link to <a href="https://softuni.bg/trainings/3961/js-advanced-january-2023">Course</a>
-
-
-
-
 
 -->
