@@ -13,6 +13,7 @@ out/
 
 # Python / PyCharm
 venv/
+.vscode/
 
 
 
