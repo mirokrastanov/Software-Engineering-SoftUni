@@ -1,0 +1,39 @@
+{
+    "launch": {
+        "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Launch Program",
+                "program": "${file}",
+                "outputCapture": "std",
+            }
+        ],
+        "compounds": []
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "git.autofetch": true,
+    "debug.console.collapseIdenticalLines": false,
+    "eslint.alwaysShowStatus": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.details.text.idle": "Testing app.js",
+    "vscord.status.details.text.notInFile": "Testing util.js",
+    "vscord.status.details.text.noWorkSpaceText": "Workspace validation",
+    "vscord.status.image.small.idle.text": "Visual Studio Code",
+    "vscord.status.image.small.notInFile.text": "Visual Studio Code",
+    "vscord.status.image.small.idle.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/debugging.png",
+    "vscord.status.image.small.notInFile.key": "https://raw.githubusercontent.com/LeonardSSH/vscord/main/assets/icons/debugging.png",
+    "vscord.status.image.large.idle.text": "Testing app.js",
+    "vscord.status.image.large.notInFile.text": "Testing util.js",
+    "vscord.status.image.large.idle.key": "https://raw.githubusercontent.com/leonardssh/vscord/main/assets/icons/js.png",
+    "vscord.status.image.large.viewing.key": "https://github.com/leonardssh/vscord/blob/main/assets/icons/js.png?raw=true",
+    "vscord.status.image.large.notInFile.key": "https://raw.githubusercontent.com/leonardssh/vscord/main/assets/icons/js.png",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "liveServer.settings.file": "/",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false
+}
