@@ -1,50 +1,18 @@
 function coins(input) {
     let change = Number(input[0]);
     let coins = 0;
-    let remainder = change;
 
-    while (remainder > 0) {
-        if (remainder >= 2) {
-            coins++;
-            remainder -= 2;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 1) {
-            coins++;
-            remainder -= 1;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.5) {
-            coins++;
-            remainder -= 0.5;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.2) {
-            coins++;
-            remainder -= 0.2;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.1) {
-            coins++;
-            remainder -= 0.1;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.05) {
-            coins++;
-            remainder -= 0.05;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.02) {
-            coins++;
-            remainder -= 0.02;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        } else if (remainder >= 0.01) {
-            coins++;
-            remainder -= 0.01;
-            remainder = Number(remainder.toFixed(2));
-            continue;
-        }
+    while (change > 0) {
+        change = Number(change.toFixed(2));
+        coins++;
+        if (change >= 2) change -= 2;
+        else if (change >= 1) change -= 1;
+        else if (change >= 0.5) change -= 0.5;
+        else if (change >= 0.2) change -= 0.2;
+        else if (change >= 0.1) change -= 0.1;
+        else if (change >= 0.05) change -= 0.05;
+        else if (change >= 0.02) change -= 0.02;
+        else if (change >= 0.01) change -= 0.01;
     }
     console.log(coins);
 }
