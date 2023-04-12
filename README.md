@@ -48,6 +48,10 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-fundamentals">Programming Fundamentals with JS</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/149442/7cdc532d"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
+  <tr>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-html-and-css">HTML & CSS</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
  <tr> <!-- add here -->
   <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-advanced">JS Advanced</a> </td>
   <td> <a href="https://softuni.bg/Certificates/Details/160014/409ec459"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
@@ -55,10 +59,6 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <tr> <!-- add here -->
   <td> <a href="https://softuni.bg/trainings/3962/js-applications-february-2023">JS Applications</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/167716/26bd4406"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
- </tr>
- <tr>
-  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-html-and-css">HTML & CSS</a> </td>
-  <td> <a href="https://softuni.bg/certificates/details/147196/0b77e9d1"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
