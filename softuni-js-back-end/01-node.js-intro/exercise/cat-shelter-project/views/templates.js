@@ -6,7 +6,7 @@ exports.indexTemplate = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/site.css">
     <link rel="shortcut icon" type="image/png" href="../../content/images/pawprint.ico" />
     <title>Cat Shelter</title>
@@ -16,9 +16,9 @@ exports.indexTemplate = `
     <header>
         <nav>
             <ul class="navigation">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/cats/add-breed">Add Breed</a></li>
-                <li><a href="/cats/add-cat">Add Cat</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/">Home Page</a></li>
+                <li><i class="fa-solid fa-circle-plus"></i><a href="/cats/add-breed">Add Breed</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="/cats/add-cat">Add Cat</a></li>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
@@ -57,10 +57,15 @@ exports.indexCatTemplate = (img, name, breed, desc) => `
 
 exports.citeCss = `
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
     margin: 0;
     padding: 0;
+}
+
+i {
+    margin-right: 5px;
 }
 
 html, body {
@@ -304,9 +309,9 @@ exports.addBreedTemplate = `
     <header>
         <nav>
             <ul class="navigation">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/cats/add-breed">Add Breed</a></li>
-                <li><a href="/cats/add-cat">Add Cat</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/">Home Page</a></li>
+                <li><i class="fa-solid fa-circle-plus"></i><a href="/cats/add-breed">Add Breed</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="/cats/add-cat">Add Cat</a></li>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
@@ -341,9 +346,9 @@ exports.addCatTemplate = `
     <header>
         <nav>
             <ul class="navigation">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/cats/add-breed">Add Breed</a></li>
-                <li><a href="/cats/add-cat">Add Cat</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/">Home Page</a></li>
+                <li><i class="fa-solid fa-circle-plus"></i><a href="/cats/add-breed">Add Breed</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="/cats/add-cat">Add Cat</a></li>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
@@ -388,9 +393,9 @@ exports.catShelterTemplate = `
     <header>
         <nav>
             <ul class="navigation">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/cats/add-breed">Add Breed</a></li>
-                <li><a href="/cats/add-cat">Add Cat</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/">Home Page</a></li>
+                <li><i class="fa-solid fa-circle-plus"></i><a href="/cats/add-breed">Add Breed</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="/cats/add-cat">Add Cat</a></li>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
@@ -433,9 +438,9 @@ exports.editCatTemplate = `
     <header>
         <nav>
             <ul class="navigation">
-                <li><a href="/">Home Page</a></li>
-                <li><a href="/cats/add-breed">Add Breed</a></li>
-                <li><a href="/cats/add-cat">Add Cat</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="/">Home Page</a></li>
+                <li><i class="fa-solid fa-circle-plus"></i><a href="/cats/add-breed">Add Breed</a></li>
+                <li><i class="fa-solid fa-paw"></i><a href="/cats/add-cat">Add Cat</a></li>
             </ul>
         </nav>
         <h1>Cat Shelter</h1>
