@@ -7,6 +7,7 @@ const { indexTemplate, citeCss, indexCatTemplate, addBreedTemplate, addCatTempla
 const server = http.createServer(async (req, res) => {
     console.log('Server is called at: ' + req.url);
 
+
     if (req.url == '/' || req.url == '/index.html' || req.url == '/index') {
         const catsHTML = db.cats.map(cat => indexCatTemplate(cat.img, cat.name, cat.breed, cat.description)).join('');
         const indexHTML = indexTemplate.replace('{{cats}}', catsHTML);
@@ -34,6 +35,23 @@ const server = http.createServer(async (req, res) => {
     } else if (req.url == '/styles/site.css') {
         res.writeHead(200, { 'Content-Type': 'text/css' });
         res.write(citeCss);
+
+    } else if (req.url == '/database') {
+        if (req.method == 'POST') {
+            let raw;
+            req.on('data', (data) => {
+                raw += data;
+                console.log(raw);
+            });
+            req.on('end', () => {
+                console.log('done');
+                res.write(raw); // figure out how to return the data or return ANYTHING :D 
+            });
+        } else if (req.method == 'GET') {
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.write(req.method);
+        }
+
     }
 
     res.end();
