@@ -14,7 +14,7 @@ const server = http.createServer(async (req, res) => {
 
     } else if (req.url == '/cat-shelter') {
 
-    } else if (req.url == '/edit-cat') {
+    } else if (req.url == '/cats/edit-cat') {
 
     } else if (req.url == '/styles/site.css') {
         res.writeHead(200, { 'Content-Type': 'text/css' });
