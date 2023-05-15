@@ -41,12 +41,12 @@ exports.indexTemplate = `
 </html>
 `;
 
-exports.indexCatTemplate = `
+exports.indexCatTemplate = (img, name, breed, desc) => `
 <li>
-    <img src="{{catImg}}" alt="Black Cat">
-    <h3>{{catName}}</h3>
-    <p><span>Breed: </span>{{catBreed}}</p>
-    <p><span>Description: </span>{{catDescription}}</p>
+    <img src="${img}" alt="Black Cat">
+    <h3>${name}</h3>
+    <p><span>Breed: </span>${breed}</p>
+    <p><span>Description: </span>${desc}</p>
     <ul class="buttons">
         <li class="btn edit"><a href="{{editCat}}">Change Info</a></li>
         <li class="btn delete"><a href="{{deleteCat}}">New Home</a></li>

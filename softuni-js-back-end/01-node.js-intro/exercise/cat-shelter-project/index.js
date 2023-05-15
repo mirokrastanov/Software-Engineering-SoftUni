@@ -1,21 +1,22 @@
 const http = require('http');
 const { db } = require('./database.js');
-const { indexTemplate, citeCss, indexCatTemplate, } = require('./views/templates.js');
+const { indexTemplate, citeCss, indexCatTemplate, addBreedTemplate, addCatTemplate, catShelterTemplate,
+    editCatTemplate } = require('./views/templates.js');
 
 
 const server = http.createServer(async (req, res) => {
     console.log('Server is called at: ' + req.url);
 
     if (req.url == '/' || req.url == '/index.html' || req.url == '/index') {
-        const catsHtml = db.cats.map(cat => indexCatTemplate.replace('{{catName}}', cat.name)).join('');
-        const indexHtml = indexTemplate.replace('{{cats}}', catsHtml);
+        const catsHTML = db.cats.map(cat => indexCatTemplate(cat.img, cat.name, cat.breed, cat.description)).join('');
+        const indexHTML = indexTemplate.replace('{{cats}}', catsHTML);
 
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(indexHtml);
+        res.write(indexHTML);
     } else if (req.url == '/cats/add-breed') {
 
     } else if (req.url == '/cats/add-cat') {
-        
+
     } else if (req.url == '/cat-shelter') {
 
     } else if (req.url == '/cats/edit-cat') {
