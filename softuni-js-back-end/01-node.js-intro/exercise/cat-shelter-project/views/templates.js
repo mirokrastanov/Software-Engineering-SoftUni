@@ -364,9 +364,7 @@ exports.addCatTemplate = `
             <input name="upload" type="file" id="image">
             <label for="group">Breed</label>
             <select name="breed" id="group">
-                <option value="Fluffy Cat">Fluffy Cat</option>
-				<option value="Fluffy Cat">Fluffy Cat</option>
-				<option value="Fluffy Cat">Fluffy Cat</option>
+				{{breeds}}
             </select>
             <button type="submit">Add Cat</button>
         </form>
@@ -375,6 +373,11 @@ exports.addCatTemplate = `
 
 </html>
 `;
+
+exports.addCatOptionTemplate = (breed) => `
+<option value="${breed} Cat">${breed} Cat</option>
+`;
+
 
 exports.catShelterTemplate = `
 <!DOCTYPE html>

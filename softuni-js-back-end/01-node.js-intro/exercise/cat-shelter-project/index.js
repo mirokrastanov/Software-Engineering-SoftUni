@@ -1,7 +1,7 @@
 const http = require('http');
 const { db } = require('./database.js');
 const { indexTemplate, citeCss, indexCatTemplate, addBreedTemplate, addCatTemplate, catShelterTemplate,
-    editCatTemplate } = require('./views/templates.js');
+    editCatTemplate, addCatOptionTemplate } = require('./views/templates.js');
 
 
 const server = http.createServer(async (req, res) => {
@@ -18,8 +18,10 @@ const server = http.createServer(async (req, res) => {
         res.write(addBreedTemplate);
 
     } else if (req.url == '/cats/add-cat') {
+        const breedsHTML = db.breeds.map(breed => addCatOptionTemplate(breed.name)).join('');
+        const addCatHTML = addCatTemplate.replace('{{breeds}}', breedsHTML);
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(addCatTemplate);
+        res.write(addCatHTML);
 
     } else if (req.url == '/cat-shelter') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
