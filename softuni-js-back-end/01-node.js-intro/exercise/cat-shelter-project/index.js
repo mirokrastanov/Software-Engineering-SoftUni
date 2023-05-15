@@ -14,13 +14,17 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write(indexHTML);
     } else if (req.url == '/cats/add-breed') {
-
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(addBreedTemplate);
     } else if (req.url == '/cats/add-cat') {
-
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(addCatTemplate);
     } else if (req.url == '/cat-shelter') {
-
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(catShelterTemplate);
     } else if (req.url == '/cats/edit-cat') {
-
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write(editCatTemplate);
     } else if (req.url == '/styles/site.css') {
         res.writeHead(200, { 'Content-Type': 'text/css' });
         res.write(citeCss);

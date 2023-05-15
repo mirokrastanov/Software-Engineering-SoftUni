@@ -48,8 +48,8 @@ exports.indexCatTemplate = (img, name, breed, desc) => `
     <p><span>Breed: </span>${breed}</p>
     <p><span>Description: </span>${desc}</p>
     <ul class="buttons">
-        <li class="btn edit"><a href="{{editCat}}">Change Info</a></li>
-        <li class="btn delete"><a href="{{deleteCat}}">New Home</a></li>
+        <li class="btn edit"><a href="/cats/edit-cat">Change Info</a></li>
+        <li class="btn delete"><a href="/cat-shelter">New Home</a></li>
     </ul>
 </li>
 `;
@@ -65,7 +65,7 @@ exports.citeCss = `
 
 html, body {
     font-family: 'Lato', sans-serif;
-    background-color: #F2F2F2;
+    background-color: #c9c9c9;
     color: #333;
 }
 
@@ -167,7 +167,7 @@ form button:hover {
     margin-top: 3rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .cats li {
@@ -175,6 +175,7 @@ form button:hover {
     background-color: #fff;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -215,6 +216,9 @@ form button:hover {
     width: 100%;
     height: 40%;
     object-fit: cover;
+    position: relative;
+    top: 0px;
+    left: 0px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     margin: 0 auto;
@@ -291,7 +295,7 @@ exports.addBreedTemplate = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../content/styles/site.css">
+    <link rel="stylesheet" href="/styles/site.css">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <title>Cat Shelter</title>
 </head>
@@ -328,7 +332,7 @@ exports.addCatTemplate = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../content/styles/site.css">
+    <link rel="stylesheet" href="/styles/site.css">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <title>Cat Shelter</title>
 </head>
@@ -375,7 +379,7 @@ exports.catShelterTemplate = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../content//styles/site.css">
+    <link rel="stylesheet" href="/styles/site.css">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <title>Cat Shelter</title>
 </head>
@@ -420,7 +424,7 @@ exports.editCatTemplate = `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../content/styles/site.css">
+    <link rel="stylesheet" href="/styles/site.css">
     <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
     <title>Cat Shelter</title>
 </head>
