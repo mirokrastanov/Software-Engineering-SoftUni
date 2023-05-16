@@ -183,7 +183,7 @@ form button:hover {
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cats ul li .buttons {
