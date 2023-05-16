@@ -169,7 +169,6 @@ form button:hover {
 .cats ul {
     display: flex;
     list-style: none;
-    margin-top: 3rem;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
@@ -219,7 +218,8 @@ form button:hover {
 
 .cats li img {
     width: 100%;
-    height: 40%;
+    height: 160px;
+    max-height: 50%;
     object-fit: cover;
     position: relative;
     top: 0px;
