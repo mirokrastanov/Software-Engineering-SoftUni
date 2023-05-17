@@ -9,16 +9,19 @@ const server = http.createServer(async (req, res) => {
 
 
     if (req.method == 'POST') {
-        let body = '';
-        req.on('data', (data) => {
-            console.log('POST data received at: ' + req.url);
-            body += data;
-        });
-        req.on('end', () => {
-            console.log('POST response sent back to requester.');
-            res.writeHead(200, { 'Content-Type': 'application/json' });
-            res.end(body);
-        });
+        if (req.url == '/database') {
+
+            let body = '';
+            req.on('data', (data) => {
+                console.log('POST data received at: ' + req.url);
+                body += data;
+            });
+            req.on('end', () => {
+                console.log('POST response sent back to requester.');
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(body);
+            });
+        }
 
     } else if (req.method == 'GET') {
         if (req.url == '/' || req.url == '/index.html' || req.url == '/index') {
