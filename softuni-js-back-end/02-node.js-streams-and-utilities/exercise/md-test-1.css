@@ -1,0 +1,17 @@
+* {
+    font-family: 'Helvetica';
+    background-color: lightgray;
+}
+
+table {
+    margin-top: 100px;
+    border-right: 1px solid black;    
+    border-bottom: 1px solid black;
+    border-spacing: 0px;
+}
+
+td, th {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 0px 5px;
+}
