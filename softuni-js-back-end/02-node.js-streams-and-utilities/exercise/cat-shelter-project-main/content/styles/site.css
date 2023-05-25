@@ -136,32 +136,40 @@ form button:hover {
     position: relative;
     left: 0px;
     bottom: 0px;
-    border: 1px splid black;
+    padding: 5px 5px 10px 5px;
 }
 
 .buttons li {
-    margin-left: 2rem;
+    width: fit-content;
+    max-width: 30%;
+    padding: 2px 5px;
 }
 
 .cats ul li .buttons .btn a {
     text-align: center;
-    padding: 5px;
     border-radius: 17px;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
-    margin-bottom: 1rem;
+    text-decoration: none;
+    padding-bottom: 2px;
 }
 
-
-.cats ul li .buttons .edit a {
+.cats ul li .buttons .edit {
     background-color: #3d99e3;
 }
 
-.cats ul li .buttons .delete a {
+.cats ul li .buttons .delete {
     background-color: #ff0000d6;
 }
 
+.cats ul li .buttons .edit:hover {
+    background-color: #1589e7;
+}
+
+.cats ul li .buttons .delete:hover {
+    background-color: #d10000;
+}
 
 .cats li img {
     width: 100%;
@@ -201,9 +209,22 @@ body>form>label:nth-child(3) {
     margin: 0.5rem;
 }
 
-.cats ul li:hover {
-    opacity: 0.75;
-    transform: scale(0.98);
+.cats li p:nth-of-type(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.cats ul li.cat-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cats .buttons .btn:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .cat-form {
@@ -237,3 +258,4 @@ body>form>label:nth-child(3) {
     background-color: lightskyblue;
     margin-bottom: 1.5rem;
 }
+
