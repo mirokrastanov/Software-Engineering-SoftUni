@@ -1,11 +1,9 @@
 const http = require('http');
 const fs = require('fs/promises');
-const { replaceData } = require('./util.js');
-
+const { replaceData, addCatOptionTemplate } = require('./util.js');
 const { db } = require('./database.js');
-const { addBreedTemplate, addCatTemplate, catShelterTemplate,
-    editCatTemplate, addCatOptionTemplate } = require('./views/templates.js');
 
+const { addCatTemplate, catShelterTemplate, editCatTemplate } = require('./views/templates.js');
 
 const server = http.createServer(async (req, res) => {
     console.log('Server is called at: ' + req.url);
@@ -37,8 +35,11 @@ const server = http.createServer(async (req, res) => {
 
         } else if (req.url == '/cats/add-breed') {
 
+            let addBreedHTML = await fs.readFile('./views/addBreed.html', 'utf-8');
+            const breedsHTML = db.breeds.map(breed => addCatOptionTemplate(breed.name, true));
+            addBreedHTML = addBreedHTML.replace('{{breeds}}', breedsHTML);
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.write(addBreedTemplate);
+            res.write(addBreedHTML);
 
         } else if (req.url == '/cats/add-cat') {
 
@@ -63,7 +64,7 @@ const server = http.createServer(async (req, res) => {
             res.write(siteCSS);
 
         } else if (req.url == '/database') {
-            
+
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.write(JSON.stringify(db, null, 2));
 
