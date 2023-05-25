@@ -8,3 +8,6 @@ exports.replaceData = (html, data) => {
     }, html)
 };
 
+exports.addCatOptionTemplate = (breed, disabled = false) => `
+<option value="${breed} Cat" ${disabled ? 'disabled' : ''}>${breed} Cat</option>
+`;
