@@ -41,7 +41,7 @@ const server = http.createServer(async (req, res) => {
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write(addBreedHTML);
 
-        } else if (req.url == '/cats/add-cat') {
+        } else if (req.url == '/cats/add-cat') {  // CONTINUE HERE
 
             const breedsHTML = db.breeds.map(breed => addCatOptionTemplate(breed.name)).join('');
             const addCatHTML = addCatTemplate.replace('{{breeds}}', breedsHTML);
