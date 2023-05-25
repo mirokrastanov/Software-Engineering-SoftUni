@@ -132,6 +132,3 @@ exports.editCatTemplate = `
 
 </html>
 `;
-
-
-

@@ -37,7 +37,7 @@ exports.db = {
             name: 'Angora',
         },
         {
-            name: 'Abyssianian',
+            name: 'Abyssinian',
         },
         {
             name: 'Siamese',
