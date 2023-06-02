@@ -9,7 +9,7 @@
     </form>
 
     {{#each cubes}}
-        {{>cube}}
+        {{>cube}}  {{! "cube" gets each element of the cubes array AND RENDERS the PARTIAL named "cube" for it }}
     {{else}}
     <p>There are no cubes yet!</p>
     {{/each}}

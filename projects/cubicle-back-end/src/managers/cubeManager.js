@@ -19,13 +19,9 @@ exports.getAll = async (search, from, to) => {
 exports.getOne = (cubeId) => Cube.findById(cubeId);
 
 exports.create = async (cubeData) => {
-    // const newCube = {
-    //     id: uniqid(),
-    //     ...cubeData,
-    // };
-    // cubes.push(newCube);
-
     const cube = new Cube(cubeData);
+
     await cube.save();
+    
     return cube;
 }
