@@ -6,7 +6,7 @@ router.get('/', async (req, res) => {
 
     const cubes = await cubeManager.getAll(search, from, to);
 
-    res.render('index', { cubes, search, from, to });
+    res.render('index', { cubes, search, from, to });  // loads index.hbs and loads it with the "cubes" array
 });
 
 router.get('/about', (req, res) => {
