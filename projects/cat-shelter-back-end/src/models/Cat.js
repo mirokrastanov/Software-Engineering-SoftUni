@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const catSchema = {
     name: String,
     description: String,
-    imageUrl: String,
+    img: String,
     breed: String,
 };
 
