@@ -6,7 +6,6 @@ router.get('/', async (req, res) => {
     const { search } = req.query;
 
     const cats = await catManager.getAll(search);
-    console.log(cats);
     
     res.render('index', {
         searchElement: true, cats, search,
