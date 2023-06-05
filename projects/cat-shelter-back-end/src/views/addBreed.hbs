@@ -1,7 +1,7 @@
 <form action="/cats/add-breed" method="POST" class="cat-form">
     <h2>Add Cat Breed</h2>
     <label for="breed-name">Breed Name</label>
-    <input name="breed" type="text" id="breed-name">
+    <input name="breed" type="text" id="breed-name" placeholder="Type a Breed name, without the word 'Cat'...">
     <button type="submit">Add Breed</button>
 </form>
 
@@ -10,7 +10,7 @@
     <select>
         <option value="" selected disabled hidden>See breeds here</option>
         {{#each breeds}}
-            {{>'breed'}}
+            {{>'options/addBreed-opt'}}
         {{/each}}
     </select>
 </div>
