@@ -1,6 +1,6 @@
 const Breed = require('../models/Breed');
 
-exports.getAll = async (search) => {
+exports.getAll = async () => {
     let result = await Breed.find().lean();
     return result;
 };
