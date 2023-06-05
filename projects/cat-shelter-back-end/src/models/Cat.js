@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const catSchema = {
+const catSchema = new mongoose.Schema({
     name: String,
     description: String,
     img: String,
     breed: String,
-};
+}, { collection: 'cats' });
 
 const Cat = mongoose.model('Cat', catSchema);
 

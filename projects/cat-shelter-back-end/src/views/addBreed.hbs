@@ -9,6 +9,8 @@
     <h2>Breeds in database</h2>
     <select>
         <option value="" selected disabled hidden>See breeds here</option>
-        {{breeds}}
+        {{#each breeds}}
+            {{>breed}}
+        {{/each}}
     </select>
 </div>
