@@ -10,11 +10,13 @@ router.get('/cats/add-breed', async (req, res) => {
 
 router.post('/cats/add-breed', async (req, res) => {
     const { breed } = req.body;
+    const breeds = await breedManager.getAll();
+    let exists = breeds.find(x => x.name.toLowerCase() == breed.toLowerCase());
 
     if (breed == '') {
-        const breeds = await breedManager.getAll();
-
-        res.render('addBreed', { breeds, class: 'empty' });
+        res.render('addBreed', { breeds, class: 'empty', message: 'Input cannot be empty!' });
+    } else if (exists) {
+        res.render('addBreed', { breeds, class: 'empty', message: 'This breed already exists in the database!' });
     } else {
         await breedManager.create({ name: breed });
 
@@ -31,6 +33,7 @@ router.get('/cats/add-cat', async (req, res) => {
 router.post('/cats/add-cat', async (req, res) => {
     const { name, description, img, breed } = req.body;
 
+    // verification of inputs
     let empty = [];
     let filled = {};
     if (name == '') empty.push('name');
@@ -47,6 +50,8 @@ router.post('/cats/add-cat', async (req, res) => {
 
         let breeds = await breedManager.getAll();
         if (breed != breeds[0].name) {
+            // keeping breed value, in case it was selected, but there
+            // were other empty inputs
             let current = breeds.find(x => x.name == breed);
             breeds = breeds.filter(x => x.name != breed);
             breeds.unshift(current);

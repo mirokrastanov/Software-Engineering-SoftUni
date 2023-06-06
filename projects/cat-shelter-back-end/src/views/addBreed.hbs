@@ -1,7 +1,13 @@
 <form action="/cats/add-breed" method="POST" class="cat-form">
     <h2>Add Cat Breed</h2>
     <label for="breed-name">Breed Name</label>
-    <input class="{{class}}" name="breed" type="text" id="breed-name" placeholder="Type a breed name...">
+    <input class="{{class}}" name="breed" type="text" id="breed-name" 
+    placeholder=
+    {{#if message}}
+    "{{message}}">
+    {{else}}
+    "Type a breed name...">
+    {{/if}}
     <button type="submit">Add Breed</button>
 </form>
 
