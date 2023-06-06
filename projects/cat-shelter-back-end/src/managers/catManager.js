@@ -28,3 +28,5 @@ exports.edit = async (catId, name, description, img, breed) => {
         $set: { name, description, img, breed }
     })
 };
+
+exports.remove = (catId) => Cat.findByIdAndDelete(catId);

@@ -53,4 +53,12 @@ router.get('/cats/new-home/:catId', async (req, res) => {
     res.render('catShelter', cat);
 });
 
+router.post('/cats/new-home/:catId', async (req, res) => {
+    const catId = req.params.catId;
+
+    await catManager.remove(catId);
+
+    res.redirect('/');
+});
+
 module.exports = router;
