@@ -30,3 +30,11 @@ exports.edit = async (catId, name, description, img, breed) => {
 };
 
 exports.remove = (catId) => Cat.findByIdAndDelete(catId);
+
+exports.exists = async (catId) => {
+    let cats = await this.getAll();
+    cats = cats.filter(cat => cat._id == catId);
+
+    if (cats.length == 0) return false;
+    else return true;
+};
