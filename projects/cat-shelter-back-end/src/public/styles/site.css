@@ -276,3 +276,8 @@ body>form>label:nth-child(3) {
     width: 30%;
     height: 30%;
 }
+
+.empty {
+    border: 1px solid rgb(160, 2, 2) !important;
+    background-color: rgba(206, 46, 46, 0.219);
+}

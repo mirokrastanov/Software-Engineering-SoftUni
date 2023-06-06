@@ -11,9 +11,15 @@ router.get('/cats/add-breed', async (req, res) => {
 router.post('/cats/add-breed', async (req, res) => {
     const { breed } = req.body;
 
-    await breedManager.create({ name: breed });
+    if (breed == '') {
+        const breeds = await breedManager.getAll();
 
-    res.redirect('/');
+        res.render('addBreed', { breeds, class: 'empty' });
+    } else {
+        await breedManager.create({ name: breed });
+
+        res.redirect('/');
+    }
 });
 
 router.get('/cats/add-cat', async (req, res) => {
@@ -25,9 +31,33 @@ router.get('/cats/add-cat', async (req, res) => {
 router.post('/cats/add-cat', async (req, res) => {
     const { name, description, img, breed } = req.body;
 
-    await catManager.create({ name, description, img, breed, });
+    let empty = [];
+    let filled = {};
+    if (name == '') empty.push('name');
+    else filled['name'] = name;
+    if (description == '') empty.push('description');
+    else filled['description'] = description;
+    if (img == '') empty.push('img');
+    else filled['img'] = img;
+    if (breed == '') empty.push('breed');
+    else filled['breed'] = breed;
+    if (empty.length != 0) {
+        let properties = {};
+        empty.forEach(x => properties[`${x}-empty`] = 'empty')
 
-    res.redirect('/');
+        let breeds = await breedManager.getAll();
+        if (breed != breeds[0].name) {
+            let current = breeds.find(x => x.name == breed);
+            breeds = breeds.filter(x => x.name != breed);
+            breeds.unshift(current);
+        }
+
+        res.render('addCat', { breeds, ...properties, ...filled });
+    } else {
+        await catManager.create({ name, description, img, breed, });
+
+        res.redirect('/');
+    }
 });
 
 router.get('/cats/edit-cat/:catId', async (req, res) => {

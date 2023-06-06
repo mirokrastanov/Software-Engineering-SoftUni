@@ -1,13 +1,13 @@
 <form action="/cats/add-cat" method="POST" class="cat-form">
     <h2>Add Cat</h2>
     <label for="name">Name</label>
-    <input name="name" type="text" id="name">
+    <input value="{{name}}" class="{{'name-empty'}}" name="name" type="text" id="name">
     <label for="description">Description</label>
-    <textarea name="description" id="description"></textarea>
+    <textarea class="{{'description-empty'}}" name="description" id="description">{{description}}</textarea>
     <label for="img">Image</label>
-    <input name="img" type="text" id="image">
+    <input value="{{img}}" class="{{'img-empty'}}" name="img" type="text" id="image">
     <label for="breed">Breed</label>
-    <select name="breed" id="group">
+    <select class="{{'breed-empty'}}" name="breed" id="group">
         {{#each breeds}}
             {{>'options/addCat-opt'}}
         {{/each}}
