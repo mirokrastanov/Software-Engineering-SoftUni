@@ -22,3 +22,9 @@ exports.create = (catData) => {
 
     return cat.save();
 }
+
+exports.edit = async (catId, name, description, img, breed) => {
+    return Cat.findByIdAndUpdate(catId, {
+        $set: { name, description, img, breed }
+    })
+};
