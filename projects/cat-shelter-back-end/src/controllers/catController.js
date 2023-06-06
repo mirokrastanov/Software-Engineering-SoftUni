@@ -11,7 +11,7 @@ router.get('/cats/add-breed', async (req, res) => {
 router.post('/cats/add-breed', async (req, res) => {
     const { breed } = req.body;
 
-    await breedManager.create({ name: breed, });
+    await breedManager.create({ name: breed });
 
     res.redirect('/');
 });
@@ -22,5 +22,14 @@ router.get('/cats/add-cat', async (req, res) => {
     res.render('addCat', { breeds });
 });
 
+router.post('/cats/add-cat', async (req, res) => {
+    const { name, description, img, breed } = req.body;
+
+    await catManager.create({
+        name, description, img, breed,
+    });
+
+    res.redirect('/');
+});
 
 module.exports = router;
