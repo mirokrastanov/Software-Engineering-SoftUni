@@ -38,13 +38,19 @@ router.get('/cats/edit-cat/:catId', async (req, res) => {
     res.render('editCat', { breeds, _id, name, description, img, breed });
 });
 
-router.post('/cats/edit-cat/:catId', async (req, res) => { 
+router.post('/cats/edit-cat/:catId', async (req, res) => {
     const catId = req.params.catId;
     const { name, description, img, breed } = req.body;
 
     await catManager.edit(catId, name, description, img, breed);
 
     res.redirect('/');
+});
+
+router.get('/cats/new-home/:catId', async (req, res) => {
+    const cat = await catManager.getOne(req.params.catId);
+
+    res.render('catShelter', cat);
 });
 
 module.exports = router;
