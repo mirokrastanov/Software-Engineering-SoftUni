@@ -32,6 +32,9 @@ router.post('/cats/add-cat', async (req, res) => {
 
 router.get('/cats/edit-cat/:catId', async (req, res) => {
     const { _id, name, description, img, breed } = await catManager.getOne(req.params.catId);
+
+    if (!name) return res.redirect('/404');
+
     const breeds = (await breedManager.getAll())
         .filter(x => x.name != breed);
 
@@ -48,6 +51,11 @@ router.post('/cats/edit-cat/:catId', async (req, res) => {
 });
 
 router.get('/cats/new-home/:catId', async (req, res) => {
+    let cats = await catManager.getAll();
+    cats = cats.filter(cat => cat._id == req.params.catId);
+    console.log(cats.length);
+    if (cats.length == 0) return res.redirect('/404');
+
     const cat = await catManager.getOne(req.params.catId);
 
     res.render('catShelter', cat);
