@@ -30,7 +30,9 @@ router.get('/:cubeId/details', async (req, res) => {
 
     if (!cube) return res.redirect('/404');
 
-    res.render('cube/details', { cube });
+    const isOwner = cube.owner?.toString() === req.user._id; // optional chanining to prevent undefined.toString() erroring out
+
+    res.render('cube/details', { cube, isOwner });
 });
 
 router.get('/:cubeId/attach-accessory', async (req, res) => {
