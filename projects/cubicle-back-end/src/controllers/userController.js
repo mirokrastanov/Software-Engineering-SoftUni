@@ -3,7 +3,7 @@ const router = require('express').Router();
 const userManager = require('../managers/userManager');
 
 router.get('/register', (req, res) => {
-    res.render('users/register');
+    res.render('user/register');
 });
 
 router.post('/register', async (req, res) => {
@@ -11,11 +11,11 @@ router.post('/register', async (req, res) => {
 
     await userManager.register({ username, password, repeatPassword });
 
-    res.redirect('/users/login');
+    res.redirect('/user/login');
 });
 
 router.get('/login', (req, res) => {
-    res.render('users/login');
+    res.render('user/login');
 });
 
 router.post('/login', async (req, res) => {
