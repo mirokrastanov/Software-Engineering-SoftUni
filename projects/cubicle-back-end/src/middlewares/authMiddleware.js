@@ -11,15 +11,21 @@ exports.auth = async (req, res, next) => {
 
             req.user = decodedToken; // save info about the user inside the request object as it is transfered futher to the next function as well
             res.locals.user = decodedToken;
-            res.locals.isAuthenticated = true; 
+            res.locals.isAuthenticated = true;
 
             next();
         } catch (error) {
             res.clearCookie('auth');
-            
+
             res.redirect('/users/login');
         }
     } else {
         next();
     }
+};
+
+exports.isAuth = (req, res, next) => {
+    if (!req.user) return res.redirect('/users/login');
+
+    next();
 };
