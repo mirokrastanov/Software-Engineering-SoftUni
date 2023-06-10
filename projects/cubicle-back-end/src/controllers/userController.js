@@ -24,14 +24,19 @@ router.get('/login', (req, res) => {
     res.render('user/login');
 });
 
-router.post('/login', async (req, res) => {
+router.post('/login', async (req, res, next) => {
     const { username, password } = req.body;
 
-    const token = await userManager.login(username, password);
+    try {
+        const token = await userManager.login(username, password);
+        res.cookie('auth', token, { httpOnly: true });
+        res.redirect('/');
+        
+    } catch (error) {
+        next(error); // for the global middleware / error handler option
+    }
 
-    res.cookie('auth', token, { httpOnly: true });
 
-    res.redirect('/');
 });
 
 router.get('/logout', (req, res) => {
