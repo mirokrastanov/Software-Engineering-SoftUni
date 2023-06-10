@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: [true, 'Password is required!'],
         validate: {
             validator: function(value) {
                 return /^[A-Za-z0-9]+$/.test(value);
@@ -29,7 +29,7 @@ userSchema.virtual('repeatPassword')
         }
     })
 
-userSchema.pre('save', async function () {
+userSchema.pre('save', async function () { // prior to db saving - this handler is activated
     const hash = await bcrypt.hash(this.password, 10);
 
     this.password = hash;
