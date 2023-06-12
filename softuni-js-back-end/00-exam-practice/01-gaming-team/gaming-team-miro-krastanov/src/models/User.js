@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+
+// START MODEL HERE - delete as it fills up 
+
+
 const userSchema = new mongoose.Schema({
     username: {
         type: String,

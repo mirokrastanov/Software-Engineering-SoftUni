@@ -31,7 +31,7 @@ router.post('/login', async (req, res, next) => {
         const token = await userManager.login(username, password);
         res.cookie('auth', token, { httpOnly: true });
         res.redirect('/');
-        
+
     } catch (error) {
         next(error); // for the global middleware / error handler option
     }
