@@ -1,18 +1,32 @@
-exports.getCubeDifficultyOptions = function (difficultyLevel) {
-    const titles = [
-        'Very Easy',
-        'Easy',
-        'Medium (Standard 3x3)',
-        'Intermediate',
-        'Expert',
-        'Hardcore',
+exports.getPlatformOptions = function (platform) {
+    const platforms = [
+        'PC',
+        'Nintendo',
+        'PS4',
+        'PS5',
+        'XBOX',
     ];
 
-    const options = titles.map((title, index) => ({
-        title: `${index + 1} - ${title}`,
-        value: index + 1,
-        selected: Number(difficultyLevel) === index + 1,
+    const options = platforms.map((title, index) => ({
+        title: title,
+        value: title,
+        selected: platform.toLowerCase() == title.toLowerCase(),
     }));
 
     return options;
+}
+
+exports.platformIsValid = function (platform) {
+    const platforms = [
+        'PC',
+        'Nintendo',
+        'PS4',
+        'PS5',
+        'XBOX',
+    ];
+    let flag = false;
+    platforms.forEach(x => {
+        if (platform == x) flag = true;
+    });
+    return flag;
 }
