@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="col-9">
+        {{#if photos}}
+            {{#each photos}}
+                {{>'photos/petCard'}}
+            {{/each}}
+        {{else}}
+            {{>'photos/noPosts'}}
+        {{/if}}
+    </div>
+</div>
