@@ -1,18 +1,8 @@
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
-    // const { search, from, to } = req.query;
-
-    // const cubes = await cubeManager.getAll(search, from, to);
-
-    res.render('index', { 
-        // cubes, search, from, to 
-    });  // loads index.hbs and loads it with the "cubes" array
+router.get('/', (req, res) => {
+    res.render('home');
 });
-
-// router.get('/about', (req, res) => {
-//     res.render('about');
-// });
 
 router.get('/404', (req, res) => {
     res.render('404');
