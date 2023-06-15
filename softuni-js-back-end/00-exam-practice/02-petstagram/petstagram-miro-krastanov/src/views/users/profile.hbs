@@ -1,0 +1,29 @@
+<div class="profile">
+    <div class="profile-data">
+        <div class="profile_img">
+            <div class="image">
+                <img src="/images/person.png" alt="img8">
+            </div>
+        </div>
+        <div class="personal">
+            <div class="edit">
+                <p>{{user.username}}</p>
+            </div>
+            <div class="data">
+                <span>{{count}}</span>
+                <p>photos</p>
+            </div>
+            <p class="email">{{user.email}}</p>
+        </div>
+    </div>
+    <div class="pet-photos">
+        {{#if filtered}}
+        {{#each filtered}}
+        {{>'userPosts/photoCard'}}
+        {{/each}}
+        {{else}}
+        {{>'userPosts/noPhotos'}}
+        {{/if}}
+    </div>
+
+</div>
