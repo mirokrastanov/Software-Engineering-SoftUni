@@ -1,33 +1,32 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
-
-// START MODEL HERE - delete as it fills up 
-
-
+// TODO: EDIT ALL requirements based on what's required. DO NOT RUN prior to edits being done!
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
-        required: [true, 'Username is required!'], // custom message if default is not suitable
+        required: [true, 'Username is required!'],
         minLength: [5, 'Username is too short!'],
-        match: [/^[A-Za-z0-9]+$/, 'Username must be alphanumeric using only latin letters!'],
         unique: {
             value: true,
             message: 'User already exists!',
         },
     },
+    email: {
+        type: String,
+        required: [true, 'Email is required!'],
+        minLength: [10, 'Email is too short!'],
+        unique: {
+            value: true,
+            message: 'Email already exists!',
+        },
+    },
     password: {
         type: String,
         required: [true, 'Password is required!'],
-        validate: {
-            validator: function(value) {
-                return /^[A-Za-z0-9]+$/.test(value);
-            },
-            message: 'Invalid password characters!',
-        },
-        minLength: [8, 'Password is too short!'],
+        minLength: [4, 'Password is too short!'],
     },
-});
+}, { collection: 'users' });
 
 userSchema.virtual('repeatPassword')
     .set(function (value) {
@@ -36,7 +35,7 @@ userSchema.virtual('repeatPassword')
         }
     })
 
-userSchema.pre('save', async function () { // prior to db saving - this handler is activated
+userSchema.pre('save', async function () {
     const hash = await bcrypt.hash(this.password, 10);
 
     this.password = hash;
