@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: [true, 'Email is required!'],
-        // minLength: [10, 'Email is too short!'],
+        match: [/(?<name>[A-Za-z]+)@(?<domain>[A-Za-z]+).(?<ext>[A-Za-z]+)/m, 'Email format invalid'],
         unique: {
             value: true,
             message: 'Email already exists!',
@@ -14,11 +14,12 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: [true, 'Password is required!'],
-        // minLength: [4, 'Password is too short!'],
+        minLength: [5, 'Password is too short!'],
     },
     description: {
         type: String,
         required: [true, 'Description required!'],
+        maxLength: [40, 'Description is too long!'],
     },
     ads: [{
         type: mongoose.Types.ObjectId,

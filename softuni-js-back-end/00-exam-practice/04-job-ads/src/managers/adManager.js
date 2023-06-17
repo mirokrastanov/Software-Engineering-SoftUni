@@ -1,10 +1,9 @@
 const Ad = require('../models/Ad');
 
 
-exports.getAll = async (search, platform) => {
-    let result = await Ad.find().lean();
-    if (search) result = result.filter(ad => ad.name.toLowerCase().includes(search.toLowerCase()));
-    if (platform) result = result.filter(ad => ad.platform.toLowerCase() == platform.toLowerCase());
+exports.getAll = async (search) => {
+    let result = await Ad.find().populate('author').populate('applicants').lean();
+    if (search) result = result.filter(ad => ad.author.email.toLowerCase().includes(search.toLowerCase()));
     return result;
 };
 
@@ -13,21 +12,21 @@ exports.create = (adData) => {
     return ad.save();
 };
 
-exports.getOne = (adId) => Ad.findById(adId);
+exports.getOne = (adId) => Ad.findById(adId).populate('author').populate('applicants');
 
-exports.buyOne = async (adId, userId) => {
-    return Ad.findByIdAndUpdate(adId, { $push: { boughtBy: userId } });
+exports.apply = async (adId, userId) => {
+    return Ad.findByIdAndUpdate(adId, { $push: { applicants: userId } });
 };
 
-exports.hasBought = (ad, isGuest, userId) => {
-    let hasBought = false;
-    if (!isGuest) {
-        if (ad.boughtBy && ad.boughtBy.length > 0) {
-            let result = ad.boughtBy.find(x => x == userId);
-            if (result) hasBought = result == userId;
+exports.hasApplied = (ad, isNotGuest, userId) => {
+    let hasApplied = false;
+    if (isNotGuest) {
+        if (ad.applicants && ad.applicants.length > 0) {
+            let result = ad.applicants.find(x => x == userId);
+            if (result) hasApplied = result == userId;
         }
     }
-    return hasBought;
+    return hasApplied;
 }
 
 exports.delete = (adId) => Ad.findByIdAndDelete(adId);

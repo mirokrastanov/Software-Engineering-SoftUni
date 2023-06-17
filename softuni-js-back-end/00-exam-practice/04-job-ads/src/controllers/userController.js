@@ -10,9 +10,9 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/register', async (req, res) => {
-    const { username, password, repeatPassword } = req.body; // TODO: change here and all others
+    const { email , password, repeatPassword, description } = req.body; // TODO: change here and all others
     try {
-        await userManager.register({ username, password, repeatPassword });
+        await userManager.register({ email, password, repeatPassword, description });
         res.redirect('/users/login');
     } catch (err) {
         const errorMessages = errors.getMessageArray(err);
@@ -26,9 +26,9 @@ router.get('/login', (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    const { username, password } = req.body;  // TODO: change here and all others
+    const { email, password } = req.body;  // TODO: change here and all others
     try {
-        const token = await userManager.login(username, password);
+        const token = await userManager.login(email, password);
         res.cookie(TOKEN_KEY, token, { httpOnly: true });
         res.redirect('/');
     } catch (err) {

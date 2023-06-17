@@ -4,8 +4,8 @@ const { genToken } = require('../util/token');
 
 // TODO: Adjust according to requirements!
 
-exports.login = async (username, password) => {
-    const user = await User.findOne({ username });
+exports.login = async (email, password) => {
+    const user = await User.findOne({ email });
     if (!user) throw new Error('Invalid user or password');
 
     const passIsValid = await bcrypt.compare(password, user.password);
@@ -15,7 +15,7 @@ exports.login = async (username, password) => {
 };
 
 exports.register = async (userData) => {
-    const userExists = await User.findOne({ username: userData.username });
+    const userExists = await User.findOne({ email: userData.email });
     if (userExists) throw new Error('Username already exists');
 
     await User.create(userData);

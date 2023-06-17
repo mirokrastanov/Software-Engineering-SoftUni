@@ -5,18 +5,22 @@ const adSchema = new mongoose.Schema({
     headline: {
         type: String,
         required: [true, 'Headline is required!'],
+        minLength: [4, 'Headline is too short!'],
     },
     location: {
         type: String,
         required: [true, 'Location is required!'],
+        minLength: [8, 'Location is too short!'],
     },
     companyName: {
         type: String,
         required: [true, 'Company name is required!'],
+        minLength: [3, 'Company name is too short!'],
     },
     companyDescription: {
         type: String,
         required: [true, 'Company descroption is required!'],
+        maxLength: [40, 'Company description is too long!'],
     },
     author: {
         type: mongoose.Types.ObjectId,
@@ -27,19 +31,6 @@ const adSchema = new mongoose.Schema({
         ref: 'User',
     }],
 }, { collection: 'ads' });
-
-adSchema.virtual('repeatPassword')
-    .set(function (value) {
-        if (value !== this.password) {
-            throw new Error('Password missmatch!');
-        }
-    })
-
-adSchema.pre('save', async function () {
-    const hash = await bcrypt.hash(this.password, 10);
-
-    this.password = hash;
-});
 
 const Ad = mongoose.model('Ad', adSchema);
 
