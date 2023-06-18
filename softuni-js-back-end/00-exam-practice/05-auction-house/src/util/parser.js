@@ -1,19 +1,20 @@
 
 exports.generateOptions = function (theSelectedOption) {
     // TODO: Adjust accordingly
-    const valuesRaw = [
-        'Very Easy',
-        'Easy',
-        'Medium (Standard 3x3)',
-        'Intermediate',
-        'Expert',
-        'Hardcore',
-    ];
+    const valuesRaw = {
+        "estate": "Real Estate",
+        "vehicles": "Vehicles",
+        "furniture": "Furniture",
+        "electronics": "Electronics",
+        "other": "Other",
+    };
 
-    const options = valuesRaw.map((value, index) => ({
-        title: value, 
-        value: value,
-        selected: theSelectedOption == value,
+    let options = [];
+
+    Object.entries(valuesRaw).forEach(([key, value], index) => options.push({
+        title: valuesRaw[key],
+        value: key,
+        selected: theSelectedOption == key,
     }));
 
     return options;

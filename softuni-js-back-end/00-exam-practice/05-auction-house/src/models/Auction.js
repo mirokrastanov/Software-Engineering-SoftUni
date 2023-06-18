@@ -31,14 +31,11 @@ const auctionSchema = new mongoose.Schema({
     author: {
         type: mongoose.Types.ObjectId,
         ref: 'User',
+        required: [true, 'Author is required'],
     },
     bidder: {
         type: mongoose.Types.ObjectId,
         ref: 'User',
-    },
-    bid: {
-        type: Number,
-        min: [0, 'Big must be a positive number!'],
     },
     closed: {
         type: Boolean,

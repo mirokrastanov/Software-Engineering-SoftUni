@@ -1,9 +1,13 @@
 const Auction = require('../models/Auction');
 
-exports.getAll = async (search, platform) => {
+exports.getAll = async (closed = false, userId) => {
     let result = await Auction.find().populate('bidder').populate('author').lean();
-    if (search) result = result.filter(auction => auction.email.toLowerCase().includes(search.toLowerCase()));
-    if (platform) result = result.filter(auction => auction.platform.toLowerCase() == platform.toLowerCase());
+    if (closed) {
+        result = result.filter(x => x.closed == true);
+        result = result.filter(x => x.author._id == userId);
+    } else {
+        result = result.filter(x => x.closed != true);
+    }
     return result;
 };
 
@@ -14,32 +18,22 @@ exports.create = (auctionData) => {
 
 exports.getOne = (auctionId) => Auction.findById(auctionId).populate('bidder').populate('author').lean();
 
-exports.placeBid = async (auctionId, userId, currentBid, bid) => {
-    const auction = await Auction.findById(auctionId);
-    if (currentBid < bid) {
-        auction.bidder = userId;
-        auction.bid = bid;
-        auction.save();
-        return true;
-    } else {
-        return false;
+exports.placeBid = async (auction, userId, bid) => {
+    bid = Number(bid);
+    if (userId == auction.author._id) return 'You cannot bid on your own auction!';
+    if (!auction.bidder || (auction.bidder && auction.price < bid)) {
+        await this.update(auction._id, { bidder: userId, price: bid });
+        return 'success';
     }
+    return `Bid is not enough! Current price is: $${auction.price}`;
 };
 
-exports.hasBidder = async (auctionId) => {
-
+exports.canBid = async (auction, userId) => {
+    if (userId == auction.author._id) return 'You cannot bid on your own auction!';
+    else if (userId == auction.bidder?._id) return 'You are the current highest bidder!';
+    return 'success';
 };
 
-// exports.hasBought = (auction, isGuest, userId) => {
-//     let hasBought = false;
-//     if (!isGuest) {
-//         if (auction.boughtBy && auction.boughtBy.length > 0) {
-//             let result = auction.boughtBy.find(x => x == userId);
-//             if (result) hasBought = result == userId;
-//         }
-//     }
-//     return hasBought;
-// }
 
 exports.delete = (auctionId) => Auction.findByIdAndDelete(auctionId);
 

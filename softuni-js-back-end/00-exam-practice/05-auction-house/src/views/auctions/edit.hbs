@@ -15,7 +15,7 @@
                     <span>Category</span>
                     <select name="category">
                         {{#each options}}
-                        <option value="{{value}}">{{title}}</option>
+                        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{title}}</option>
                         {{else}}
                         <option value="estate">Real Estate</option>
                         <option value="vehicles">Vehicles</option>
@@ -31,11 +31,8 @@
                 </label>
                 <label>
                     <span>Starting price</span>
-                    {{#if hasBidder}}
-                    <input type="number" name="bid" value="{{bid}}">
-                    {{else}}
-                    <input type="number" name="bid" value="{{bid}}">
-                    {{/if}}
+
+                    <input type="number" name="price" value="{{auction.price}}" {{#if hasBidder}}disabled{{/if}}>
                 </label>
             </div>
 
