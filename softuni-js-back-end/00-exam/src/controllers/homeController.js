@@ -1,23 +1,13 @@
 const router = require('express').Router();
+const animalManager = require('../managers/animalManager');
 
-// TODO: If home and catalog/dashboard are the same ==> import extra manager and use the commented section
+router.get('/', async (req, res) => {
+    const animals = await animalManager.getAll();
+    let lastThree = [];
+    if (animals.length <= 3) lastThree = animals.slice();
+    else lastThree = animals.slice().reverse().splice(0, 3).reverse();
 
-
-router.get('/', (req, res) => { // TODO: delete this if catalog & home are the same page
-    res.render('home');
-});
-
-
-router.get('/', async (req, res) => { // TODO: delete this if catalog is SEPARATE
-
-    const { search, from, to } = req.query; // TODO: adjust search params
-    const cubes = await cubeManager.getAll(search, from, to);
-    res.render('home', { cubes, search, from, to });  
-});
-
-
-router.get('/about', (req, res) => { // TODO: remove if there is no about
-    res.render('about');
+    res.render('home', { lastThree });
 });
 
 router.get('/404', (req, res) => {

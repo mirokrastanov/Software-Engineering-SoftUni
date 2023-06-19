@@ -1,8 +1,8 @@
 const server = require('express')();
 const express = require('./config/express');
 const handlebars = require('./config/handlebars');
-const database = require('./config/database'); // TODO: Change db name inside origin file
-const constants = require('./config/constants'); // TODO: Change port  based on the requirements inside origin file
+const database = require('./config/database');
+const constants = require('./config/constants');
 const routes = require('./routes');
 
 express.configure(server);

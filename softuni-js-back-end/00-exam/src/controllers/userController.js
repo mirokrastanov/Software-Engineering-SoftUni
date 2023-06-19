@@ -3,21 +3,20 @@ const userManager = require('../managers/userManager');
 const { TOKEN_KEY } = require('../config/constants');
 const errors = require('../util/error');
 
-// TODO: Adjust according to requirements!
 
 router.get('/register', (req, res) => {
     res.render('users/register');
 });
 
 router.post('/register', async (req, res) => {
-    const { username, password, repeatPassword } = req.body; // TODO: change here and all others
+    const { email, password, repeatPassword } = req.body;
     try {
-        await userManager.register({ username, password, repeatPassword });
-        res.redirect('/users/login');
+        const token = await userManager.register({ email, password, repeatPassword });
+        res.cookie(TOKEN_KEY, token, { httpOnly: true });
+        res.redirect('/');
     } catch (err) {
         const errorMessages = errors.getMessageArray(err);
-        res.status(404).render('users/register', { errorMessages }); 
-        // TODO: make sure template knows this is an ARRAY of errors, even if its just 1
+        res.status(404).render('users/register', { errorMessages });
     }
 });
 
@@ -26,15 +25,14 @@ router.get('/login', (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    const { username, password } = req.body;  // TODO: change here and all others
+    const { email, password } = req.body;
     try {
-        const token = await userManager.login(username, password);
+        const token = await userManager.login(email, password);
         res.cookie(TOKEN_KEY, token, { httpOnly: true });
         res.redirect('/');
     } catch (err) {
         const errorMessages = errors.getMessageArray(err);
-        res.status(404).render('users/login', { errorMessages }); 
-        // TODO: make sure template knows this is an ARRAY of errors, even if its just 1
+        res.status(404).render('users/login', { errorMessages });
     }
 });
 
