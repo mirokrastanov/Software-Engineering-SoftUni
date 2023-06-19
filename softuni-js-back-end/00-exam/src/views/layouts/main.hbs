@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page - Gaming Team</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Home Page</title>
 </head>
 
 <body>
@@ -19,30 +19,32 @@
         </div>
     </div>
     {{/if}}
-    <header class="header">
-        <nav>
-            <img src="/images/logo.jpg" class="logo">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/games/catalog">All Games Code</a></li>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <div>
+                    <a href="/">Home</a>
+                    <a href="/animals/dashboard">Dashboard</a>
+                    <a href="/animals/search">Search</a>
+                </div>
                 {{#if isAuthenticated}}
-                <li><a href="/games/search">Search</a></li>
-                <li><a href="/games/create">Create Game Offer</a></li>
-                <li><a href="/users/logout">Logout</a></li>
+                <div class="user">
+                    <a href="/animals/create">Add Animal</a>
+                    <a href="/users/logout">Logout</a>
+                </div>
                 {{else}}
-                <li><a href="/users/login">Login</a></li>
-                <li><a href="/users/register">Register</a></li>
+                <div class="guest">
+                    <a href="/users/login">Login</a>
+                    <a href="/users/register">Register</a>
+                </div>
                 {{/if}}
-            </ul>
-        </nav>
-    </header>
-
-    {{{body}}}
-
-    <footer>
-        <p>Back-End 2023</p>
-    </footer>
-
+            </nav>
+        </header>
+        {{{body}}}
+        <footer>
+            <p>@Friendly World</p>
+        </footer>
+    </div>
 </body>
 
 </html>

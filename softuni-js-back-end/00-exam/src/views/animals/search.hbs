@@ -1,0 +1,22 @@
+<main class="search">
+    <section id="search">
+        <h2>Search by Location</h2>
+
+        <form class="search-wrapper cf" method="GET">
+            <input id="search-input" type="text" name="location" placeholder="Search location here..." value="{{location}}" required />
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="search-container">
+            {{#if found}}
+            <ul class="card-wrapper">
+                {{#each found}}
+                {{>'search/searchCard'}}
+                {{/each}}
+            </ul>
+            {{else}}
+            {{>'search/noSearchCards'}}
+            {{/if}}
+        </div>
+    </section>
+</main>
