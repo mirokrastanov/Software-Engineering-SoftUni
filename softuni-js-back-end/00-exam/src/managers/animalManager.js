@@ -42,5 +42,5 @@ exports.update = async (animalId, animalData) => {
     }
 };
 
-// THIS WORKS - But I found it on the day AFTER the exam... :D Thankfully the workaround above didn't took more than a few min to implement.
+// THIS WORKS - But I found it on the day AFTER the exam... :D Thankfully the workaround above didn't take more than a few min to implement.
 // exports.update = (animalId, animalData) => Animal.findByIdAndUpdate(animalId, animalData, { runValidators: true });
