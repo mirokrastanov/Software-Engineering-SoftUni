@@ -98,5 +98,24 @@ const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
 
 // Classes
+class Person {
+    protected id: number // only accessible from within the class or any extented classes
+    name: string
+    private credential: string // only accessible from within the class
+
+    constructor(id: number, name: string, credential: string) {
+        this.id = id
+        this.name = name
+        this.credential = credential
+    }
+
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const brad = new Person(1, 'Brad', 'ighdwa');
+const mike = new Person(2, 'Mike', 'iuyorje');
+
+console.log(brad.register());
 
 

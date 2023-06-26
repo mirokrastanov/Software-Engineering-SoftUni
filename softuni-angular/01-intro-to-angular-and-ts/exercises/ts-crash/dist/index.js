@@ -70,3 +70,16 @@ const p1 = 1;
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
 // Classes
+class Person {
+    constructor(id, name, credential) {
+        this.id = id;
+        this.name = name;
+        this.credential = credential;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const brad = new Person(1, 'Brad', 'ighdwa');
+const mike = new Person(2, 'Mike', 'iuyorje');
+console.log(brad.register());
