@@ -83,3 +83,17 @@ class Person {
 const brad = new Person(1, 'Brad', 'ighdwa');
 const mike = new Person(2, 'Mike', 'iuyorje');
 console.log(brad.register());
+const PaymentStatus2 = {
+    Failed: 'Failed',
+    Successful: 'Successful',
+    Pending: 'Pending'
+};
+PaymentStatus2.Failed;
+const usersTest2 = [
+    { name: '1' },
+    { name: '2' },
+    { name: '3' },
+    { name: '4' },
+    { name: '5' },
+    { name: '6' },
+];
