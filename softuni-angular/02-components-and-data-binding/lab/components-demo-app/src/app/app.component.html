@@ -1,9 +1,8 @@
-<app-navigation />
-<div>{{title}}</div>
+<app-navigation
+  [title2]="title"
+  [activeUsers]="users"
+  (onTestOutput)="onNavOutput()"
+/>
 <hr />
 <app-home />
 <app-home />
-
-
-
-

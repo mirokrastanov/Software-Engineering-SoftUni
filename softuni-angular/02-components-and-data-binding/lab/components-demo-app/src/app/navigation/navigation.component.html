@@ -1,10 +1,19 @@
 <div id="nav">
+  <h3>{{ titleFromApp }}</h3>
+
   <ul *ngIf="isActive">
-    <li *ngFor="let user of activeUsers">
-      {{ user.name + ": " + user.age + " years old"}}
+    <li *ngFor="let user of data">
+      <span [class.green]="user.age % 2 == 0" [class.red]="user.age % 2 != 0">
+        {{ user.name + ": " + user.age + " years old" }}
+      </span>
     </li>
   </ul>
+
   <span *ngIf="!isActive"> Nothing is active :( </span>
+
+  <input [value]="inputValue" type="text" />
+  <input style="display: none" [attr.data-testche] type="text" />
+
   <button (click)="handleClick()">
     {{ isActive ? "Deactivate" : "Activate" }}
   </button>

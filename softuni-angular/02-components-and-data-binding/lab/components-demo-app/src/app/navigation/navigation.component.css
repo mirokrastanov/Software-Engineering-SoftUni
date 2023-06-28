@@ -8,3 +8,11 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
