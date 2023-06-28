@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let id = 5;
 let company = 'My company';
 let isPublished = true;
@@ -71,18 +72,27 @@ const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
 // Classes
 class Person {
-    constructor(id, name, credential) {
+    // private credential: string // only accessible from within the class // protected => only accessible from within the class or any extented classes
+    constructor(id, name) {
         this.id = id;
         this.name = name;
-        this.credential = credential;
     }
     register() {
         return `${this.name} is now registered`;
     }
 }
-const brad = new Person(1, 'Brad', 'ighdwa');
-const mike = new Person(2, 'Mike', 'iuyorje');
+const brad = new Person(1, 'Brad');
+const mike = new Person(2, 'Mike');
 console.log(brad.register());
+// Subclasses
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(5, 'Jackie', 'Developer');
+console.log(emp.register());
 const PaymentStatus2 = {
     Failed: 'Failed',
     Successful: 'Successful',
@@ -97,3 +107,18 @@ const usersTest2 = [
     { name: '5' },
     { name: '6' },
 ];
+// Generics - used to build reusable components - custom type 
+// -> u define it later when using the function - T is a placeholder for the future type
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['John', 'Jill', 'Jackie']);
+;
+const Header = (props) => {
+    return `
+        <header>
+        <h1 style="color: ${props.color ? props.color : 'blue'};" >${props.title}</h1>
+        </header>
+    `;
+};

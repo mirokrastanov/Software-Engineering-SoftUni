@@ -97,26 +97,44 @@ interface MathFunc {
 const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
 
-// Classes
-class Person {
-    protected id: number // only accessible from within the class or any extented classes
-    name: string
-    private credential: string // only accessible from within the class
+interface PersonInterface {
+    id: number,
+    name: string,
+    register(): string,
+}
 
-    constructor(id: number, name: string, credential: string) {
+// Classes
+class Person implements PersonInterface {
+    id: number
+    name: string
+    // private credential: string // only accessible from within the class // protected => only accessible from within the class or any extented classes
+
+    constructor(id: number, name: string) {
         this.id = id
         this.name = name
-        this.credential = credential
     }
 
     register() {
         return `${this.name} is now registered`;
     }
 }
-const brad = new Person(1, 'Brad', 'ighdwa');
-const mike = new Person(2, 'Mike', 'iuyorje');
+const brad = new Person(1, 'Brad');
+const mike = new Person(2, 'Mike');
 
 console.log(brad.register());
+
+// Subclasses
+class Employee extends Person {
+    position: string
+    constructor(id: number, name: string, position: string) {
+        super(id, name);
+        this.position = position;
+    }
+}
+
+const emp = new Employee(5, 'Jackie', 'Developer');
+
+console.log(emp.register());
 
 
 const PaymentStatus2 = {
@@ -139,3 +157,30 @@ const usersTest2 = [
     { name: '5' },
     { name: '6' },
 ] as userInterface2[];
+
+
+
+// Generics - used to build reusable components - custom type 
+// -> u define it later when using the function - T is a placeholder for the future type
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items);
+}
+
+let numArray = getArray<number>([1, 2, 3, 4]);
+let strArray = getArray<string>(['John', 'Jill', 'Jackie']);
+
+export interface Props {
+    title: string;
+    color?: string;
+};
+
+const Header = (props: Props) => {
+    return `
+        <header>
+        <h1 style="color: ${props.color ? props.color : 'blue'};" >${props.title}</h1>
+        </header>
+    `;
+};
+
+
+
