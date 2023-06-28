@@ -1,0 +1,11 @@
+<div id="nav">
+  <ul *ngIf="isActive">
+    <li *ngFor="let user of activeUsers">
+      {{ user.name + ": " + user.age + " years old"}}
+    </li>
+  </ul>
+  <span *ngIf="!isActive"> Nothing is active :( </span>
+  <button (click)="handleClick()">
+    {{ isActive ? "Deactivate" : "Activate" }}
+  </button>
+</div>
