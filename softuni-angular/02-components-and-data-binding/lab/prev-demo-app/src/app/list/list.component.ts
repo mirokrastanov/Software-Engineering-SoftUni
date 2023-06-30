@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ICustomEvent } from '../list-item/list-item.component';
 
 @Component({
   selector: 'app-list',
@@ -31,6 +32,10 @@ export class ListComponent {
       return;
     }
     this.selectedUserIndex = index;
+  }
+
+  customEventHandler($event: ICustomEvent) { // coming from the @Output in list-item
+    console.log($event);
   }
 
   constructor() { }

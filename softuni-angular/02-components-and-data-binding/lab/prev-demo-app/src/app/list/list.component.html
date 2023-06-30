@@ -10,7 +10,8 @@
 
 <ul id="list-ctr">
   <li class="list-item" *ngFor="let user of users; let i = index;">
-    <app-list-item [user]="user" [showLastName]="showLastName" staticString="test" (click)="listItemClickHandler(i)">
+    <app-list-item [user]="user" [showLastName]="showLastName" staticString="test" (click)="listItemClickHandler(i)"
+      (customEvent)="customEventHandler($event)">
     </app-list-item>
   </li>
 </ul>
