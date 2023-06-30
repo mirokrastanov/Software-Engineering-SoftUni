@@ -1,3 +1,8 @@
 >>> <span>{{ user.firstName }}</span> -
 <span *ngIf="showLastName">{{ user.lastName }}</span>
-{{ staticString }}
+
+<button (click)="selectClickHandler()">Select</button>
+
+<div>
+    {{ staticString }}
+</div>

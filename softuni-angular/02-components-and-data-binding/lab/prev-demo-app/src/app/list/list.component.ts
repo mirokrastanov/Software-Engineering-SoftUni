@@ -19,5 +19,19 @@ export class ListComponent {
     this.showLastName = !this.showLastName;
   }
 
-  constructor() {}
+  selectedUserIndex: null | number = null;
+
+  get showSelectedIndex(): boolean {
+    return (this.selectedUserIndex === null ? -1 : this.selectedUserIndex) >= 0;
+  }
+
+  listItemClickHandler(index: number) {
+    if (this.selectedUserIndex == index) {
+      this.selectedUserIndex = null;
+      return;
+    }
+    this.selectedUserIndex = index;
+  }
+
+  constructor() { }
 }

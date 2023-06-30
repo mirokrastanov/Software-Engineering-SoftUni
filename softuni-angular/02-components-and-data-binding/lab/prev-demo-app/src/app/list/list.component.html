@@ -4,9 +4,14 @@
   last name
 </button>
 
+<div *ngIf="showSelectedIndex">
+  Selected index is: {{ selectedUserIndex }}
+</div>
+
 <ul id="list-ctr">
-  <li class="list-item" *ngFor="let user of users">
-    <app-list-item [user]="user" [showLastName]="showLastName" staticString="test"></app-list-item>
+  <li class="list-item" *ngFor="let user of users; let i = index;">
+    <app-list-item [user]="user" [showLastName]="showLastName" staticString="test" (click)="listItemClickHandler(i)">
+    </app-list-item>
   </li>
 </ul>
 

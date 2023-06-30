@@ -6,7 +6,14 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./list-item.component.css'],
 })
 export class ListItemComponent {
+
   @Input() user!: { firstName: string; lastName: string };
   @Input() showLastName!: boolean;
   @Input() staticString!: string;
+
+  selectClickHandler() {
+    
+  }
+
+
 }
