@@ -1,15 +1,18 @@
 <button (click)="handleClickEvent($event)">
-    <ng-container *ngIf="showLastName">Hide</ng-container>
-    <ng-container *ngIf="!showLastName">Show</ng-container>
-    last name
+  <ng-container *ngIf="showLastName">Hide</ng-container>
+  <ng-container *ngIf="!showLastName">Show</ng-container>
+  last name
 </button>
 
-<div id="list-ctr">
-  <div class="list-item" *ngFor="let user of users">
-    >>> <span>{{ user.firstName }}</span> -
-    <span *ngIf="showLastName">{{ user.lastName }}</span>
-  </div>
-</div>
+<ul id="list-ctr">
+  <li class="list-item" *ngFor="let user of users">
+    <app-list-item [user]="user" [showLastName]="showLastName" staticString="test"></app-list-item>
+  </li>
+</ul>
+
+<!-- <div id="list-ctr">
+  <app-list-item class="list-item" *ngFor="let user of users"></app-list-item>
+</div> -->
 
 <ng-container *ngIf="false"></ng-container>
 <!-- placeholder, dummy element -->
