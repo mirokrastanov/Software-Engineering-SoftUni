@@ -1,1 +1,17 @@
-<p>Interpolation -> {{myProp}}</p>
+<button (click)="handleClickEvent($event)">
+    <ng-container *ngIf="showLastName">Hide</ng-container>
+    <ng-container *ngIf="!showLastName">Show</ng-container>
+    last name
+</button>
+
+<div id="list-ctr">
+  <div class="list-item" *ngFor="let user of users">
+    >>> <span>{{ user.firstName }}</span> -
+    <span *ngIf="showLastName">{{ user.lastName }}</span>
+  </div>
+</div>
+
+<ng-container *ngIf="false"></ng-container>
+<!-- placeholder, dummy element -->
+<ng-template>ANGULAR TEST</ng-template>
+<template>TEST</template>

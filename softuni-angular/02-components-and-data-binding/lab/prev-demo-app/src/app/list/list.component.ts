@@ -4,13 +4,20 @@ import { Component } from '@angular/core';
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
+  // interpolation: ['<<<', '>>>'],
 })
 export class ListComponent {
-  myProp = 'Hello World!';
+  users = [
+    { firstName: 'Ivan', lastName: 'Petrov' },
+    { firstName: 'Pesho', lastName: 'Georgiev' },
+  ];
 
-  constructor() {
-    setTimeout(() => {
-      this.myProp = 'Hello Other World!';
-    }, 1000);
+  showLastName = true;
+
+  handleClickEvent(event: MouseEvent) {
+    console.log(event);
+    this.showLastName = !this.showLastName;
   }
+
+  constructor() {}
 }
