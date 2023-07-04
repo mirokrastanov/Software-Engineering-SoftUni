@@ -8,7 +8,7 @@ const cors = require('cors');
 const { errorHandler } = require('./utils');
 
 dbConnector()
-  .then(() => {
+.then(() => {
     const config = require('./config/config');
 
     const app = require('express')();
