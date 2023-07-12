@@ -1,0 +1,6 @@
+{
+    "/api": {
+        "target": "https://scores.weaklytyped.com/api/v1/sports/nba/events",
+        "secure": false
+    }
+}
