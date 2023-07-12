@@ -11,7 +11,7 @@ export class ApiService {
   fetchData() {
     // const website = 'https://scores.weaklytyped.com/api/v1/sports/nba/events';
     // const website = 'https://jsonplaceholder.typicode.com/posts';
-    const website = 'http://localhost:3000';
+    const website = 'https://proxy-1.mirokrastanov.repl.co/jsonplaceholder.typicode.com/posts';
     return this.http.get<any>(website);
   }
 }
