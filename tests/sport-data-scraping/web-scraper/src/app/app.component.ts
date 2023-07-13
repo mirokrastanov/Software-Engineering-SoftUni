@@ -9,13 +9,17 @@ import { ApiService } from './services/api.service';
 
 export class AppComponent implements OnInit {
   constructor (private apiService: ApiService) {}
-  jsonData: any;
+  dataArray: any;
+  metaObject: any;
 
   ngOnInit(): void {
     this.apiService.fetchData().subscribe({
       next: (data) => {
-        this.jsonData = JSON.stringify(data);
+        this.dataArray = data.data;
+        this.metaObject = data.meta;
         console.log(data);
+        console.log(data.data[0]);
+                
       }
     });
   } 
