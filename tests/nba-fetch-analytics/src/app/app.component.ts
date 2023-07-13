@@ -19,14 +19,10 @@ export class AppComponent implements OnInit {
         this.metaObject = data.meta;
         console.log(data);
         console.log(data.data[0]);
-
+        let test: object = {};
+        console.log(test.hasOwnProperty('players'));
+        
       }
     });
   }
-
-  handleClick(): void {
-
-  }
-
-
 }
