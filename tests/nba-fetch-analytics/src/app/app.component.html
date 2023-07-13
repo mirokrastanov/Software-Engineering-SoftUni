@@ -1,12 +1,14 @@
 <div class="nav-ctr">
-    <ul>
-        <li><a href="">Players</a></li>
-        <li><a href="">Teams</a></li>
-        <li><a href="">Stats</a></li>
-    </ul>
+    <nav>
+        <a [routerLink]="['home']">Home</a>
+        <a [routerLink]="['players']">Players</a>
+        <a [routerLink]="['teams']">Teams</a>
+        <a [routerLink]="['stats']">Stats</a>
+    </nav>
 </div>
 <div class="content-ctr">
-    <!-- <app-players-table></app-players-table>
+    <!-- <app-home></app-home>
+    <app-players-table></app-players-table>
     <app-teams></app-teams>
     <app-stats></app-stats> -->
     <router-outlet></router-outlet>
