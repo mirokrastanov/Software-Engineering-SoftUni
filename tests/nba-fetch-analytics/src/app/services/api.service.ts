@@ -10,7 +10,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  fetchData(target: string) {
+  fetchData(target: string) { // TODO ==> Add and implement dynamic query params input
     if (!target) target = endpoints.players;
     let address = endpoints[target];
     return this.http.get<any>(proxy + address);
