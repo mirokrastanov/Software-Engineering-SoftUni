@@ -23,6 +23,7 @@
     align-items: center;
     font-size: 25px;
     color: black;
+    transition: linear 0.2s;
 }
 
 .active {

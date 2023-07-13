@@ -8,3 +8,16 @@
     font-variant: normal;
     font-weight: 400;
 }
+
+.btn {
+    padding: 5px 30px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: linear 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

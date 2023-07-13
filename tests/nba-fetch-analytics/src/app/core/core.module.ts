@@ -6,7 +6,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { StatsComponent } from './stats/stats.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
-
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { ErrorComponent } from './error/error.component';
     ErrorComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
   ],
   exports: [
     PlayersTableComponent,
