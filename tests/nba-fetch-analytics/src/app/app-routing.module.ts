@@ -5,9 +5,11 @@ import { TeamsComponent } from './core/teams/teams.component';
 import { StatsComponent } from './core/stats/stats.component';
 
 const routes: Routes = [
-  { 'path': 'players', component: PlayersTableComponent },
-  { 'path': 'teams', component: TeamsComponent },
-  { 'path': 'stats', component: StatsComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: PlayersTableComponent },
+  { path: 'players', component: PlayersTableComponent },
+  { path: 'teams', component: TeamsComponent },
+  { path: 'stats', component: StatsComponent },
 ];
 
 @NgModule({
