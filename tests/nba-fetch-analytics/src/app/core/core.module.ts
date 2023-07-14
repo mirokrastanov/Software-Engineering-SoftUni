@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { GlobalLoaderComponent } from './global-loader/global-loader.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { GlobalLoaderComponent } from './global-loader/global-loader.component';
   imports: [
     CommonModule,
     AppRoutingModule,
+    SharedModule,
   ],
   exports: [
     PlayersTableComponent,
@@ -31,6 +33,7 @@ import { GlobalLoaderComponent } from './global-loader/global-loader.component';
     StatsComponent,
     HomeComponent,
     ErrorComponent,
+    GlobalLoaderComponent,
   ]
 })
 export class CoreModule { }
