@@ -20,10 +20,9 @@ export class PlayersTableComponent implements OnInit {
         console.log(data.data[0]);
         let test: object = {};
         console.log(test.hasOwnProperty('players'));
-
-       
-        
-
+      },
+      error: (err) => {
+        console.log(err);
       }
     });
   }

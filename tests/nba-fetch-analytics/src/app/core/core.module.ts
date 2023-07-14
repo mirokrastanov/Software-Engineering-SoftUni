@@ -7,6 +7,7 @@ import { StatsComponent } from './stats/stats.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { GlobalLoaderComponent } from './global-loader/global-loader.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AppRoutingModule } from '../app-routing.module';
     StatsComponent,
     HomeComponent,
     ErrorComponent,
+    GlobalLoaderComponent,
   ],
   imports: [
     CommonModule,
