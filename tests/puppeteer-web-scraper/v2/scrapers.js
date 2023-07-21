@@ -60,46 +60,32 @@ export async function scrapeStandings(url) {
 }
 
 export async function scrapePlayers(url) {
-    const selector = '#__next > div.Layout_base__6IeUC.Layout_withSubNav__ByKRF.Layout_justNav__2H4H0 > div.Layout_mainContent__jXliI > main > div.MaxWidthContainer_mwc__ID5AG > section > div > div.PlayerList_content__kwT7z > div.PlayerList_filters__n_6IL > div.PlayerList_pagination__c5ijE > div > div.Pagination_pageDropdown__KgjBU > div > label > div > select';
+    const selectors = {
+        thead: 'thead',
+        tbody: 'tbody',
+    };
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
+    await page.setViewport({ width: 1000, height: 1024 });
     await page.goto(url);
-    await page.click('#onetrust-close-btn-container > button');
-    await page.waitForSelector(selector);
-    await page.click(selector);
-    await page.select(selector, '-1');
-    const table = await page.waitForSelector('#__next > div.Layout_base__6IeUC.Layout_withSubNav__ByKRF.Layout_justNav__2H4H0 > div.Layout_mainContent__jXliI > main > div.MaxWidthContainer_mwc__ID5AG > section > div > div.PlayerList_content__kwT7z > div.PlayerList_playerTable__Jno0k > div > div > div > table');
-    const tds = await table.$$('tr');
-    // console.log(tds);
-    await page.click('#__next > div.Layout_base__6IeUC.Layout_withSubNav__ByKRF.Layout_justNav__2H4H0 > div.Layout_mainContent__jXliI > main > div.MaxWidthContainer_mwc__ID5AG > section > div > div.Block_titleContainerBetween__0GYet > h1');
-    await page.waitForNavigation();    
-    await page.waitForSelector('#__next > div.Layout_base__6IeUC.Layout_withSubNav__ByKRF.Layout_justNav__2H4H0 > div.Layout_mainContent__jXliI > main > div.MaxWidthContainer_mwc__ID5AG > section > div > div.PlayerList_content__kwT7z > div.PlayerList_playerTable__Jno0k > div > div > div > table > tbody > tr:nth-child(565) > td:nth-child(8)');
-    await page.waitForNavigation();    
 
-    // const data = await page.evaluate(() => {
-    //     return tds.map(td => td.innerText);
-    // });
-    // console.log(data);
-
-    for (let x = 0; x < tds.length; x++) {
-        // if (x % 3 == 0) await page.waitForNavigation();
-        const el = tds[x];
-        const tdText = await page.evaluate(el => el.textContent, el);
-        console.log(tdText);
+    async function scrapeHeaders(selector) {
+        const headersRowEl1 = await page.waitForSelector(selector);
+        const headersThArray1 = await headersRowEl1.$$('th button');
+        const headersArray1 = [];
+        for (let i = 0; i < headersThArray1.length; i++) {
+            const element = headersThArray1[i];
+            const thText = await page.evaluate(element => element.textContent, element);
+            headersArray1.push(thText);
+        }
+        return headersArray1;
     }
+    const headers = await scrapeHeaders(selectors.thead);
+    console.log(headers);
 
-    // const playersTable = await page.waitForSelector('table.players-list tbody');
-    // const tableCells = await playersTable.$$('td');
-    // let test = [];
-    // for (let i = 0; i < tableCells.length; i++) {
-    //     const element = tableCells[i];
-    //     const textC = await page.evaluate(element => element.textContent, element);
-    //     test.push(textC);
-
-    // }
-    // console.log(test);
 
     browser.close();
     return;
 }
-scrapePlayers('https://www.nba.com/players');
+
+scrapePlayers('https://basketball.realgm.com/nba/players');
