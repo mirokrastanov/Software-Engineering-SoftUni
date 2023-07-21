@@ -1,5 +1,5 @@
-import { scrapeStandings } from "./scrapers.js";
-import { firebaseConfig } from './constants.js';
+import { scrapePlayers, scrapeStandings } from "./scrapers.js";
+import { firebaseConfig, scrapeURLs } from './constants.js';
 
 import { initializeApp } from 'firebase/app';
 // import {
@@ -14,10 +14,14 @@ const db = getDatabase(firebaseApp);
 
 
 async function scrapeAll() {
-    const standings = await scrapeStandings('https://www.nba.com/standings');
+    const standings = await scrapeStandings(scrapeURLs.standings);
     console.log(standings);
+    const players = await scrapePlayers(scrapeURLs.players);
+    console.log(players);
 
     set(ref(db, 'nba/standings'), standings);
+    set(ref(db, 'nba/players'), players);
+
 
     console.log('Saved to Firebase!');
 
