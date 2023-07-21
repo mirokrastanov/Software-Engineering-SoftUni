@@ -49,6 +49,37 @@ export async function scrapeStandings(url) {
     const headersArray = await scrapeHeaders('.Crom_headers__mzI_m');
     const bodyArray1 = await scrapeBody('.Crom_body__UYOcU', headersArray);
     const bodyArray2 = await scrapeBody('#__next > div.Layout_base__6IeUC.Layout_justNav__2H4H0 > div.Layout_mainContent__jXliI > div.MaxWidthContainer_mwc__ID5AG > section.Block_block__62M07.nba-stats-content-block > div > div:nth-child(3) > div.Crom_container__C45Ti.crom-container > table > tbody', headersArray);
+    bodyArray1.map(x => {
+        let teamMain = x['Team'][0].split(' - ');
+        let teamCut = teamMain.splice(0, 1).join('');
+        teamCut = teamCut.split('');
+        let rank;
+        if (teamCut[1] == Number(teamCut[1])) {
+            rank = teamCut.splice(0, 2);
+        } else {
+            rank = teamCut.splice(0, 1);
+        }
+        rank = rank.join('');
+        let letter = teamMain.join('');
+        let team = teamCut.join('');
+        x['Team'].splice(0, 1, rank, team, letter);
+    });
+    bodyArray2.map(x => {
+        let teamMain = x['Team'][0].split(' - ');
+        let teamCut = teamMain.splice(0, 1).join('');
+        teamCut = teamCut.split('');
+        let rank;
+        if (teamCut[1] == Number(teamCut[1])) {
+            rank = teamCut.splice(0, 2);
+        } else {
+            rank = teamCut.splice(0, 1);
+        }
+        rank = rank.join('');
+        let letter = teamMain.join('');
+        let team = teamCut.join('');
+        x['Team'].splice(0, 1, rank, team, letter);
+    });
+    // console.log(bodyArray1);
 
     browser.close();
 
@@ -58,6 +89,8 @@ export async function scrapeStandings(url) {
         updatedAt: ['MM/DD/YYYY, HH:MM:SS', (new Date()).toLocaleString()],
     };
 }
+
+// scrapeStandings('https://www.nba.com/standings');
 
 export async function scrapePlayers(url) {
     const selectors = {
@@ -88,8 +121,19 @@ export async function scrapePlayers(url) {
         for (let i = 0; i < bodyTdArray1.length; i++) {
             const element = bodyTdArray1[i];
             const thText = await page.evaluate(element => element.textContent, element);
-            bodyArray1.temp[headersArray1[i % 12]] = [thText];
-            if (Object.keys(bodyArray1.temp).length == 12) {
+            const aTags = await element.$$('a');
+            if (aTags.length > 1) {
+                const anchorTextArr = [];
+                for (let j = 0; j < aTags.length; j++) {
+                    const el = aTags[j];
+                    const aText = await page.evaluate(el => el.textContent, el);
+                    anchorTextArr.push(aText);
+                }
+                bodyArray1.temp[headersArray1[i % 11]] = anchorTextArr;
+            } else {
+                bodyArray1.temp[headersArray1[i % 11]] = thText;
+            }
+            if (Object.keys(bodyArray1.temp).length == 11) {
                 let copy = JSON.parse(JSON.stringify(bodyArray1.temp));
                 bodyArray1.result.push(copy);
                 bodyArray1.temp = {};
@@ -99,13 +143,16 @@ export async function scrapePlayers(url) {
     }
 
     const headers = await scrapeHeaders(selectors.thead);
-    console.log(headers);
+    headers[headers.indexOf('#')] = 'id';
     const body = await scrapeBody(selectors.tbody, headers);
-    console.log(body);
-
+    // console.log(headers);
+    // console.log(body);
 
     browser.close();
-    return;
+    return {
+        players: body,
+        updatedAt: ['MM/DD/YYYY, HH:MM:SS', (new Date()).toLocaleString()],
+    };
 }
 
-scrapePlayers('https://basketball.realgm.com/nba/players');
+// scrapePlayers('https://basketball.realgm.com/nba/players');
