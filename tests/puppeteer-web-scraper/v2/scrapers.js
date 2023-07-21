@@ -80,8 +80,28 @@ export async function scrapePlayers(url) {
         }
         return headersArray1;
     }
+
+    async function scrapeBody(selector, headersArray1) {
+        const bodyEl1 = await page.waitForSelector(selector);
+        const bodyTdArray1 = await bodyEl1.$$('td');
+        const bodyArray1 = { temp: {}, result: [] };
+        for (let i = 0; i < bodyTdArray1.length; i++) {
+            const element = bodyTdArray1[i];
+            const thText = await page.evaluate(element => element.textContent, element);
+            bodyArray1.temp[headersArray1[i % 12]] = [thText];
+            if (Object.keys(bodyArray1.temp).length == 12) {
+                let copy = JSON.parse(JSON.stringify(bodyArray1.temp));
+                bodyArray1.result.push(copy);
+                bodyArray1.temp = {};
+            }
+        }
+        return bodyArray1.result;
+    }
+
     const headers = await scrapeHeaders(selectors.thead);
     console.log(headers);
+    const body = await scrapeBody(selectors.tbody, headers);
+    console.log(body);
 
 
     browser.close();
