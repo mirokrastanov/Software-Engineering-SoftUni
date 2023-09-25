@@ -57,8 +57,20 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/Certificates/Details/160014/409ec459"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr> <!-- add here -->
-  <td> <a href="https://softuni.bg/trainings/3962/js-applications-february-2023">JS Applications</a> </td>
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-applications">JS Applications</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/167716/26bd4406"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
+ <tr> <!-- add here -->
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-back-end">JS Back End</a> </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/175161/35a6a78d"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
+ <tr> <!-- add here -->
+  <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-angular">Angular</a> </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/182923/5a7e06bb"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/4238/reactjs-october-2023">ReactJS</a> </td>
+  <td> In Progress... </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
@@ -73,6 +85,10 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
+  <tr>
+  <td> <a href="https://softuni.bg/trainings/4182/ms-sql-september-2023">MS SQL</a> </td>
+  <td> In Progress... </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
