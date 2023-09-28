@@ -4794,3 +4794,75 @@ ALTER TABLE Addresses
 ADD CONSTRAINT FK_Addresses_Towns FOREIGN KEY(TownID)
 REFERENCES Towns(TownID)
 GO
+
+
+
+-------------------------------
+-- LAB - Exercises
+-------------------------------
+
+CREATE VIEW v_EngEmpBySalary AS SELECT TOP 10
+	CONCAT_WS(' ', Firstname, MiddleName, LastName) AS [Name],
+	Salary, 
+	d.[Name] AS Department,
+	t.[Name] AS Town
+  FROM Employees AS e 
+  JOIN Departments AS d 
+    ON e.DepartmentID = d.DepartmentID
+  JOIN Addresses AS a ON e.AddressID = a.AddressID
+  JOIN Towns AS t ON a.TownID = t.TownID
+ WHERE e.DepartmentID <> 1
+ ORDER BY Salary DESC, Town ASC;
+ GO
+
+SELECT * FROM v_EngEmpBySalary
+ORDER BY Salary DESC, Town ASC;
+GO
+
+SELECT DISTINCT DepartmentID FROM Employees
+GO
+
+SELECT LastName FROM Employees
+WHERE NOT (ManagerID = 3 OR ManagerID = 4)
+GO
+
+SELECT LastName, Salary FROM Employees
+WHERE Salary BETWEEN 20000 AND 22000
+GO
+
+SELECT FirstName, LastName, ManagerID
+FROM Employees
+WHERE ManagerID IN (109, 3, 16)
+GO
+
+CREATE VIEW V_HighestPeak AS SELECT TOP 1 * FROM Peaks ORDER BY Elevation DESC
+SELECT * FROM V_HighestPeak
+GO
+
+SELECT CustomerId, FirstName, Email, Phone
+INTO CustomerContacts
+FROM Customers
+GO
+
+CREATE SEQUENCE seq_Customers_CustomerID
+AS INT
+START WITH 1
+INCREMENT BY 1
+GO
+
+SELECT NEXT VALUE FOR seq_Customers_CustomerID
+GO
+
+INSERT INTO Departments ([Name], ManagerID) VALUES ('HR', 7)
+GO
+
+SELECT * FROM Projects WHERE EndDate IS NULL;
+GO
+
+UPDATE Projects
+SET EndDate = GETDATE()
+WHERE EndDate IS NULL;
+GO
+
+
+
