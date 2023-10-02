@@ -1,0 +1,37 @@
+CREATE DATABASE [Online Store];
+
+USE [Online Store];
+
+CREATE TABLE [Cities] (
+	[CityID] INT IDENTITY PRIMARY KEY,
+	[Name] VARCHAR(MAX)
+);
+
+CREATE TABLE [ItemTypes] (
+	[ItemTypeID] INT IDENTITY PRIMARY KEY,
+	[Name] VARCHAR(MAX)
+);
+
+CREATE TABLE [Customers] (
+	[CustomerID] INT IDENTITY PRIMARY KEY,
+	[Name] VARCHAR(MAX),
+	[Birthday] DATE,
+	[CityID] INT FOREIGN KEY REFERENCES [Cities]([CityID])
+);
+
+CREATE TABLE [Orders] (
+	[OrderID] INT IDENTITY PRIMARY KEY,
+	[CustomerID] INT FOREIGN KEY REFERENCES [Customers]([CustomerID])
+);
+
+CREATE TABLE [Items] (
+	[ItemID] INT IDENTITY PRIMARY KEY,
+	[Name] VARCHAR(MAX),
+	[ItemTypeID] INT FOREIGN KEY REFERENCES [ItemTypes]([ItemTypeID])
+);
+
+CREATE TABLE [OrderItems] (
+	[OrderID] INT FOREIGN KEY REFERENCES [Orders]([OrderID]),
+	[ItemID] INT FOREIGN KEY REFERENCES [Items]([ItemID])
+	PRIMARY KEY([OrderID], [ItemID])
+);
