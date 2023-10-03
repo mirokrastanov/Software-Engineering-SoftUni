@@ -6,10 +6,10 @@
 USE master
 GO
 
-CREATE DATABASE SoftUni
+CREATE DATABASE SoftUni_2
 GO
 
-USE SoftUni
+USE SoftUni_2
 GO
 
 CREATE TABLE Towns(
