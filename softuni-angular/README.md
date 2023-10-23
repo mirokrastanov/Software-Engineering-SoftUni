@@ -43,5 +43,5 @@
 
 ### Link to <a href="https://softuni.bg/Certificates/Details/182923/5a7e06bb">Certificate</a>
 ### Link to <a href="https://softuni.bg/trainings/4112/angular-june-2023">Course</a>
-
+### Link to <a href="https://github.com/mirokrastanov/NBA-Dashboard">Project</a>
 
