@@ -39,7 +39,7 @@
 
 ### FINAL GPA: 6.00/6.00 
 - Final Project: 100/100pts <i> - Project Link & Full Information: <a href="https://github.com/mirokrastanov/NBA-Dashboard">Here</a></i>
-
+### Selected for Best Project from all the students in this course! 😊
 
 ### Link to <a href="https://softuni.bg/Certificates/Details/182923/5a7e06bb">Certificate</a>
 ### Link to <a href="https://softuni.bg/trainings/4112/angular-june-2023">Course</a>
