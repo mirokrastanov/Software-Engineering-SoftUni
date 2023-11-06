@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import UncontrolledForm from './components/UncontrolledForm'
+import ControlledForm from './components/ControlledForm'
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      <UncontrolledForm />
+      <ControlledForm />
     </>
   )
 }
