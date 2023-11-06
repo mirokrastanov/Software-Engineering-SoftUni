@@ -50,6 +50,7 @@ export default function ControlledForm() {
     const resetFormHandler = (e) => {
         console.log(formValues[FORM_KEYS.hobbies[0]]);
         setFormValues(formInitialState);
+        setErrors({});
     };
 
     const usernameBlurHandler = (e) => {
