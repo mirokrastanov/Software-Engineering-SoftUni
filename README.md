@@ -70,7 +70,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/4238/reactjs-october-2023">ReactJS</a> </td>
-  <td> In Progress... </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/197747/334de91a"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
@@ -88,7 +88,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
   <tr>
   <td> <a href="https://softuni.bg/trainings/4182/ms-sql-september-2023">MS SQL</a> </td>
-  <td> In Progress... </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/185578/9bcb6aef"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
