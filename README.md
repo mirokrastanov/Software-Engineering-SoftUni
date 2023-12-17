@@ -36,9 +36,13 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <td>
  <!-- 1st embedded table start -->
 <table>
- <tr>  <!-- row 1, left embedded table, 1 col -->
+ <tr>  <!-- row 0, left embedded table, 1 col -->
   <th> Course </th> <!-- left embedded table, 1 col -->
   <th> Certificate </th>   <!-- left embedded table, 2 col -->
+ </tr>
+ <tr> 
+  <th> Average GPA </th> 
+  <th> 6.00 / 6.00 </th> 
  </tr>
  <tr>
   <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics">Programming Basics with JS</a> </td>
@@ -81,6 +85,10 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <tr>
   <th> Course </th>
   <th> Certificate </th>
+ </tr>
+ <tr> 
+  <th> Average GPA </th> 
+  <th> 5.67 / 6.00 </th> 
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
