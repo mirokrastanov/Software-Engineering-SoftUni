@@ -110,7 +110,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 
 
 ## Diploma
-- <a href="https://softuni.bg/Certificates/Details/199351/2ec8d9a1">JS Web Developer - Diploma</a>
+- <a href="https://softuni.bg/Certificates/Details/199351/2ec8d9a1" target="_blank">JS Web Developer - Diploma</a>
 
 
 
