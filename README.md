@@ -36,9 +36,13 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <td>
  <!-- 1st embedded table start -->
 <table>
- <tr>  <!-- row 1, left embedded table, 1 col -->
+ <tr>  <!-- row 0, left embedded table, 1 col -->
   <th> Course </th> <!-- left embedded table, 1 col -->
   <th> Certificate </th>   <!-- left embedded table, 2 col -->
+ </tr>
+ <tr> 
+  <th> Average GPA </th> 
+  <th> 6.00 / 6.00 </th> 
  </tr>
  <tr>
   <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics">Programming Basics with JS</a> </td>
@@ -70,7 +74,7 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/4238/reactjs-october-2023">ReactJS</a> </td>
-  <td> In Progress... </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/197747/334de91a"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 1st embedded table end -->
@@ -82,23 +86,31 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <th> Course </th>
   <th> Certificate </th>
  </tr>
+ <tr> 
+  <th> Average GPA </th> 
+  <th> 5.72 / 6.00 </th> 
+ </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
   <td> <a href="https://softuni.bg/certificates/details/69010/be20a5e9"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
-  <tr>
+ <tr>
   <td> <a href="https://softuni.bg/trainings/4182/ms-sql-september-2023">MS SQL</a> </td>
-  <td> In Progress... </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/185578/9bcb6aef"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/4402/it-career-booster-october-2023">IT Career Booster</a> </td>
+  <td> <a href="https://softuni.bg/Certificates/Details/198595/0f3abc84"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
  </td>
  </tr>
- 
 </table>
 
 
-
+## Diploma
+- <a href="https://softuni.bg/Certificates/Details/199351/2ec8d9a1" target="_blank">JS Web Developer - Diploma</a> <i>(Issued: Dec 2023)</i>
 
 
 
@@ -107,6 +119,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
 
 
 <!--
+
+- <a href="https://softuni.bg/Certificates/Details/199351/2ec8d9a1">JS Web Developer - Diploma</a>
+
+<a href="https://softuni.bg/Certificates/Details/199351/2ec8d9a1"><img src="https://softuni.bg/certificates/certificates/converttoimage/199351?code=2ec8d9a1" alt="Diploma URL" title="Diploma - press here" height="1000px" /></a>
+
 To add:
 - Diplomas
 - Other certification from the open courses in SoftUni
