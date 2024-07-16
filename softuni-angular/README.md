@@ -10,7 +10,7 @@
 </body>
 </html>
 
-# ❗⭐Award-Winning Final Project✨❗ - <a href="https://github.com/mirokrastanov/NBA-Dashboard">Click Here▶️</a>
+# <p align="center"> ❗⭐Award-Winning Final Project✨❗ - <a href="https://github.com/mirokrastanov/NBA-Dashboard">Click Here▶️</a></p>
 
 ### Course Description:
 - This course teaches students how to create modern web single page applications using Angular (one of the most popular frameworks on the market).
