@@ -10,6 +10,8 @@
 </body>
 </html>
 
+# ❗⭐Award-Winning Final Project✨❗ - <a href="https://github.com/mirokrastanov/NBA-Dashboard">Click Here▶️</a>
+
 ### Course Description:
 - This course teaches students how to create modern web single page applications using Angular (one of the most popular frameworks on the market).
 - Students also learn TypeScript and later on incorporate it in their final project as well as in a lot of tasks & problems during the  course.
@@ -34,12 +36,12 @@
 - Course Exercises
 - Extra Exercises (optional)
 - Projects & Workshop files + Demos/Previews where applicable
-- Final Project - <a href="https://github.com/mirokrastanov/NBA-Dashboard">Here</a>
+- ❗⭐**Award-Winning** Final Project✨❗ - <a href="https://github.com/mirokrastanov/NBA-Dashboard">Click Here▶️</a>
 - GPA & Certificate information
 
 ### FINAL GPA: 6.00/6.00 
 - Final Project: 100/100pts <i> - Project Link & Full Information: <a href="https://github.com/mirokrastanov/NBA-Dashboard">Here</a></i>
-### Selected for Best Project from all the students in this course! 😊
+### Selected for Best Project from all the students in this course! `Over 500 students` 😊
 
 ### Link to <a href="https://softuni.bg/Certificates/Details/182923/5a7e06bb">Certificate</a>
 ### Link to <a href="https://softuni.bg/trainings/4112/angular-june-2023">Course</a>
