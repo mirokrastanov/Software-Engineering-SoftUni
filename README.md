@@ -36,13 +36,16 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <td>
  <!-- 1st embedded table start -->
 <table>
- <tr>  <!-- row 0, left embedded table, 1 col -->
-  <th> Course </th> <!-- left embedded table, 1 col -->
-  <th> Certificate </th>   <!-- left embedded table, 2 col -->
+ <tr>  <!-- row 1, left embedded table, 1st row -->
+  <th colspan="2"> JS Track </th>
  </tr>
- <tr> 
-  <th> Average GPA </th> 
-  <th> 6.00 / 6.00 </th> 
+ <tr>  <!-- row 2, left embedded table, 2nd row -->
+  <th> Average GPA </th> <!-- left embedded table, 1st col -->
+  <th> 6.00 / 6.00 </th> <!-- left embedded table, 2nd col -->
+ </tr>
+ <tr>  <!-- row 3, left embedded table, 3rd row -->
+  <th> Course </th> <!-- left embedded table, 1st col -->
+  <th> Certificate </th> <!-- left embedded table, 2nd col -->
  </tr>
  <tr>
   <td> <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni/tree/main/softuni-js-basics">Programming Basics with JS</a> </td>
@@ -82,13 +85,13 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  <td>
  <!-- 2nd embedded table start -->
  <table>
- <tr>
-  <th> Course </th>
-  <th> Certificate </th>
+ <tr>  <!-- row 1, right embedded table -->
+  <th> Average GPA </th> <!-- 1st col -->
+  <th> 5.72 / 6.00 </th> <!-- 2nd col -->
  </tr>
- <tr> 
-  <th> Average GPA </th> 
-  <th> 5.72 / 6.00 </th> 
+ <tr>  <!-- row 2, right embedded table -->
+  <th> Course </th> <!-- 1st col -->
+  <th> Certificate </th> <!-- 2nd col -->
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/2322/windows-system-administration-june-2019">Windows System Administration</a> </td>
