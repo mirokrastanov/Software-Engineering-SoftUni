@@ -34,6 +34,7 @@ def get_number_of_lines():
         else:
             print('Invalid input. Please enter a valid number.')
 
+    # print(f'Number of lines: {lines}')
     return lines
 
 
