@@ -65,31 +65,36 @@ const getRemainingTime = (expiration) => {
 
 //================================================================
 function pretifyNum(num) { return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }
+function getD(n) { return n.split('').slice(0, n.length - 6).join('') }
+
 const toLog = [];
-
-const resetTime = new Date('9/12/2024, 16:30:00');
-const currentTime = new Date();
-
+const [resetTime, currentTime] = [new Date('9/12/2024, 16:30:00'), new Date()];
 const timeDiff = (currentTime - resetTime) / 1000 / 60 / 60;
-toLog.push(`Hours so far: ${timeDiff.toFixed(1)}h`);
+
+const [rD, rT, cD, cT, h] = [getD(getDate(resetTime)), getTime(resetTime),
+getD(getDate(currentTime)), getTime(currentTime), timeDiff.toFixed(1)];
+toLog.push(`Reset: ${rD}, ${rT}\nNow: ${cD}, ${cT}\nTime Past: ${h} hours`);
+toLog.push('--------------------------------------');
 
 const prodPH = 396 * 4;
 const prodLost = prodPH * timeDiff;
-toLog.push(`Prod lost: ${pretifyNum(prodLost.toFixed(0))} | (${pretifyNum(prodPH)}/h)`);
+toLog.push(`Lost: -${pretifyNum(prodLost.toFixed(0))} | (-${pretifyNum(prodPH)}/h)`);
 
-const resGained = (4 * 1760) + (4 * 1240) + (4 * 760) + (4 * 360) +
-    (4 * 160) + (4 * 800) + (4 * 1360) + (4 * 240) + (4 * 40);
-toLog.push(`Res gained: ${pretifyNum(resGained)} | (${pretifyNum((resGained / timeDiff).toFixed(0))}/h)`);
+// ADD UPDATES HERE ===================================================================================
+const resGained = (4 * 1760) + (4 * 1240) + (4 * 760) + (4 * 360) + (4 * 160) + (4 * 800) + (4 * 1360)
+    + (4 * 240) + (4 * 40) + (4 * 920) + (4 * 1720) + (4 * 440);
+// ====================================================================================================
+toLog.push(`Gained: +${pretifyNum(resGained)} | (+${pretifyNum((resGained / timeDiff).toFixed(0))}/h)`);
+toLog.push('--------------------------------------');
 
 const finalSum = resGained - prodLost;
-toLog.push(`Final Sum: ${finalSum >= 0 ? '+' : ''}${pretifyNum(finalSum.toFixed(0))} | (${finalSum >= 0 ? 'POSITIVE' : 'NEGATIVE'})`);
+toLog.push(`Sum: ${finalSum >= 0 ? '+' : ''}${pretifyNum(finalSum.toFixed(0))} | (${finalSum >= 0 ? 'POSITIVE' : 'NEGATIVE'})`);
 
 const hoursAhead = finalSum / 4 / 360;
-const isAhead = hoursAhead >= 0 ? 'Hours Ahead' : 'Hours Behind';
-toLog.push(`${isAhead}: ${hoursAhead.toFixed(1)}h`);
+const isAhead = hoursAhead >= 0 ? '(AHEAD)' : '(BEHIND)';
+toLog.push(`Status: ${hoursAhead.toFixed(1)}h | ${isAhead}`);
 
-// toLog.forEach(x => console.log(x));
-console.table({ [toLog[1]]: toLog[3], [toLog[2]]: `${toLog[0]} | ${toLog[4]}` });
+toLog.forEach(x => console.log(x));
 
 
 
