@@ -1,29 +1,22 @@
 <img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/github_02.gif" alt="bg-header-image" width="100%" title="Github Profile Intro Animation - Miro Krastanov" align="center" /> 
 
-<br />
-<h2 align="center">💯 Click below to check out my portfolio 👇</h2>
+<h3 align="center">💯 Click below to check out my portfolio 👇</h3>
 <a href="https://miro-navy-mu.vercel.app/" target="_blank" width="100%">
    <img align="center" alt="view-portfolio-banner" title="Click here to view my portfolio" width="100%"
         src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/ai-portfolio-banner.jpg?raw=true" 
     />
 </a>
 
-<br />
-<br />
-<h2 align="center">🙂 Or continue exploring 👇</h2>
-<table align="center">
-  <tr>
-    <th colspan="3">❗ Interactive Headings ▶️</th>
-  </tr>
-  <tr>
-    <td align="center">Click to <code>Show</code> / <code>Hide</code> contents</td>
-  </tr>
-</table>
+
+<h3 align="center">▶️ Or use the interactive headings below to learn more 👇</h3>
 
 <details align="center"> <!-- Start sub 1 -->
- <summary><h2>1. 👋Introduction</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>1. 👋Introduction</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
  
  <ul type="none" align="center">
   <li> 💻 Full Stack Developer (MERN stack) </li>
@@ -41,9 +34,12 @@
 
 
 <details align="center"> <!-- Start sub 2 -->
- <summary><h2>2. 🛠️Tools & Technologies</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>2. 🛠️Tools & Technologies</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
 
  <table align="center"> <!-- TABLE 1 -->
     <tr height="50px"> <!-- ROW 0 -->
@@ -186,9 +182,12 @@
 
 
 <details align="center"> <!-- Start sub 3 -->
- <summary><h2>3. 📜Certificates</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>3. 📜Certificates</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
  
  <a href="https://softuni.bg/">
   <img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png"        
@@ -291,9 +290,12 @@
 
 
 <details align="center"> <!-- Start sub 4 -->
- <summary><h2>4. 💡Small Projects</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>4. 💡Small Projects</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
 
   <table align="center">
    <thead>
@@ -446,9 +448,12 @@
 
 
 <details align="center"> <!-- Start sub 5 -->
- <summary><h2>5. 🚀Large Projects</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>5. 🚀Large Projects</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
 
  <table align="center">
   <thead>
@@ -565,9 +570,12 @@
 
 
 <details align="center"> <!-- Start sub 6 -->
- <summary><h2>6. 📊Statistics</h2></summary>
- <p>👆Click above to hide section🚫</p>
- <hr />
+ <summary><b>6. 📊Statistics</b> | <code>Show</code>👈</summary>
+ <table align="center">
+    <tr>
+        <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
+    </tr>
+ </table>
 
  <table align="center"> 
   <tr>
