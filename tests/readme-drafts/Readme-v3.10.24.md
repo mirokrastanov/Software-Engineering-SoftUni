@@ -8,20 +8,20 @@
 </a>
 
 
-
-
 <h3 align="center">▶️ Or use the interactive headings below to learn more 👇</h3>
+<hr />
 
 <details align="center"> <!-- Start sub 1 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base1.png?raw=true" height="50px" />
+    <b>1. 👋INTRODUCTION</b> | <code>Show</code>👈
  </summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
+ <br />
  
  <ul type="none" align="center">
   <li> 💻 Full Stack Developer (MERN stack) </li>
@@ -30,7 +30,7 @@
   <li> 🎓 Alumnus of <a href="https://www.coventry.ac.uk/">Coventry University</a> (UK,2018) (graduated with merit).</li>
   <li> 🎓 Alumnus of <a href="https://softuni.bg">Software University - Sofia</a> (BG,2023) - <a href="https://github.com/mirokrastanov/Software-Engineering-SoftUni#Certificates">Diploma & Certificates</a> </li>
   <h3> 🕹️ Check out all my <a href="https://app-library-13e36.web.app/">App Demos</a> in my app library.</h3>
-  <h3> 🕹️ Or explore my <a href="https://app-library-13e36.web.app/">Portfolio</a></h3>
+  <h3> 🕹️ Or explore my <a href="https://miro-navy-mu.vercel.app/">My Portfolio Website</a></h3>
  </ul>
  
  <hr />
@@ -40,14 +40,15 @@
 
 <details align="center"> <!-- Start sub 2 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base2.png?raw=true" height="50px" />
- </summary>
+    <b>2. 🛠️TOOLS & TECH</b> | <code>Show</code>👈
+</summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
+ <br />
 
  <table align="center"> <!-- TABLE 1 -->
     <tr height="50px"> <!-- ROW 0 -->
@@ -191,15 +192,16 @@
 
 <details align="center"> <!-- Start sub 3 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base3.png?raw=true" height="50px" />
- </summary>
+    <b>3. 📜CERTIFICATES</b> | <code>Show</code>👈
+</summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
-
+ <br />
+ 
  <a href="https://softuni.bg/">
   <img src="https://raw.githubusercontent.com/mirokrastanov/Software-Engineering-SoftUni/main/miscellaneous/softuni-banner.png"        
    height="160">
@@ -302,14 +304,15 @@
 
 <details align="center"> <!-- Start sub 4 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base4.png?raw=true" height="50px" />
- </summary>
+    <b>4. 💡SMALL PROJECTS</b> | <code>Show</code>👈
+</summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
+ <br />
 
   <table align="center">
    <thead>
@@ -463,14 +466,15 @@
 
 <details align="center"> <!-- Start sub 5 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base5.png?raw=true" height="50px" />
- </summary>
+    <b>5. 🚀LARGE PROJECTS</b> | <code>Show</code>👈
+</summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
+ <br />
 
  <table align="center">
   <thead>
@@ -588,14 +592,15 @@
 
 <details align="center"> <!-- Start sub 6 -->
  <summary>
-    <img src="https://github.com/mirokrastanov/Software-Engineering-SoftUni/blob/main/miscellaneous/btns/btn%20base6.png?raw=true" height="50px" />
+    <b>6. 📊STATISTICS</b> | <code>Show</code>👈
  </summary>
+ <hr />
  <table align="center">
     <tr>
         <td><b>👆Click above to <code>Hide</code> section🚫</b></td>
     </tr>
  </table>
- <hr />
+ <br />
 
  <table align="center"> 
   <tr>
