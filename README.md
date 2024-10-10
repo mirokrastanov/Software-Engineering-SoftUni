@@ -105,6 +105,14 @@ Each course ends with an Exam, designed so students can demonstrate their skills
   <td> <a href="https://softuni.bg/trainings/4402/it-career-booster-october-2023">IT Career Booster</a> </td>
   <td> <a href="https://softuni.bg/Certificates/Details/198595/0f3abc84"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/4717/software-engineering-and-devops-september-2024">DevOps</a> </td>
+  <td>In Progress...</td>
+ </tr>
+ <tr>
+  <td> <a href="https://softuni.bg/trainings/4718/containers-and-cloud-october-2024">Containers & Cloud</a> </td>
+  <td>In Progress...</td>
+ </tr>
 </table>
  <!-- 2nd embedded table end -->
  </td>
