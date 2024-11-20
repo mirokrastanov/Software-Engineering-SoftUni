@@ -1,8 +1,11 @@
-FROM alpine
+FROM node:20
 
-ENTRYPOINT [ "echo", "Hello" ]
-CMD [ "World" ]
+WORKDIR /working_dir
 
-# during docker run -d miro1 {A var can be put here to replace "World"}
-# eg: docker run -d miro1 "Miro"
-# difference -> cmd can be overwritten
+COPY . .
+
+RUN npm install
+
+ENTRYPOINT [ "npm", "run", "serve" ]
+
+# Sample image creation sequence for a node.js app
