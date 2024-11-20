@@ -1,6 +1,9 @@
 FROM node:20
+LABEL AUTHOR="MIRO"
 
 WORKDIR /working_dir
+
+EXPOSE 8080
 
 COPY . .
 
