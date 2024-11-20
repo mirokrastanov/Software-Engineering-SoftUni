@@ -1,5 +1,8 @@
 FROM alpine
 
-RUN apk add nano
+ENTRYPOINT [ "echo", "Hello" ]
+CMD [ "World" ]
 
-ENTRYPOINT [ "sleep", "120" ]
+# during docker run -d miro1 {A var can be put here to replace "World"}
+# eg: docker run -d miro1 "Miro"
+# difference -> cmd can be overwritten
