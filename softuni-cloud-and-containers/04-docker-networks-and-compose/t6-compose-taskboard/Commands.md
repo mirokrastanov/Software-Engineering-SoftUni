@@ -18,5 +18,18 @@
 7. Confirm the image was successfully created
 8. Launch the containers and test the App
 9. `docker compose up -d`
-10. Debug
-11. 
+10. Enter Debug Mode
+11. `docker compose down`
+12. Edit the `Dockerfile` 's arguments
+    - `ARG BUILD_CONFIGURATION=Debug`
+13. `docker compose up -d`
+14. Open the project's `sln` file with Visual Studio
+15. Debug > Attach to process
+    - Connection type -> `Docker (Linux Container)`
+    - Connection target -> `web_app`
+    - Process -> `dotnet`
+    - Attach
+16. Add a breakpoint and test
+17. Access the app and confirm execution is paused  at the breakpoint
+18. After the task is completed - close and remove everything
+19. `docker compose down`
