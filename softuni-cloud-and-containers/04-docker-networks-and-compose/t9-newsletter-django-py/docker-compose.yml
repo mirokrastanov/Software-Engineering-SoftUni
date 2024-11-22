@@ -1,0 +1,9 @@
+services:
+  simpleapp:
+    ports:
+      - 8000:8000
+    volumes:
+      - ./static:/app/staticfiles
+    build: .
+    environment:
+      - DEBUG=False
