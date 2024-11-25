@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Vote
+build_property.ProjectDir = D:\CODING\PROJECTS\Software-Engineering-SoftUni\softuni-cloud-and-containers\04-docker-networks-and-compose\t7-blue-vs-green-app\app-root\vote\dotnet\Vote\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

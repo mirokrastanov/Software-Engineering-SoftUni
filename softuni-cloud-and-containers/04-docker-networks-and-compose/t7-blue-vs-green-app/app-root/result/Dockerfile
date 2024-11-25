@@ -1,7 +1,7 @@
 FROM node:10-slim
 
 # Add Tini for proper init of signals
-ENV TINI_VERSION v0.19.0
+ENV TINI_VERSION=v0.19.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
@@ -18,7 +18,7 @@ RUN npm ci \
 
 COPY . .
 
-ENV PORT 80
+ENV PORT=80
 
 EXPOSE 80
 
