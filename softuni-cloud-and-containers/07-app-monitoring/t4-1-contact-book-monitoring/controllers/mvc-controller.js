@@ -37,9 +37,15 @@ function setup(app, data) {
   });
 
   app.get('/contacts', function (req, res) {
+
+    const end = httpRequestTimer.startTimer();
+    const route = req.route.path;
+
     let contacts = data.getContacts();
     let model = { contacts };
     res.render('contacts', model);
+
+    end({ route, code: res.statusCode, method: req.method });
   });
 
   app.get('/contacts/create', function (req, res) {
