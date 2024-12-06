@@ -34,4 +34,3 @@
 25. Confirm the `terraform.tfstate` file appears and is saved in the storage container, created above.
 26. Look in the Terraform docs for `resources` -> `storage_account` -> In order to perform 20 - 23 via the `terraform CLI` and also add it to the GitHub workflow
 27. Same as 26 applies to the Service Principal Creation process in 7
-28. 
