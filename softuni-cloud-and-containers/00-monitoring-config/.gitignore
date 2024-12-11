@@ -1,0 +1,5 @@
+# Omit all sensitive information / files!
+## Leave only License, Notice and future work data!
+*.exe
+console_libraries/
+consoles/
