@@ -1,0 +1,10 @@
+groups:
+  - name: Slow connection
+    rules:
+      - alert: SlowHttpConnection
+        expr: probe_http_duration_seconds{phase="connect"} > 0.0025
+        for: 3s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Show HTTP Connected Detected. Delay value is greater than 2.5 milliseconds."
