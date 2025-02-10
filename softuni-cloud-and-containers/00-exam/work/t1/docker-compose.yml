@@ -1,0 +1,40 @@
+services:
+    mongo:
+        networks:
+            - goals
+        container_name: mongodb
+        volumes:
+            - data:/data/db
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+            - MONGO_INITDB_ROOT_PASSWORD=secret
+        image: mongo
+    exam-1-backend:
+        networks:
+            - goals
+        container_name: exam-1-backend
+        environment:
+            - MONGODB_USERNAME=mongoadmin
+            - MONGODB_PASSWORD=secret
+        ports:
+            - 80:80
+        volumes:
+            - logs:/logs
+        build: ./backend
+    exam-1-frontend:
+        networks:
+            - goals
+        container_name: exam-1-frontend
+        ports:
+            - 3000:3000
+        volumes:
+            - ./frontend/src:/src
+        build: ./frontend
+networks:
+    goals:
+        name: goals
+volumes:
+    data:
+        name: data
+    logs:
+        name: logs
