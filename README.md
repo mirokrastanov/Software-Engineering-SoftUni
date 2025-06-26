@@ -107,11 +107,11 @@ Each course ends with an Exam, designed so students can demonstrate their skills
  </tr>
  <tr>
   <td> <a href="https://softuni.bg/trainings/4717/software-engineering-and-devops-september-2024">DevOps</a> </td>
-  <td>In Progress...</td>
+  <td> <a href="https://softuni.bg/certificates/details/229446/b99c6308"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
  <tr>
-  <td> <a href="https://softuni.bg/trainings/4718/containers-and-cloud-october-2024">Containers & Cloud</a> </td>
-  <td>In Progress...</td>
+  <td> <a href="https://softuni.bg/trainings/4718/containers-and-cloud-october-2024">Containers and Cloud</a> </td>
+  <td> <a href="https://softuni.bg/certificates/details/232839/fe2a745c"><img src="https://i.giphy.com/media/fEzB3y39Fs48FUix5Q/giphy.webp" alt="Certificate URL" title="Certificate - press here" height="20px" /></a> </td>
  </tr>
 </table>
  <!-- 2nd embedded table end -->
