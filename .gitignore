@@ -12,6 +12,7 @@ out/
 /workspace.xml
 
 # Python / PyCharm
+.venv/
 venv/
 .vscode/
 
